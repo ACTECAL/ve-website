@@ -280,6 +280,7 @@ var w = window.matchMedia("(max-width: 700px)");
   vid.appendChild(source);
   
   if (w.matches) {
+
     vid.pause();
     source.removeAttribute("src");
     source.setAttribute("src", "videos/ValueEnable_Low.mp4");
@@ -299,6 +300,7 @@ window.addEventListener("resize", function(){
   var source = document.getElementById("hvid");
   
   if (w.matches) {
+    header.classList.add("sticky");
     vid.pause();
     source.src = "videos/ValueEnable_Low.mp4";
     vid.load();    

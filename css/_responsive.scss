@@ -1273,7 +1273,10 @@
     max-width: 700px;
   }
   .solutions-wrapper .solutions-raw .solutions-box .img-wrap img {
-    max-width: 800px;
+    max-width: 627px;
+  }
+  .solutions-wrapper .solutions-raw .solutions-box .img-wrap {
+    margin-top: 0px;
   }
   .career-wrapper .career-raw .img-wrap img {
     max-width: 510px;
@@ -3901,7 +3904,7 @@
     margin: 30px 0 20px;
 }
 .reality-wrapper .yellow-bg .right-con ul li .box {
-  height: 200px;
+  max-height: 394px;
 }
 
 .teamwrap{
