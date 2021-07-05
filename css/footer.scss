@@ -1,0 +1,111 @@
+.footer {
+    margin-top: 60px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    @include box-shadow( 0 0 10px rgba(0, 0, 0, 0.1));
+    padding: 30px 0;
+    .logo {
+        width: 260px;
+    }
+    .footer-wrap {
+        padding: 0 10%;
+        .information-raw {
+            float: left;
+            width: 100%;
+            padding-left: 35px;
+            ul {
+                li {
+                    font-size: 12.18px;
+                    color: #2b3a67;
+                    padding-top: 10px;
+                    line-height: 24px;
+                    span {
+                        color: #2b3a67;
+                    }
+                    a {
+                        color: #2b3a67;
+                    }
+                }
+            }
+        }
+        .links-wrap {
+            padding-top: 10px;
+            float: left;
+            width: 100%;
+            padding-left: 45%;
+            h5 {
+                position: relative;
+                color: #2b3a67;
+                font-size: 17px;
+                line-height: 23px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 58px;
+                    height: 1px;
+                    background-color: #dddfe7;
+                    left: -10px;
+                    top: 30px;
+                }
+            }
+            ul {
+                padding-top: 40px;
+                float: left;
+                width: 100%;
+                column-gap: 30px;
+                li {
+                    width: 50%;
+                    float: left;
+                    padding-top: 10px;
+                    a {
+                        line-height: 24px;
+                        font-weight: 400;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12.18px;
+                        color: #2b3a67;
+                        @include transition(all 0.3s);
+                        &:hover{
+                            color: #da1e37;
+                        }
+                    }
+                }
+            }
+        }
+        ul.socials {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 30px;
+            li {
+                display: flex;
+                width: 3%;
+                justify-content: center;
+                margin-left: 12px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid #2b3a67;
+                    border-radius: 50px;
+                    
+                    @include transition(all 0.3s);
+                    i {
+                        color: #2b3a67;
+                    }
+                    &:hover {
+                        border: 1px solid #ca2825;
+                        background-color: #ca2825;
+                        i {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

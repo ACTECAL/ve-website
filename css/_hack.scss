@@ -1,0 +1,15 @@
+::selection {
+    background: #ca2825;
+    color: #ffffff;
+    text-shadow: none
+}
+
+::-moz-selection {
+    background: #ca2825;
+    color: #ffffff;
+    text-shadow: none
+}
+
+// sass --watch style.scss style.css
+// gulp
+// gulp watch

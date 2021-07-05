@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "gulp": "gulp",
+    "minify": "gulp minify"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "less": "^4.1.1",
+    "node-sass": "^6.0.1"
+  }
+}
