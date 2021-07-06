@@ -738,7 +738,8 @@ section {
   .valuenable-main .title-wrap {
     padding: 0 7%;
     display: flex;
-    align-items: flex-end; }
+    align-items: flex-end;
+    justify-content: space-between; }
     .valuenable-main .title-wrap h2,
     .valuenable-main .title-wrap h3 {
       font-weight: 800;
@@ -1058,11 +1059,12 @@ section {
   padding: 0 5%;
   text-align: left; }
   .hard-reality-row .image-length {
-    margin-top: 0px; }
+    margin-top: 8px; }
   .hard-reality-row p {
     font-weight: 600;
     font-size: 15.17px;
-    line-height: 26px; }
+    line-height: 26px;
+    text-align: left; }
   .hard-reality-row .img-wrap {
     text-align: center; }
   .hard-reality-row .text-wrap {
@@ -1128,7 +1130,7 @@ section {
     color: #333434;
     padding-top: 40px;
     overflow: hidden;
-    text-align: justify; }
+    text-align: center; }
   .career-wrapper .career-raw .small-title-raw a {
     padding-top: 16.08px;
     position: relative;
@@ -1831,7 +1833,7 @@ form ul {
       line-height: 136%;
       color: #2e2e2e;
       font-weight: 400;
-      text-align: justify; }
+      text-align: center; }
     .inner-wrapper .innerpage .innercontainerwrap .teamwrap p {
       padding: 15px 0 15px 0px !important; }
     .inner-wrapper .innerpage .innercontainerwrap .about-wrap {
@@ -2161,7 +2163,7 @@ form ul {
                 line-height: 22px;
                 font-weight: 400;
                 padding: 15px 0 15px 40px;
-                text-align: justify; }
+                text-align: left; }
                 .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .leftwrap ul li::before {
                   position: absolute;
                   content: "";
@@ -2205,7 +2207,7 @@ form ul {
               line-height: 23px;
               font-weight: 400;
               padding: 10px 0;
-              text-align: justify; }
+              text-align: left; }
               .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .fullboxwrap p a {
                 float: none;
                 display: inline-block;
@@ -2623,7 +2625,7 @@ form ul {
   .why-ve-wrapper-block video {
     position: absolute;
     left: 12%;
-    top: 22.6%; }
+    top: 19.6%; }
 
 .customer-retention-raw .solution-one-details p {
   min-height: 212px; }
@@ -3306,7 +3308,8 @@ form ul {
       width: 483px; }
       .reality-wrapper .yellow-bg .title-wrap .title h2 {
         font-size: 56.11px;
-        line-height: 47px; }
+        line-height: 47px;
+        margin-bottom: 15px; }
       .reality-wrapper .yellow-bg .title-wrap .title h3 {
         font-size: 56.11px;
         line-height: 39px; }
@@ -3318,7 +3321,7 @@ form ul {
   .reality-wrapper .pink-bg .img-fluid {
     max-width: 183px; }
   .reality-wrapper .pink-bg .top-wrap {
-    padding: 0 15px; }
+    padding: -1px 15px; }
   .reality-wrapper .pink-bg .title-wrap {
     padding: 0 65px; }
     .reality-wrapper .pink-bg .title-wrap .title {
@@ -3485,7 +3488,8 @@ form ul {
     font-size: 56px; }
   .title-text-main h2 {
     font-size: 57.74px;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    margin-bottom: 15px !important; }
   .career-wrapper .career-box {
     padding: 0 192px 0 192px; }
   .contact-wrapper .contacts-raws {
@@ -5128,7 +5132,7 @@ form ul {
       top: -1.5%;
       max-width: 69%;
       width: 100%;
-      max-height: 91%;
+      max-height: 92%;
       height: 100%; }
   .reality-wrapper .yellow-bg .title-wrap .title h3 {
     font-size: 28.11px !important;
