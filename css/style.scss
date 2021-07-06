@@ -581,6 +581,7 @@ ul {
     padding: 0 7%;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     h2,
     h3 {
       font-weight: 800;
@@ -994,12 +995,13 @@ ul {
   padding: 0 5%;
   text-align: left;
   .image-length {
-    margin-top: 0px;
+    margin-top: 8px;
   }
   p {
     font-weight: 600;
     font-size: 15.17px;
     line-height: 26px;
+    text-align: left;
   }
   .img-wrap {
     text-align: center;
@@ -1097,7 +1099,7 @@ ul {
         color: #333434;
         padding-top: 40px;
         overflow: hidden;
-        text-align: justify;
+        text-align: center;
       }
       a {
         padding-top: 16.08px;
@@ -1969,7 +1971,7 @@ form {
         line-height: 136%;
         color: #2e2e2e;
         font-weight: 400;
-        text-align: justify;
+        text-align: center;
         // padding-top: 10px;
       }
       .teamwrap {
@@ -2391,7 +2393,7 @@ form {
                       line-height: 22px;
                       font-weight: 400;
                       padding: 15px 0 15px 40px;
-                      text-align: justify;
+                      text-align: left;
                       &::before {
                         position: absolute;
                         content: "";
@@ -2442,7 +2444,7 @@ form {
                     line-height: 23px;
                     font-weight: 400;
                     padding: 10px 0;
-                    text-align: justify;
+                    text-align: left;
                     a {
                       float: none;
                       display: inline-block;
@@ -3046,7 +3048,7 @@ form {
   video {
     position: absolute;
     left: 12%;
-    top: 22.6%;
+    top: 19.6%;
   }
 }
 .customer-retention-raw .solution-one-details p {
