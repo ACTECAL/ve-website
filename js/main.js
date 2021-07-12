@@ -272,13 +272,13 @@ $(document).ready(function () {
 
 
 
-var w = window.matchMedia("(max-width: 700px)");
+  var w = window.matchMedia("(max-width: 900px)");
   var vid = document.getElementById("ve-video");
   var source = document.createElement("source");
   source.id = "hvid";
   source.setAttribute("type", "video/mp4");
   vid.appendChild(source);
-  
+
   if (w.matches) {
 
     vid.pause();
@@ -294,22 +294,22 @@ var w = window.matchMedia("(max-width: 700px)");
     // vid.play();
   }
 
-window.addEventListener("resize", function(){
-  var w = window.matchMedia("(max-width: 700px)");
-  var vid = document.getElementById("ve-video");
-  var source = document.getElementById("hvid");
-  
-  if (w.matches) {
-    header.classList.add("sticky");
-    vid.pause();
-    source.src = "videos/ValueEnable_Low.mp4";
-    vid.load();    
-    // vid.play();
-  } else {
-    vid.pause();
-    source.src = "videos/ValueEnable_High.mp4";
-    vid.load();
-    // vid.play();
-  }
-});
+  window.addEventListener("resize", function () {
+    var w = window.matchMedia("(max-width: 900px)");
+    var vid = document.getElementById("ve-video");
+    var source = document.getElementById("hvid");
+
+    if (w.matches) {
+      header.classList.add("sticky");
+      vid.pause();
+      source.src = "videos/ValueEnable_Low.mp4";
+      vid.load();
+      // vid.play();
+    } else {
+      vid.pause();
+      source.src = "videos/ValueEnable_High.mp4";
+      vid.load();
+      // vid.play();
+    }
+  });
 });
