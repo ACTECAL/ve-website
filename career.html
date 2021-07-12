@@ -195,24 +195,24 @@
                                 </div>
                                 <div class="row form-wrapper">
                                     <div class="col-12 col-md-12">
-                                        <form action="#">
+                                        <form id="careerForm" method="POST" enctype="multipart/form-data">
                                             <ul>
                                                 <li>
-                                                    <input type="text" class="form-control" id="name" placeholder="Your Name *" name="name">
+                                                    <input type="text" class="form-control" id="name" placeholder="Your Name *" name="name" required>
                                                 </li>
                                                 <li>
-                                                    <input type="email" class="form-control" id="email" placeholder="Your Email *" name="email">
+                                                    <input type="email" class="form-control" id="email" placeholder="Your Email *" name="email" required>
                                                 </li>
                                                 <li>
-                                                    <input type="number" class="form-control" id="mobile" placeholder="Enter Number *" name="number">
+                                                    <input type="number" class="form-control" id="mobile" placeholder="Enter Number *" name="number" required>
                                                 </li>
                                                 <li>
-                                                    <input type="text" class="form-control" id="position" placeholder="Applying for Position *" name="position">
+                                                    <input type="text" class="form-control" id="position" placeholder="Applying for Position *" name="position" required>
                                                 </li>
                                                 <li>
-                                                    <input type="file" name="file" id="file" class="file">
+                                                    <input type="file" name="resume" id="file" class="file" accept="application/pdf">
                                                     <div class="d-flex">
-                                                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly" placeholder="Upload CV*">
+                                                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly" placeholder="Upload CV*" required>
                                                       <input type="button" class="btn" value="Choose File">
                                                     </div>
                                                 </li>
@@ -220,7 +220,8 @@
                                                     <textarea  class="form-control" placeholder="Summary *" id="message"></textarea>
                                                 </li>
                                                 <li>
-                                                   <input type="submit" class=" form-control btn-main submit-btn" placeholder="submit" id="submit" name="submit" onClick="Call_Api('http://139.59.94.131:3000')">
+                                                   <input type="submit" class=" form-control btn-main submit-btn" placeholder="submit" id="submit" name="submit" 
+                                                   >
                                                 </li>
                                             </ul>
                                         </form>
@@ -230,7 +231,7 @@
                                     <div class="col-sm-12 col-12">
                                         <div class="query-raw">
                                             <p>
-                                                You can also email your CV at <a href="#">career@valuenable.in</a>
+                                                You can also email your CV at <a href="mailto:career@valuenable.in">career@valuenable.in</a>
                                             </p>
                                         </div>
                                     </div>
@@ -266,7 +267,7 @@
                                     </li>
                                     <li>
                                         <span>Email:</span>
-                                        <a href="#">info@valuenable.in</a>
+                                        <a href="mailto:info@valuenable.in">info@valuenable.in</a>
                                     </li>
                                     <li>
                                         <span>Office Timings:</span> 24/7
@@ -319,8 +320,44 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
-
+        
         <script>
+			$( "#careerForm").submit(( event )=> {
+				event.preventDefault()
+				let name = document.getElementById("name");
+				let email = document.getElementById("email");
+				let number = document.getElementById("mobile");
+				let position = document.getElementById("position");
+				let resume = document.getElementById("file")?.files[0];
+				let message = document.getElementById("message");
+                var bodyFormData = new FormData();
+                bodyFormData.append('name', name.value);
+                bodyFormData.append('email', email.value);
+                bodyFormData.append('mobile', mobile.value);
+                bodyFormData.append('position', position.value);
+                bodyFormData.append('resume', resume);
+                bodyFormData.append('summary', message.value);
+				let obj = {
+						name: name.value,
+						email: email.value,
+						mobile: parseInt(number.value) ,
+						position: position.value,
+						resume: resume,
+						summary: message.value
+				}
+
+				let link=`http://localhost:3000/careers`
+                const xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == XMLHttpRequest.DONE && xhr.status==200) {
+                        return alert("Resume uploaded successfully");
+                    }
+                }
+                xhr.open("POST",link,true)
+                xhr.send(bodyFormData)
+			});
+    </script>
+        <!-- <script>
         function Call_Api(baseUrl) 
         {
         var name = document.getElementById("name");
@@ -356,6 +393,6 @@
 
             window.location.href = link;
         }
-        </script>
+        </script> -->
     </body>
 </html>

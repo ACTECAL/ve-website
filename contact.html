@@ -39,10 +39,10 @@
         <div id="status">&nbsp;</div>
     </div>
     <header id="header">
-        <div class="header">
-            <div class="container">
-                <div class="header-wrap section">
-                    <div class="header-main section">
+      <div class="header">
+        <div class="container">
+          <div class="header-wrap section">
+            <div class="header-main section">
                         <div class="logo">
                             <a href="index.html">
                                 <img src="images/logo.png" alt="ValuEnable" />
@@ -135,28 +135,37 @@
                                         <div class="contact-form-wrapper">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <form action="#">
+                                                    <form id="userForm" method="POST">
                                                         <ul>
                                                             <li>
-                                                                <input type="text" class="form-control" id="conatct-name" placeholder="Your Name *" name="name">
+                                                                <input type="text" class="form-control" id="conatct-name" placeholder="Your Name *" name="name"
+																																required>
                                                             </li>
                                                             <li>
-                                                                <input type="email" class="form-control" id="contact-email" placeholder="Your Email *" name="email">
+                                                                <input type="email" class="form-control" id="contact-email" placeholder="Your Email *" name="email"
+																																required>
                                                             </li>
                                                             <li>
-                                                                <input type="number" class="form-control" id="contact-mobile" placeholder="Enter Number *" name="number">
+                                                                <input type="number" class="form-control" id="contact-mobile" placeholder="Enter Number *" name="number"
+																																required>
                                                             </li>
                                                             <li>
-                                                                <input type="text" class="form-control" id="companyname" placeholder="Company Name *" name="companyname">
+                                                                <input type="text" class="form-control" id="companyname" placeholder="Company Name *" name="companyName"
+																																required>
                                                             </li>
                                                             <li>
-                                                                <input type="text" class="form-control" id="position" placeholder="City *" name="city">
+                                                                <input type="text" class="form-control" id="position" placeholder="City *" name="city"
+																																required>
                                                             </li>
                                                             <li>
-                                                                <textarea name="textarea" class="form-control" placeholder="Message *" id="message" form="usrform"></textarea>
+                                                                <textarea name="description" class="form-control" 
+																																id="description"
+																																placeholder="Message *" id="message" form="usrform"></textarea>
                                                             </li>
                                                             <li>
-                                                            <input type="submit" class=" form-control btn-main submit-btn" placeholder="submit" id="contact-submit" name="submit">
+                                                            <input type="submit" class=" form-control btn-main submit-btn" placeholder="submit" id="contact-submit" name="submit"
+                                                            
+																														>
                                                             </li>
                                                         </ul>
                                                     </form>
@@ -164,7 +173,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane" id="tabs-2" role="tabpanel" aria-labelledby="tabs-2">
+                                    <!-- <div class="tab-pane" id="tabs-2" role="tabpanel" aria-labelledby="tabs-2">
                                         <div class="contact-form-wrapper">
                                             <div class="row">
                                                 <div class="col-12">
@@ -180,7 +189,7 @@
                                                                 <input type="number" class="form-control" id="contact-mobile" placeholder="Enter Mobile *" name="number">
                                                             </li>
                                                             <li>
-                                                                <input type="text" class="form-control" id="companyname" placeholder="Company Name *" name="companyname">
+                                                                <input type="text" class="form-control" id="company-name" placeholder="Company Name *" name="companyname">
                                                             </li>
                                                             <li>
                                                                 <input type="text" class="form-control" id="position" placeholder="City *" name="city">
@@ -276,7 +285,7 @@
                                                                 <input type="email" class="form-control" id="contact-email" placeholder="Your Email *" name="email">
                                                             </li>
                                                             <li>
-                                                                <input type="number" class="form-control" id="contact-mobile" placeholder="Enter Number *" name="number">
+                                                                <input type="number" class="form-control" id="contact-mobile" placeholder="Enter Mobile Number *" name="number">
                                                             </li>
                                                             <li>
                                                                 <input type="text" class="form-control" id="companyname" placeholder="Company Name *" name="companyname">
@@ -285,7 +294,7 @@
                                                                 <input type="text" class="form-control" id="position" placeholder="City *" name="city">
                                                             </li>
                                                             <li>
-                                                                <textarea name="textarea" class="form-control" placeholder="Message *" id="message" form="usrform"></textarea>
+                                                                <textarea name="description" class="form-control" placeholder="Message *" id="message" form="usrform"></textarea>
                                                             </li>
                                                             <li>
                                                             <input type="submit" class=" form-control btn-main submit-btn" placeholder="submit" id="contact-submit" name="submit">
@@ -303,7 +312,8 @@
                                                     <form action="#">
                                                         <ul>
                                                             <li>
-                                                                <input type="text" class="form-control" id="conatct-name" placeholder="Your Name *" name="name">
+                                                                <input type="text" class="form-control" id="conatct-name" placeholder="Your Name *" name="name"
+                                                                id="name">
                                                             </li>
                                                             <li>
                                                                 <input type="email" class="form-control" id="contact-email" placeholder="Your Email *" name="email">
@@ -328,7 +338,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="customer-support section">
@@ -456,6 +466,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-  
+    <script>
+			$( "#userForm" ).submit(( event )=> {
+				event.preventDefault()
+				let name = document.getElementById("conatct-name");
+				let email = document.getElementById("contact-email");
+				let number = document.getElementById("contact-mobile");
+				let companyName = document.getElementById("companyname");
+				let city = document.getElementById("position");
+				let description = document.getElementById("description");
+				let obj = {
+						name: name.value,
+						email: email.value,
+						number: parseInt(number.value) ,
+						companyName: companyName.value,
+						city: city.value,
+						description: description.value
+				}
+				let link=`http://localhost:3000/contact-us`
+				$.ajax({
+					type: "POST",
+					url: link,
+					data: obj ,
+					dataType: "json",
+					encode: true,
+				}).done( (data)=> {
+					alert(data.message);
+					name.value = null;
+					email.value = null;
+					number.value = null;
+					companyName.value = null;
+					city.value = null;
+					description.value = null;
+				});
+			});
+    </script>
 </body>
 </html>
