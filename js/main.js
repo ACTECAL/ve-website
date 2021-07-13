@@ -17,10 +17,11 @@ $(document).ready(function () {
 
   var header = document.getElementById("header");
   var sticky = header.offsetTop;
-
   function myFunction() {
     if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
+      if (window.matchMedia("(max-device-width: 960px)").matches) {
+        header.classList.add("sticky");
+      }
     } else {
       header.classList.remove("sticky");
     }
@@ -295,7 +296,11 @@ $(document).ready(function () {
   }
 
   window.addEventListener("resize", function () {
-    var w = window.matchMedia("(max-width: 900px)");
+    // var w = window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches || screen.width <= 960;
+    var w = window.matchMedia("(max-device-width: 960px)");
+    // var w = window.matchMedia("(max-width: 1000px)");
+    console.log(Math.max(window.screen.width, window.innerWidth));
+
     var vid = document.getElementById("ve-video");
     var source = document.getElementById("hvid");
 
