@@ -19,9 +19,9 @@ $(document).ready(function () {
   var sticky = header.offsetTop;
   function myFunction() {
     if (window.pageYOffset > sticky) {
-      if (window.matchMedia("(max-device-width: 960px)").matches) {
-        header.classList.add("sticky");
-      }
+      // if (window.matchMedia("(max-device-width: 960px)").matches) {
+      header.classList.add("sticky");
+      // }
     } else {
       header.classList.remove("sticky");
     }

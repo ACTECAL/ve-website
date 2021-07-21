@@ -212,7 +212,7 @@
                                                 <li>
                                                     <input type="file" name="resume" id="file" class="file" accept="application/pdf">
                                                     <div class="d-flex">
-                                                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly" placeholder="Upload CV*" required>
+                                                      <input type="text" name="fileName" id="file-name" class="file-name" readonly="readonly" placeholder="Upload CV*" required>
                                                       <input type="button" class="btn" value="Choose File">
                                                     </div>
                                                 </li>
@@ -329,6 +329,7 @@
 				let number = document.getElementById("mobile");
 				let position = document.getElementById("position");
 				let resume = document.getElementById("file")?.files[0];
+				let fileName = document.getElementById("file-name");
 				let message = document.getElementById("message");
                 var bodyFormData = new FormData();
                 bodyFormData.append('name', name.value);
@@ -346,15 +347,22 @@
 						summary: message.value
 				}
 
-				let link=`http://localhost:3000/careers`
+				let link=`https://139.59.94.131:3000/careers`
                 const xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState == XMLHttpRequest.DONE && xhr.status==200) {
+                        name.value=null
+                        email.value=null
+                        mobile.value=null
+                        position.value=null
+                        fileName.value=null
+                        message.value=null
                         return alert("Resume uploaded successfully");
                     }
                 }
                 xhr.open("POST",link,true)
                 xhr.send(bodyFormData)
+                
 			});
     </script>
         <!-- <script>

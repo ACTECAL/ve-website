@@ -399,6 +399,7 @@ section {
   -ms-transition: all 0.3s;
   transition: all 0.3s; }
   #header.sticky {
+    position: -webkit-sticky !important;
     position: fixed;
     background: #fff;
     padding: 10px 10px;
@@ -482,7 +483,7 @@ section {
           height: auto;
           font-style: normal;
           font-size: 24px;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
           line-height: 120%;
           font-weight: 500;
           display: block;
@@ -504,15 +505,15 @@ section {
             background: #ca2825;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
-            -webkit-transition: all .25s ease 0s;
-            transition: all .25s ease 0s;
+            -webkit-transition: all 0.25s ease 0s;
+            transition: all 0.25s ease 0s;
             content: "";
             position: absolute; }
           .header .header-right .nav-main ul.menu > li a:hover::before, .header .header-right .nav-main ul.menu > li a:active::before, .header .header-right .nav-main ul.menu > li a:focus::before {
             -webkit-transform: scaleX(1);
             transform: scaleX(1); }
         .header .header-right .nav-main ul.menu > li ul.sub-menu {
-          background-color: #FFF;
+          background-color: #fff;
           width: 185px;
           position: absolute;
           opacity: 0;
@@ -532,7 +533,7 @@ section {
               height: 100%;
               font-style: normal;
               font-size: 20px;
-              font-family: 'Poppins', sans-serif;
+              font-family: "Poppins", sans-serif;
               line-height: 120%;
               font-weight: 500;
               display: block;
@@ -1557,7 +1558,7 @@ form ul {
     .solutions-wrapper .solution-description-raw p {
       color: #1f1c33;
       font-weight: 300;
-      font-size: 18.94px;
+      font-size: 16.08px;
       line-height: 26px;
       text-align: justify;
       padding-top: 30px; }
