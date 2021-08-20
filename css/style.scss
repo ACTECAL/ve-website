@@ -254,7 +254,7 @@ h6 {
 
 p {
   @extend %section;
-  line-height: 120%;
+  line-height: 128%;
 }
 
 h1 {
@@ -788,7 +788,7 @@ ul {
       padding: 0;
       ul {
         li {
-          width: 100%;
+          width: 120%;
           padding: 15px;
           .box {
             @include border-radius(12px);
@@ -1095,7 +1095,7 @@ ul {
       }
       p {
         // font-weight: 500;
-        font-size: 16.08px;
+        font-size: 18px;
         color: #333434;
         padding-top: 40px;
         overflow: hidden;
@@ -1619,8 +1619,8 @@ form {
     }
     p {
       color: #1f1c33;
-      font-weight: 300;
-      font-size: 16.08px;
+      font-weight: 400;
+      font-size: 18px;
       line-height: 26px;
       text-align: justify;
       padding-top: 30px;
@@ -1966,7 +1966,7 @@ form {
     .innercontainerwrap {
       padding: 0 170px;
       p {
-        font-size: 16.08px;
+        font-size: 18px;
         padding: 15px 0 15px 0px;
         line-height: 136%;
         color: #2e2e2e;
