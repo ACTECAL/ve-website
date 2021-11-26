@@ -898,7 +898,7 @@ section {
     .reality-wrapper .yellow-bg .right-con {
       padding: 0; }
       .reality-wrapper .yellow-bg .right-con ul li {
-        width: 120%;
+        width: 100%;
         padding: 15px; }
         .reality-wrapper .yellow-bg .right-con ul li .box {
           -webkit-border-radius: 12px;
@@ -912,7 +912,8 @@ section {
           font-weight: 400;
           color: #ffffff;
           font-size: 15px;
-          padding: 13px; }
+          padding: 13px;
+          margin-top: 50px; }
   .reality-wrapper .blue-bg {
     background: #eef2fc;
     width: 100%;
@@ -3272,7 +3273,7 @@ form ul {
     max-width: 780px;
     margin-left: 0px !important; }
   #header {
-    padding: 30px 20px; }
+    padding: 20px 20px; }
     #header.sticky .header .header-main .logo {
       width: 220px; }
     #header.sticky .header .header-main .header-right {
@@ -4503,6 +4504,8 @@ form ul {
   .reality-wrapper .pink-bg,
   .reality-wrapper .blue-bg {
     margin-left: 0px; }
+  .reality-wrapper .yellow-bg .right-con ul li .box p {
+    margin-top: 0px; }
   .header .header-right .nav-main {
     margin-left: 0px; }
   .res_navigation {
@@ -4858,7 +4861,7 @@ form ul {
       .footer .footer-wrap .links-wrap h5:before {
         display: none; }
       .footer .footer-wrap .links-wrap ul {
-        padding-top: 10px; }
+        display: none; }
       .footer .footer-wrap .col-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -4868,7 +4871,10 @@ form ul {
         padding-left: 0px;
         padding-top: 20px; }
       .footer .footer-wrap .links-wrap {
-        padding-left: 0%; }
+        padding-left: 0%;
+        display: block; }
+      .footer .footer-wrap .link-block {
+        display: none; }
       .footer .footer-wrap ul.socials li {
         width: 5%; }
   /*-----footer-end---*/
@@ -5148,7 +5154,7 @@ form ul {
   .reality-wrapper .yellow-bg .boxes-row {
     margin: 30px 0 20px; }
   .reality-wrapper .yellow-bg .right-con ul li .box {
-    max-height: 394px; }
+    max-height: 290px; }
   .teamwrap {
     padding: 40px 0 0 0 !important; }
   .reality-wrapper .pink-bg .title-wrap .title h2 {

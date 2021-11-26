@@ -318,3 +318,12 @@ $(document).ready(function () {
     }
   });
 });
+function adjustHeight() {
+  var actual_width = window.innerWidth;
+  console.log(actual_width);
+  if (actual_width < 991) {
+    var a = document.getElementById('link-add');
+    a.href = "privacy.html"
+  }
+
+}
