@@ -5771,7 +5771,8 @@ form ul {
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .textwrap h4 {
           font-size: 22px; }
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .textwrap p {
-          text-align: center; }
+          text-align: center;
+          margin-top: 0px !important; }
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .textwrap .imgwrap {
           padding: 20px 0 30px;
           border-bottom: 0px solid #da1e37; }
