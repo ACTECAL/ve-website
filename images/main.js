@@ -17,11 +17,10 @@ $(document).ready(function () {
 
   var header = document.getElementById("header");
   var sticky = header.offsetTop;
+
   function myFunction() {
     if (window.pageYOffset > sticky) {
-      // if (window.matchMedia("(max-device-width: 960px)").matches) {
       header.classList.add("sticky");
-      // }
     } else {
       header.classList.remove("sticky");
     }
@@ -296,11 +295,7 @@ $(document).ready(function () {
   }
 
   window.addEventListener("resize", function () {
-    // var w = window.matchMedia && window.matchMedia('(max-device-width: 960px)').matches || screen.width <= 960;
-    var w = window.matchMedia("(max-device-width: 960px)");
-    // var w = window.matchMedia("(max-width: 1000px)");
-    console.log(Math.max(window.screen.width, window.innerWidth));
-
+    var w = window.matchMedia("(max-width: 900px)");
     var vid = document.getElementById("ve-video");
     var source = document.getElementById("hvid");
 
@@ -318,12 +313,3 @@ $(document).ready(function () {
     }
   });
 });
-function adjustHeight() {
-  var actual_width = window.innerWidth;
-  console.log(actual_width);
-  if (actual_width < 991) {
-    var a = document.getElementById('link-add');
-    a.href = "privacy.html"
-  }
-
-}

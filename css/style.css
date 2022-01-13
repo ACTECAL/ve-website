@@ -217,7 +217,7 @@ h6 {
   line-height: 120%; }
 
 p {
-  line-height: 120%; }
+  line-height: 128%; }
 
 h1 {
   font-size: 80px;
@@ -399,6 +399,7 @@ section {
   -ms-transition: all 0.3s;
   transition: all 0.3s; }
   #header.sticky {
+    position: -webkit-sticky !important;
     position: fixed;
     background: #fff;
     padding: 10px 10px;
@@ -482,7 +483,7 @@ section {
           height: auto;
           font-style: normal;
           font-size: 24px;
-          font-family: 'Poppins', sans-serif;
+          font-family: "Poppins", sans-serif;
           line-height: 120%;
           font-weight: 500;
           display: block;
@@ -504,15 +505,15 @@ section {
             background: #ca2825;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
-            -webkit-transition: all .25s ease 0s;
-            transition: all .25s ease 0s;
+            -webkit-transition: all 0.25s ease 0s;
+            transition: all 0.25s ease 0s;
             content: "";
             position: absolute; }
           .header .header-right .nav-main ul.menu > li a:hover::before, .header .header-right .nav-main ul.menu > li a:active::before, .header .header-right .nav-main ul.menu > li a:focus::before {
             -webkit-transform: scaleX(1);
             transform: scaleX(1); }
         .header .header-right .nav-main ul.menu > li ul.sub-menu {
-          background-color: #FFF;
+          background-color: #fff;
           width: 185px;
           position: absolute;
           opacity: 0;
@@ -532,7 +533,7 @@ section {
               height: 100%;
               font-style: normal;
               font-size: 20px;
-              font-family: 'Poppins', sans-serif;
+              font-family: "Poppins", sans-serif;
               line-height: 120%;
               font-weight: 500;
               display: block;
@@ -911,7 +912,8 @@ section {
           font-weight: 400;
           color: #ffffff;
           font-size: 15px;
-          padding: 13px; }
+          padding: 13px;
+          margin-top: 50px; }
   .reality-wrapper .blue-bg {
     background: #eef2fc;
     width: 100%;
@@ -1126,7 +1128,7 @@ section {
       width: 25%;
       background-color: #2b3a67; }
   .career-wrapper .career-raw .small-title-raw p {
-    font-size: 16.08px;
+    font-size: 18px;
     color: #333434;
     padding-top: 40px;
     overflow: hidden;
@@ -1556,8 +1558,8 @@ form ul {
         width: 40%; }
     .solutions-wrapper .solution-description-raw p {
       color: #1f1c33;
-      font-weight: 300;
-      font-size: 18.94px;
+      font-weight: 400;
+      font-size: 18px;
       line-height: 26px;
       text-align: justify;
       padding-top: 30px; }
@@ -1828,7 +1830,7 @@ form ul {
   .inner-wrapper .innerpage .innercontainerwrap {
     padding: 0 170px; }
     .inner-wrapper .innerpage .innercontainerwrap p {
-      font-size: 16.08px;
+      font-size: 18px;
       padding: 15px 0 15px 0px;
       line-height: 136%;
       color: #2e2e2e;
@@ -3271,7 +3273,7 @@ form ul {
     max-width: 780px;
     margin-left: 0px !important; }
   #header {
-    padding: 30px 20px; }
+    padding: 20px 20px; }
     #header.sticky .header .header-main .logo {
       width: 220px; }
     #header.sticky .header .header-main .header-right {
@@ -3347,7 +3349,7 @@ form ul {
     .reality-wrapper .blue-bg .top-wrap {
       padding: 0 80px; }
     .reality-wrapper .blue-bg .silver-row p {
-      font-size: 17.97px; }
+      font-size: 18px; }
     .reality-wrapper .blue-bg .silver-row .stakeholders-col p {
       line-height: 30px !important; }
     .reality-wrapper .blue-bg .silver-row .holder-circle {
@@ -3429,13 +3431,13 @@ form ul {
         .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox {
           padding-top: 25px; }
           .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .leftwrap ul li {
-            font-size: 16.08px;
+            font-size: 18px;
             padding: 15px 0 15px 30px; }
           .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .leftwrap p {
-            font-size: 16.08px;
+            font-size: 18px;
             text-align: left; }
           .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .fullboxwrap p {
-            font-size: 16.08px; }
+            font-size: 18px; }
           .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .fullboxwrap a {
             font-size: 16px;
             padding-top: 0px; }
@@ -4502,6 +4504,8 @@ form ul {
   .reality-wrapper .pink-bg,
   .reality-wrapper .blue-bg {
     margin-left: 0px; }
+  .reality-wrapper .yellow-bg .right-con ul li .box p {
+    margin-top: 0px; }
   .header .header-right .nav-main {
     margin-left: 0px; }
   .res_navigation {
@@ -4854,6 +4858,10 @@ form ul {
       display: block; }
     .footer .footer-wrap {
       padding: 0%; }
+      .footer .footer-wrap .links-wrap h5:before {
+        display: none; }
+      .footer .footer-wrap .links-wrap ul {
+        display: none; }
       .footer .footer-wrap .col-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -4863,6 +4871,9 @@ form ul {
         padding-left: 0px;
         padding-top: 20px; }
       .footer .footer-wrap .links-wrap {
+        padding-left: 0%;
+        display: block; }
+      .footer .footer-wrap .link-block {
         display: none; }
       .footer .footer-wrap ul.socials li {
         width: 5%; }
@@ -5143,7 +5154,7 @@ form ul {
   .reality-wrapper .yellow-bg .boxes-row {
     margin: 30px 0 20px; }
   .reality-wrapper .yellow-bg .right-con ul li .box {
-    max-height: 394px; }
+    max-height: 290px; }
   .teamwrap {
     padding: 40px 0 0 0 !important; }
   .reality-wrapper .pink-bg .title-wrap .title h2 {
@@ -5760,7 +5771,8 @@ form ul {
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .textwrap h4 {
           font-size: 22px; }
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .textwrap p {
-          text-align: center; }
+          text-align: center;
+          margin-top: 0px !important; }
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .textwrap .imgwrap {
           padding: 20px 0 30px;
           border-bottom: 0px solid #da1e37; }

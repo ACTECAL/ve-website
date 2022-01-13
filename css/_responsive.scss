@@ -857,7 +857,8 @@
     margin-left: 0px !important;
   }
   #header {
-    padding: 30px 20px;
+    // padding: 30px 20px;
+    padding: 20px 20px;
     &.sticky {
       .header .header-main {
         .logo {
@@ -986,7 +987,7 @@
       }
       .silver-row {
         p {
-          font-size: 17.97px;
+          font-size: 18px;
         }
         .stakeholders-col p {
           line-height: 30px !important;
@@ -1113,18 +1114,18 @@
                   .leftwrap {
                     ul {
                       li {
-                        font-size: 16.08px;
+                        font-size: 18px;
                         padding: 15px 0 15px 30px;
                       }
                     }
                     p {
-                      font-size: 16.08px;
+                      font-size: 18px;
                       text-align: left;
                     }
                   }
                   .fullboxwrap {
                     p {
-                      font-size: 16.08px;
+                      font-size: 18px;
                     }
                     a {
                       font-size: 16px;
@@ -2552,7 +2553,13 @@
     }
   }
 }
-
+// @media (max-width: 767px) {
+//   .reality-wrapper .yellow-bg .right-con ul li:nth-child(1),
+//   .reality-wrapper .yellow-bg .left-con ul li:nth-child(4) {
+//     width: 100%;
+//     height:
+//   }
+// }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .reality-wrapper .yellow-bg {
     .left-con ul li .box {
@@ -3171,6 +3178,10 @@
   .reality-wrapper .blue-bg {
     margin-left: 0px;
   }
+  //my code
+  .reality-wrapper .yellow-bg .right-con ul li .box p {
+    margin-top: 0px;
+  }
   .header .header-right .nav-main {
     margin-left: 0px;
   }
@@ -3495,6 +3506,17 @@
     }
     .footer-wrap {
       padding: 0%;
+      .links-wrap {
+        h5 {
+          &:before {
+            display: none;
+          }
+        }
+        ul {
+          // padding-top: 10px;
+          display: none;
+        }
+      }
       .col-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -3506,7 +3528,10 @@
         padding-top: 20px;
       }
       .links-wrap {
-        // padding-left: 30%;
+        padding-left: 0%;
+        display: block;
+      }
+      .link-block {
         display: none;
       }
       ul.socials {
@@ -3906,7 +3931,8 @@
     margin: 30px 0 20px;
   }
   .reality-wrapper .yellow-bg .right-con ul li .box {
-    max-height: 394px;
+    // max-height: 394px;
+    max-height: 290px;
   }
 
   .teamwrap {
@@ -5134,6 +5160,7 @@
                 }
                 p {
                   text-align: center;
+                  margin-top: 0px !important;
                 }
                 .imgwrap {
                   padding: 20px 0 30px;

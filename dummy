@@ -1,0 +1,6 @@
+var ratio = window.devicePixelRatio || 1;
+    var wi = screen.width * ratio;
+    console.log("wi", wi);
+    var hi = screen.height * ratio;
+    console.log("hi", hi);
+    console.log("ratio", ratio);

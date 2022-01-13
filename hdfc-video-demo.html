@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- Begin Head -->
+
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#13322b" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="sitebnaner url " />
+    <meta property="og:title" content="ValuEnable"/>
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="ValuEnable" />
+    <title>ValuEnable</title>
+    <!-- Vendor Styles -->
+    <!-- CSS only -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" type="text/css"/>
+
+    <!-- Theme Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Favicon -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<!-- End Head -->
+<!-- Body -->
+<style>
+  button{
+    background: rgb(128, 254, 139);
+    height: 50px;
+    padding: 0px 25px;
+    border: 0px;
+    margin-right: 20px;
+  }
+  #vidio_call_button{
+    position: relative;
+  }
+</style>
+<body>
+<img src="./images/hdfc.png" alt="hdfc-image" style="
+height: 80vh;
+width: 100vw;">
+<div
+style="width: 250px;
+height: 110px;
+position: absolute;
+right: 0;"
+>
+<h5 >Instant Video Call With Surrender Counselor</h5>
+</div>
+<div style="display:flex; justify-content: center;align-items: center;">
+
+  <div id="vidio_call_button" ></div>
+</div>
+
+    <script   src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+    
+  <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://vidiocall-scripts.s3.ap-south-1.amazonaws.com/vidio_widget.js"/></script>
+
+  <script>
+    var domContainer = document.querySelector("#vidio_call_button");
+    ReactDOM.render(React.createElement(StaticDemo, {text: "Talk to our expert", 
+      buttonHeight: "50px", 
+      bgcolor:"#80e8fe", height: "360px", 
+      width: "540px", link: "https://video.vidiocall.com/#/?apiKey=86d90e48-0dcb-42ad-9de3-865645cd5f32"}), domContainer);
+  </script>
+  
+
+</body>
+</html>
