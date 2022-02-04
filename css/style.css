@@ -5995,11 +5995,13 @@ form ul {
       padding-right: 20px; }
     #maxUserForm ul li:nth-child(5) {
       padding-left: 20px; }
-    #maxUserForm ul li:nth-child(6), #maxUserForm ul li:nth-child(7) {
+    #maxUserForm ul li:nth-child(6), #maxUserForm ul li:nth-child(7), #maxUserForm ul li:nth-child(8), #maxUserForm ul li:nth-child(9) {
       width: 50%; }
       #maxUserForm ul li:nth-child(6) input,
       #maxUserForm ul li:nth-child(6) select, #maxUserForm ul li:nth-child(7) input,
-      #maxUserForm ul li:nth-child(7) select {
+      #maxUserForm ul li:nth-child(7) select, #maxUserForm ul li:nth-child(8) input,
+      #maxUserForm ul li:nth-child(8) select, #maxUserForm ul li:nth-child(9) input,
+      #maxUserForm ul li:nth-child(9) select {
         border: 2px solid #e5e5e5; }
     #maxUserForm ul li:nth-child(6) {
       padding-right: 20px; }
@@ -6007,9 +6009,16 @@ form ul {
       width: 50%;
       padding-left: 20px; }
     #maxUserForm ul li:nth-child(8) {
+      padding-right: 20px;
+      padding-top: 0px; }
+    #maxUserForm ul li:nth-child(9) {
+      width: 50%;
+      padding-top: 0px;
+      padding-left: 20px; }
+    #maxUserForm ul li:nth-child(10) {
       width: 100%;
       padding-bottom: 30px; }
-      #maxUserForm ul li:nth-child(8) input {
+      #maxUserForm ul li:nth-child(10) input {
         border: inherit !important;
         max-height: inherit !important;
         line-height: inherit !important;
