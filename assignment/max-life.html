@@ -55,7 +55,7 @@
    <!-- Favicon -->
 
    <link rel="shortcut icon"
-      href="favicon.ico"
+      href="../favicon.ico"
       type="image/x-icon" />
 
    <!-- End Head -->
@@ -71,7 +71,7 @@
       .title-text-main {
          margin-top: 10px;
       }
-      
+
       @media screen and (max-width: 768px) {
          .max-logo {
             width: 201px;
@@ -229,10 +229,11 @@
                                                    required />
                                              </li>
                                              <li>
-                                                <select name="products"
+                                                <select required
+                                                   name="products"
                                                    id="product"
                                                    class="form-control">
-                                                   <option value="undefined"
+                                                   <option value=""
                                                       disabled
                                                       selected>
                                                       Products
@@ -308,16 +309,18 @@
                                                    id="surrenderValue"
                                                    placeholder="Surrender Value *"
                                                    name="surrenderValue"
-                                                   required />
+                                                   required
+                                                   pattern="^(0|[1-9]\d*)(\.\d+)?$" title="Please enter surrender value without comma or decimal or any other character Eg.789622.25 or 789622"/>
                                              </li>
                                              <li>
                                                 <select name="id"
                                                    id="sdlId"
-                                                   class="form-control">
-                                                   <option value="undefined"
+                                                   class="form-control"
+                                                   required>
+                                                   <option value=""
                                                       disabled
                                                       selected>
-                                                      Sap ID
+                                                      SSO ID
                                                    </option>
 
                                                 </select>
@@ -503,7 +506,7 @@
             sapid: id.value,
          };
          console.log("Object=>", obj);
-         let link = `https://main.valuenable.in/max-life-contact-us`;
+         let link = `http://localhost:3000/max-life-contact-us`;
          $.ajax({
             type: 'POST',
             url: link,
@@ -529,7 +532,7 @@
       (function () { // don't leak
          var data
          var settings = {
-            "url": "https://main.valuenable.in/get-max-life-branch-user",
+            "url": "http://localhost:3000/get-max-life-branch-user",
             "method": "GET",
             "timeout": 0,
          };
