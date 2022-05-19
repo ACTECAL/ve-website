@@ -53,6 +53,10 @@
         href="favicon.ico"
         type="image/x-icon">
 
+    <!-- Carousel Link -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        type="text/css" />
     <!-- End Head -->
     <!-- Body -->
 
@@ -94,8 +98,10 @@
                                             class="img-fluid"
                                             alt="ValuEnable"></button>
                                     <ul>
-                                        <li><a href="https://platform.valuenable.in/" target="_blank">Policy Assignment Platform</a></li>
-                                        <li><a href="https://platform.valuenable.in/" target="_blank">Policy Loan Marketplace</a></li>
+                                        <li><a href="https://platform.valuenable.in/"
+                                                target="_blank">Policy Assignment Platform</a></li>
+                                        <li><a href="https://platform.valuenable.in/"
+                                                target="_blank">Policy Loan Marketplace</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -385,274 +391,526 @@
                             </div>
                             <div class="searchbox">
                                 <h4>How Can We Help?</h4>
-                                <div class="form-group" id="filter-form">
-                                    <!-- <label for="filter">
-                                    Search for a Question
-                                    </label> -->
-                        <!-- <input id="filter" type="text" class="form-control noEnterSubmit" placeholder="" /><div class="search-icon"><img src="images/search-icon.png"alt=""></div> -->
-                        <!-- <small>
-                                    <span id="filter-help-block" class="help-block">
-                                        No filter applied.
-                                    </span>
-                                    </small> 
-                                    </div>
-                                    
+                                <div class="form-group"
+                                    id="filter-form">
+                                    <label for="filter">
+                                        Search for a Question
+                                    </label>
+                                    <input id="filter"
+                                        type="text"
+                                        class="form-control noEnterSubmit"
+                                        placeholder="" />
+                                    <div class="search-icon"><img src="images/search-icon.png"
+                                            alt=""></div>
+                                    <small>
+                                        <span id="filter-help-block"
+                                            class="help-block">
+                                            No filter applied.
+                                        </span>
+                                    </small>
+                                </div>
+
                             </div>
-                            <div class="project_con section mCustomScrollbar" >
+                            <div class="project_con section mCustomScrollbar">
                                 <div class="project_type section">
-                                    <a href="#" class="nav-tabs-dropdown btn btn-block btn-primary"><h6>PRACTICE AREAS</h6></a>                               
-                                    <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-tabs-horizontal">
-                                        <li><a class="nav-item active show" id="myTab1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab1" aria-selected="false" > <h6>Policyholders</h6></a></li>
-                                        <li><a class="nav-item"  id="myTab2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab1"><h6>Life Insurers</h6></a></li>
-                                        <li><a class="nav-item"  id="myTab3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab3"><h6>Distributors</h6></a></li>
-                                        <li><a class="nav-item"  id="myTab4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab4"><h6>Investors</h6></a></li>
-                                        <li><a class="nav-item"  id="myTab5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab5"><h6>Lenders</h6></a></li>                           
+                                    <a href="#"
+                                        class="nav-tabs-dropdown btn btn-block btn-primary">
+                                        <h6>PRACTICE AREAS</h6>
+                                    </a>
+                                    <ul id="nav-tabs-wrapper"
+                                        class="nav nav-tabs nav-tabs-horizontal">
+                                        <li><a class="nav-item active show"
+                                                id="myTab1"
+                                                data-toggle="tab"
+                                                href="#tab-1"
+                                                role="tab"
+                                                aria-controls="tab1"
+                                                aria-selected="false">
+                                                <h6>Policyholders</h6>
+                                            </a></li>
+                                        <li><a class="nav-item"
+                                                id="myTab2"
+                                                data-toggle="tab"
+                                                href="#tab-2"
+                                                role="tab"
+                                                aria-controls="tab1">
+                                                <h6>Life Insurers</h6>
+                                            </a></li>
+                                        <li><a class="nav-item"
+                                                id="myTab3"
+                                                data-toggle="tab"
+                                                href="#tab-3"
+                                                role="tab"
+                                                aria-controls="tab3">
+                                                <h6>Distributors</h6>
+                                            </a></li>
+                                        <li><a class="nav-item"
+                                                id="myTab4"
+                                                data-toggle="tab"
+                                                href="#tab-4"
+                                                role="tab"
+                                                aria-controls="tab4">
+                                                <h6>Investors</h6>
+                                            </a></li>
+                                        <li><a class="nav-item"
+                                                id="myTab5"
+                                                data-toggle="tab"
+                                                href="#tab-5"
+                                                role="tab"
+                                                aria-controls="tab5">
+                                                <h6>Lenders</h6>
+                                            </a></li>
                                     </ul>
                                 </div>
-                                <div class="tab-content section" id="myTabContent">
-                                    <div role="tabpanel" class="tab-pane fade active show" id="tab-1">
-                                        <!-- <div class="faq" id="accordion">
+                                <div class="tab-content section"
+                                    id="myTabContent">
+                                    <div role="tabpanel"
+                                        class="tab-pane fade active show"
+                                        id="tab-1">
+                                        <div class="faq"
+                                            id="accordion">
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-1">
+                                                <div class="card-header"
+                                                    id="faqHeading-1">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title show" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1" aria-expanded="false">
+                                                        <h5 class="faq-title show"
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-1"
+                                                            data-aria-expanded="true"
+                                                            data-aria-controls="faqCollapse-1"
+                                                            aria-expanded="false">
                                                             <span>a.</span>What is Lorem Ipsum?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                                <div id="faqCollapse-1"
+                                                    class="collapse show"
+                                                    aria-labelledby="faqHeading-1"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry. Lorem Ipsum has been the industry's
+                                                            standard dummy text ever since the 1500s, when an unknown
+                                                            printer took a galley of type and scrambled it to make a
+                                                            type specimen book. </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-2">
+                                                <div class="card-header"
+                                                    id="faqHeading-2">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2" aria-expanded="false">
+                                                        <h5 class="faq-title "
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-2"
+                                                            data-aria-expanded="false"
+                                                            data-aria-controls="faqCollapse-2"
+                                                            aria-expanded="false">
                                                             <span>b.</span> Where does it come from?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                                <div id="faqCollapse-2"
+                                                    class="collapse"
+                                                    aria-labelledby="faqHeading-2"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random
+                                                            text. It has roots in a piece of classical Latin literature
+                                                            from 45 BC, making it over 2000 years old.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-3">
+                                                <div class="card-header"
+                                                    id="faqHeading-3">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3" aria-expanded="false">
+                                                        <h5 class="faq-title "
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-3"
+                                                            data-aria-expanded="false"
+                                                            data-aria-controls="faqCollapse-3"
+                                                            aria-expanded="false">
                                                             <span>c.</span>Why do we use it?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                                <div id="faqCollapse-3"
+                                                    class="collapse"
+                                                    aria-labelledby="faqHeading-3"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+                                                        <p>It is a long established fact that a reader will be
+                                                            distracted by the readable content of a page when looking at
+                                                            its layout. The point of using Lorem Ipsum is that it has a
+                                                            more-or-less normal distribution of letters, as opposed to
+                                                            using 'Content here, content here.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-4">
+                                                <div class="card-header"
+                                                    id="faqHeading-4">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4" aria-expanded="false">
+                                                        <h5 class="faq-title "
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-4"
+                                                            data-aria-expanded="false"
+                                                            data-aria-controls="faqCollapse-4"
+                                                            aria-expanded="false">
                                                             <span>d.</span> Where can I get some?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                                <div id="faqCollapse-4"
+                                                    class="collapse"
+                                                    aria-labelledby="faqHeading-4"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                                        <p>There are many variations of passages of Lorem Ipsum
+                                                            available, but the majority have suffered alteration in some
+                                                            form, by injected humour, or randomised words which don't
+                                                            look even slightly believable.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-5">
+                                                <div class="card-header"
+                                                    id="faqHeading-5">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5" aria-expanded="false">
+                                                        <h5 class="faq-title"
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-5"
+                                                            data-aria-expanded="false"
+                                                            data-aria-controls="faqCollapse-5"
+                                                            aria-expanded="false">
                                                             <span>e.</span> What is Lorem Ipsum?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                                <div id="faqCollapse-5"
+                                                    class="collapse"
+                                                    aria-labelledby="faqHeading-5"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+                                                        <p> It has survived not only five centuries, but also the leap
+                                                            into electronic typesetting, remaining essentially
+                                                            unchanged. It was popularised in the 1960s with the release
+                                                            of Letraset sheets containing</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-6">
+                                                <div class="card-header"
+                                                    id="faqHeading-6">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6" aria-expanded="false">
+                                                        <h5 class="faq-title "
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-6"
+                                                            data-aria-expanded="false"
+                                                            data-aria-controls="faqCollapse-6"
+                                                            aria-expanded="false">
                                                             <span>f.</span> Where does it come from?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                                                <div id="faqCollapse-6"
+                                                    class="collapse"
+                                                    aria-labelledby="faqHeading-6"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is
+                                                            reproduced below for those interested. Sections 1.10.32 and
+                                                            1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                                                            also reproduced in their exact original form, accompanied by
+                                                            English versions from the 1914 translation by H. Rackham.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card">
-                                                <div class="card-header" id="faqHeading-7">
+                                                <div class="card-header"
+                                                    id="faqHeading-7">
                                                     <div class="mb-0">
-                                                        <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                                                        <h5 class="faq-title"
+                                                            data-toggle="collapse"
+                                                            data-target="#faqCollapse-7"
+                                                            data-aria-expanded="false"
+                                                            data-aria-controls="faqCollapse-7">
                                                             <span>g.</span> Why do we use it?
                                                         </h5>
                                                     </div>
                                                 </div>
-                                                <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                                                <div id="faqCollapse-7"
+                                                    class="collapse"
+                                                    aria-labelledby="faqHeading-7"
+                                                    data-parent="#accordion">
                                                     <div class="card-body">
-                                                        <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                                        <p>Many desktop publishing packages and web page editors now use
+                                                            Lorem Ipsum as their default model text, and a search for
+                                                            'lorem ipsum' will uncover many web sites still in their
+                                                            infancy. Various versions have evolved over the years,
+                                                            sometimes by accident, sometimes on purpose (injected humour
+                                                            and the like).</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div> -->
-                        <!-- <div class="faq"> 
+                                        </div>
+                                        <div class="faq">
                                             <div class="accordion">
                                                 <div class="accordion-item">
-                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit </a>
+                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit </a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>b.</span> Why is the sky blue?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>c.</span> Will we ever discover aliens?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>d.</span> How much does the Earth weigh?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>e.</span> How do airplanes stay up?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab-2">
+                                    <div role="tabpanel"
+                                        class="tab-pane fade"
+                                        id="tab-2">
                                         <div class="faq">
                                             <div class="accordion">
                                                 <div class="accordion-item">
-                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit </a>
+                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit </a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>b.</span> Why is the sky blue?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>c.</span> Will we ever discover aliens?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>d.</span> How much does the Earth weigh?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>e.</span> How do airplanes stay up?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab-3">
+                                    <div role="tabpanel"
+                                        class="tab-pane fade"
+                                        id="tab-3">
                                         <div class="faq">
                                             <div class="accordion">
                                                 <div class="accordion-item">
-                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit </a>
+                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit </a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>b.</span> Why is the sky blue?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
-                                              
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab-4">
+                                    <div role="tabpanel"
+                                        class="tab-pane fade"
+                                        id="tab-4">
                                         <div class="faq">
                                             <div class="accordion">
                                                 <div class="accordion-item">
-                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit </a>
+                                                    <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit </a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>b.</span> Why is the sky blue?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                                 <div class="accordion-item">
                                                     <a><span>c.</span> Will we ever discover aliens?</a>
                                                     <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab-5">
-                                        <div class="faq">
-                                            <div class="accordion">
-                                                
-                                                <div class="accordion-item">
-                                                    <a><span>c.</span> Will we ever discover aliens?</a>
-                                                    <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <a><span>d.</span> How much does the Earth weigh?</a>
-                                                    <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                    <a><span>e.</span> How do airplanes stay up?</a>
-                                                    <div class="content">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                                            do eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+                                                            pretium viverra suspendisse potenti.</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div role="tabpanel"
+                                    class="tab-pane fade"
+                                    id="tab-5">
+                                    <div class="faq">
+                                        <div class="accordion">
+
+                                            <div class="accordion-item">
+                                                <a><span>c.</span> Will we ever discover aliens?</a>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                                                        viverra suspendisse potenti.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <a><span>d.</span> How much does the Earth weigh?</a>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                                                        viverra suspendisse potenti.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <a><span>e.</span> How do airplanes stay up?</a>
+                                                <div class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                                                        viverra suspendisse potenti.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div> -->
+                        <div class="testimonialwrap  section pdtb8090">
+                            <h2 class="darkblue">Our Partners</h2>
+                            <div class="testimonial testimonial-slider">
+                                <div class="item">
+                                    <div class="hero-content"
+                                        style="border-radius:10px; height: 208px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;">
+                                        <div class="axisboxwrap">
+                                            <div class="imgbox">
+                                                <!-- <h2>logo</h2> -->
+                                                <img src="./images/our-partner-image/axis bank logo.PNG"
+                                                    class="img-fluid"
+                                                    alt="ValuEnable">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bottomwrap">
+                                            <p style="font-size: 15px;">India's 3<sup style="font-size: 12px;">rd</sup>
+                                                largest Bank
+                                            </p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="hero-content"
+                                        style="border-radius:10px; height: 208px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;">
+                                        <div class="topboxwrap">
+                                            <div class="imgbox">
+                                                <!-- <h2>logo</h2> -->
+                                                <img src="./images/our-partner-image/new-hdfc-logo.PNG"
+                                                    class="img-fluid"
+                                                    alt="ValuEnable">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="bottomwrap">
+                                            <p style="font-size: 15px;">India's 3<sup style="font-size: 12px;">rd</sup>
+                                                largest Bank
+                                            </p>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

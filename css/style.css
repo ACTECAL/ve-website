@@ -142,7 +142,7 @@ q:after {
 
 blockquote,
 q {
-  quotes: "" ""; }
+  quotes: ""; }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -2035,7 +2035,7 @@ form ul {
           width: 100%;
           background-color: #393939;
           border-radius: 100px;
-          padding: 40px; }
+          padding: 25px; }
           .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .topboxwrap {
             float: left;
             width: 100%; }
@@ -2043,7 +2043,7 @@ form ul {
               float: left;
               width: 100%;
               border-bottom: 3px solid #ffffff;
-              padding-bottom: 15px; }
+              padding-bottom: 22px; }
               .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .topboxwrap .imgbox h2 {
                 font-size: 64px;
                 font-weight: 400;
@@ -2051,6 +2051,23 @@ form ul {
                 color: #fff;
                 padding: 30px 0 60px; }
               .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .topboxwrap .imgbox img {
+                max-width: 200px;
+                margin: 0 auto; }
+          .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .axisboxwrap {
+            float: left;
+            width: 100%; }
+            .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .axisboxwrap .imgbox {
+              float: left;
+              width: 100%;
+              border-bottom: 3px solid #ffffff;
+              padding-bottom: 22px; }
+              .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .axisboxwrap .imgbox h2 {
+                font-size: 64px;
+                font-weight: 400;
+                text-align: center;
+                color: #fff;
+                padding: 30px 0 60px; }
+              .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .axisboxwrap .imgbox img {
                 max-width: 200px;
                 margin: 0 auto; }
           .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .bottomwrap {
@@ -2078,10 +2095,12 @@ form ul {
           -webkit-outline: none; }
       .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .slick-arrow.slick-prev {
         background: #9f9f9f url(../images/arrow-left.png) no-repeat center;
-        left: -25px; }
+        left: -25px;
+        top: 50%; }
       .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .slick-arrow.slick-next {
         background: #9f9f9f url(../images/arrow-right.png) no-repeat center;
-        right: -25px; }
+        right: -25px;
+        top: 50%; }
     .inner-wrapper .innerpage .innercontainerwrap .partnerwrap {
       float: left;
       width: 100%; }
@@ -3487,7 +3506,7 @@ form ul {
   .pdtb8090 {
     padding: 70px 80px; }
   .partner-with-us .pdtb8090 {
-    padding: 70px 170px; }
+    padding: 25px 170px; }
   .about-us .pdtb8090 {
     padding: 70px 170px 0px; }
   .headZeroPad div {
@@ -5238,7 +5257,7 @@ form ul {
     .titlewrap h1 {
       font-size: 42px; }
   .pdtb8090 {
-    padding: 40px 0px; }
+    padding: 10px 0px; }
   .pdtb80 {
     padding: 60px 0; }
   .inner-wrapper .innerpage .innercontainerwrap {
@@ -5829,7 +5848,7 @@ form ul {
   .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial {
     padding: 20px 20px 0; }
     .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item {
-      padding: 0px; }
+      padding: 0px 10px; }
       .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content {
         padding: 30px ​20px; }
         .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .topboxwrap .imgbox h2 {
@@ -5934,7 +5953,7 @@ form ul {
   .silver-row ul.pillar li .pillar-box .text-wrap {
     padding: 30px; }
   .inner-wrapper .innerpage .innercontainerwrap .testimonialwrap .testimonial .item .hero-content .topboxwrap .imgbox img {
-    max-width: 150px; }
+    max-width: 260px; }
   .contact-wrapper .contact-raw .img-wrap img {
     max-width: 290px; }
   .career-wrapper .career-raw .img-wrap img {
