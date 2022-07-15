@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
-   class="no-js">
+<html lang="en" class="no-js">
 <!-- Begin Head -->
 
 <head>
@@ -9,54 +8,35 @@
    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
    <meta name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-   <meta name="theme-color"
-      content="#13322b" />
-   <meta property="og:type"
-      content="website" />
-   <meta property="og:url"
-      content="" />
-   <meta property="og:image"
-      content="sitebnaner url " />
-   <meta property="og:title"
-      content="ValuEnable" />
-   <meta property="og:description"
-      content="" />
-   <meta property="og:site_name"
-      content="ValuEnable" />
+   <meta name="theme-color" content="#13322b" />
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="" />
+   <meta property="og:image" content="sitebnaner url " />
+   <meta property="og:title" content="ValuEnable" />
+   <meta property="og:description" content="" />
+   <meta property="og:site_name" content="ValuEnable" />
    <title>ValuEnable</title>
    <!-- Vendor Styles -->
    <!-- CSS only -->
-   <link rel="stylesheet"
-      href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet"
-      href="assets/css/style.css">
-   <link rel="stylesheet"
-      href="assets/css/responsive.css">
-   <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous" />
-   <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/responsive.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css" />
-   <link rel="preconnect"
-      href="https://fonts.gstatic.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" />
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet" />
-   <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css" />
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-      rel="stylesheet"
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet"
       type="text/css" />
-   <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
       type="text/css" />
 
    <!-- Theme Styles -->
-   <link href="../css/style.css"
-      rel="stylesheet"
-      type="text/css" />
+   <link href="css/style.css" rel="stylesheet" type="text/css" />
    <!-- Favicon -->
 
 
@@ -88,9 +68,40 @@
          }
 
          .title-text-main h2 {
-            line-height: 0.8;
+            line-height: 1.0;
+            margin-top: 37px;
          }
 
+      }
+
+      @media (max-width:768px) {
+         .head-contact {
+
+            font-size: small;
+            margin-left: 80px;
+         }
+      }
+
+      @media (max-width:768px) {
+         .footter-sec {
+            text-align: center;
+         }
+      }
+
+      .FAQ-pointer {
+         min-width: 30px;
+         text-align: right;
+      }
+
+      .FAQ-h5 {
+         margin-left: 10px;
+         margin-right: 15px;
+      }
+
+
+
+      .FAQ {
+         display: flex;
       }
    </style>
 </head>
@@ -104,30 +115,24 @@
       <div class="header">
          <div class="container">
             <div class="header-wrap section">
-               <div class="header-main section"
-                  style="display: flex;justify-content: space-around;">
+               <div class="header-main section" style="display: flex;justify-content: space-between;">
                   <div class="logo">
                      <a href="https://www.valuenable.in/">
-                        <img src="../images/logo.png"
-                           alt="ValuEnable" />
+                        <img src="images/logo.png" alt="ValuEnable" />
                      </a>
                   </div>
                   <div class="row">
-                     <div class="">
+                     <div class="head-contact">
                         <h5>Support</h5>
                         <ul>
                            <!-- <li class="whatsapp">
                                     <a href="https://wa.me/918645351065?text=Hi,Need a help!">+91 86453 51065</a>
                                  </li> -->
-                           <li class="whatsapp"
-                              style="margin: 10px 0px;">
-                              <a href="https://wa.me/918645351065"
-                                 target="_blank">+91 86453 51065</a>
+                           <li class="whatsapp" style="margin: 10px 0px;">
+                              <a href="https://wa.me/918645351065" target="_blank">+91 86453 51065</a>
                            </li>
-                           <li class="mail"
-                              style="margin: 10px 0px;">
-                              <a href="mailto: help@valuenable.in"
-                                 target="_blank">help@valuenable.in</a>
+                           <li class="mail" style="margin: 10px 0px;">
+                              <a href="mailto: help@valuenable.in" target="_blank">help@valuenable.in</a>
                            </li>
                         </ul>
                      </div>
@@ -153,9 +158,7 @@
                   <div class="row">
                      <div class="col-12 col-sm-12">
                         <div class="img-wrap">
-                           <img src="../images/policy-assignment-banner.png"
-                              class="img-responsive"
-                              alt="" />
+                           <img src="images/policy-assignment-banner.png" class="img-responsive" alt="" />
                         </div>
                      </div>
                   </div>
@@ -170,9 +173,8 @@
                                  <div class="row">
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <select class="form-control"
-                                             id="companyName">
-                                             <option>Company</option>
+                                          <select class="form-control" id="companyName">
+                                             <option>Company*</option>
                                              <option>Life Insurance Corporation of India</option>
                                              <option>HDFC Life Insurance Co. Ltd</option>
                                              <option>Max Life Insurance Co. Ltd.</option>
@@ -203,31 +205,20 @@
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Policy Number"
-                                             type="text"
-                                             class="form-control"
-                                             id="policyNumber">
+                                          <input name="user" placeholder="Policy Number" type="text"
+                                             class="form-control" id="policyNumber">
                                        </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Product Name"
-                                             type="text"
-                                             pattern="[A-Za-z]"
-                                             title="Only text are allowed"
-                                             class="form-control"
-                                             id="productName">
+                                          <input name="user" placeholder="Product Name" type="text" pattern="[A-Za-z]"
+                                             title="Only text are allowed" class="form-control" id="productName">
                                        </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Surrender Value"
-                                             type="text"
-                                             class="form-control"
-                                             id="surrenderValue">
+                                          <input name="user" placeholder="Surrender Value" type="text"
+                                             class="form-control" id="surrenderValue">
                                        </div>
                                     </div>
                                  </div>
@@ -243,41 +234,25 @@
                                  <div class="row">
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="First Name"
-                                             type="text"
-                                             class="form-control"
-                                             pattern="[A-Za-z]"
-                                             title="Only text are allowed"
-                                             id="customerFirstName">
+                                          <input name="user" placeholder="First Name*" type="text" class="form-control"
+                                             pattern="[A-Za-z]" title="Only text are allowed" id="customerFirstName">
                                        </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Last Name"
-                                             type="text"
-                                             class="form-control"
-                                             pattern="[A-Za-z]"
-                                             title="Only text are allowed"
-                                             id="customerLastName">
+                                          <input name="user" placeholder="Last Name*" type="text" class="form-control"
+                                             pattern="[A-Za-z]" title="Only text are allowed" id="customerLastName">
                                        </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Mobile"
-                                             type="text"
-                                             class="form-control"
+                                          <input name="user" placeholder="Mobile*" type="text" class="form-control"
                                              id="customerMobileNumber">
                                        </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Email"
-                                             type="text"
-                                             class="form-control"
+                                          <input name="user" placeholder="Email*" type="text" class="form-control"
                                              id="customerEmail">
                                        </div>
                                     </div>
@@ -285,11 +260,8 @@
                                  <div class="row">
                                     <div class="col-md-3 col-sm-6">
                                        <div class="form-group">
-                                          <input name="user"
-                                             placeholder="Date Of Birth"
-                                             type="text"
-                                             class="form-control"
-                                             id="customerDOB">
+                                          <input name="user" placeholder="Date Of Birth*" type="text"
+                                             class="form-control" id="customerDOB">
                                        </div>
                                     </div>
                                  </div>
@@ -299,8 +271,7 @@
                         <form id="maxUserForm">
 
                            <div style="display:flex; justify-content: center;">
-                              <button type="submit"
-                                 class="form-control btn-main submit-btn"
+                              <button type="submit" class="form-control btn-main submit-btn"
                                  style="padding: 10px 60px; font-size:20px">Submit
                               </button>
                            </div>
@@ -308,25 +279,6 @@
 
                      </div>
 
-                     <div class="customer-support section">
-                        <div class="row">
-                           <div class="col-6 left-wrap">
-                              <h5>Support</h5>
-                              <ul>
-                                 <!-- <li class="whatsapp">
-                                    <a href="https://wa.me/918645351065?text=Hi,Need a help!">+91 86453 51065</a>
-                                 </li> -->
-                                 <li class="whatsapp">
-                                    <a href="https://wa.me/918645351065">+91 86453 51065</a>
-                                 </li>
-                                 <li class="mail">
-                                    <a href="mailto: help@valuenable.in"
-                                       target="_blank">help@valuenable.in</a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                </div>
             </div>
@@ -336,22 +288,21 @@
          <div class="innerpage section">
             <div class="container">
                <div class="innercontainerwrap section">
-                  <div class="id-link"
-                     id="faq"></div>
+                  <div class="id-link" id="faq"></div>
                   <div class="faqwrap section pdtb8090">
                      <div class="titlebox">
                         <h2>FAQs</h2>
                      </div>
                      <div class="searchbox">
-                        <h4>How Can We Help?</h4>
+                        <h4>How Can We Help ?</h4>
                      </div>
-                     <div class="project_con section mCustomScrollbar">
+                     <!-- <div class="project_con section mCustomScrollbar">
                         <div class="project_type section">
                            <a href="#"
                               class="nav-tabs-dropdown btn btn-block btn-primary">
                               <h6>PRACTICE AREAS</h6>
-                           </a>
-                           <ul id="nav-tabs-wrapper"
+                           </a> -->
+                     <!-- <ul id="nav-tabs-wrapper"
                               class="nav nav-tabs nav-tabs-horizontal">
                               <li><a class="nav-item active show"
                                     id="myTab1"
@@ -394,413 +345,359 @@
                                     aria-controls="tab5">
                                     <h6>Lenders</h6>
                                  </a></li>
-                           </ul>
-                        </div>
-                        <div class="tab-content section"
-                           id="myTabContent">
-                           <div role="tabpanel"
-                              class="tab-pane fade active show"
-                              id="tab-1">
-                              <div class="faq"
-                                 id="accordion">
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-1">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title show"
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-1"
-                                             data-aria-expanded="true"
-                                             data-aria-controls="faqCollapse-1"
-                                             aria-expanded="false">
-                                             <span>a.</span>What is Lorem Ipsum?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-1"
-                                       class="collapse show"
-                                       aria-labelledby="faqHeading-1"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p>Lorem Ipsum is simply dummy text of the printing and
-                                             typesetting industry. Lorem Ipsum has been the industry's
-                                             standard dummy text ever since the 1500s, when an unknown
-                                             printer took a galley of type and scrambled it to make a
-                                             type specimen book. </p>
-                                       </div>
+                           </ul> -->
+                     <!-- </div> -->
+                     <div class="tab-content section" id="myTabContent">
+                        <div role="tabpanel" class="tab-pane fade active show" id="tab-1">
+                           <div class="faq" id="accordion">
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-1">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title show" data-toggle="collapse" data-target="#faqCollapse-1"
+                                          data-aria-expanded="true" data-aria-controls="faqCollapse-1"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">1.</div>
+                                             <div class="FAQ-h5"> What is Policy
+                                                Loan ?</div>
+                                          </div>
+                                       </h5>
                                     </div>
                                  </div>
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-2">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title "
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-2"
-                                             data-aria-expanded="false"
-                                             data-aria-controls="faqCollapse-2"
-                                             aria-expanded="false">
-                                             <span>b.</span> Where does it come from?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-2"
-                                       class="collapse"
-                                       aria-labelledby="faqHeading-2"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p>Contrary to popular belief, Lorem Ipsum is not simply random
-                                             text. It has roots in a piece of classical Latin literature
-                                             from 45 BC, making it over 2000 years old.</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-3">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title "
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-3"
-                                             data-aria-expanded="false"
-                                             data-aria-controls="faqCollapse-3"
-                                             aria-expanded="false">
-                                             <span>c.</span>Why do we use it?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-3"
-                                       class="collapse"
-                                       aria-labelledby="faqHeading-3"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p>It is a long established fact that a reader will be
-                                             distracted by the readable content of a page when looking at
-                                             its layout. The point of using Lorem Ipsum is that it has a
-                                             more-or-less normal distribution of letters, as opposed to
-                                             using 'Content here, content here.</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-4">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title "
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-4"
-                                             data-aria-expanded="false"
-                                             data-aria-controls="faqCollapse-4"
-                                             aria-expanded="false">
-                                             <span>d.</span> Where can I get some?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-4"
-                                       class="collapse"
-                                       aria-labelledby="faqHeading-4"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p>There are many variations of passages of Lorem Ipsum
-                                             available, but the majority have suffered alteration in some
-                                             form, by injected humour, or randomised words which don't
-                                             look even slightly believable.</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-5">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title"
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-5"
-                                             data-aria-expanded="false"
-                                             data-aria-controls="faqCollapse-5"
-                                             aria-expanded="false">
-                                             <span>e.</span> What is Lorem Ipsum?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-5"
-                                       class="collapse"
-                                       aria-labelledby="faqHeading-5"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p> It has survived not only five centuries, but also the leap
-                                             into electronic typesetting, remaining essentially
-                                             unchanged. It was popularised in the 1960s with the release
-                                             of Letraset sheets containing</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-6">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title "
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-6"
-                                             data-aria-expanded="false"
-                                             data-aria-controls="faqCollapse-6"
-                                             aria-expanded="false">
-                                             <span>f.</span> Where does it come from?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-6"
-                                       class="collapse"
-                                       aria-labelledby="faqHeading-6"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p>The standard chunk of Lorem Ipsum used since the 1500s is
-                                             reproduced below for those interested. Sections 1.10.32 and
-                                             1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
-                                             also reproduced in their exact original form, accompanied by
-                                             English versions from the 1914 translation by H. Rackham.
-                                          </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="card">
-                                    <div class="card-header"
-                                       id="faqHeading-7">
-                                       <div class="mb-0">
-                                          <h5 class="faq-title"
-                                             data-toggle="collapse"
-                                             data-target="#faqCollapse-7"
-                                             data-aria-expanded="false"
-                                             data-aria-controls="faqCollapse-7">
-                                             <span>g.</span> Why do we use it?
-                                          </h5>
-                                       </div>
-                                    </div>
-                                    <div id="faqCollapse-7"
-                                       class="collapse"
-                                       aria-labelledby="faqHeading-7"
-                                       data-parent="#accordion">
-                                       <div class="card-body">
-                                          <p>Many desktop publishing packages and web page editors now use
-                                             Lorem Ipsum as their default model text, and a search for
-                                             'lorem ipsum' will uncover many web sites still in their
-                                             infancy. Various versions have evolved over the years,
-                                             sometimes by accident, sometimes on purpose (injected humour
-                                             and the like).</p>
-                                       </div>
+                                 <div id="faqCollapse-1" class="collapse show" aria-labelledby="faqHeading-1"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>Under a Policy Loan, your life insurance policy is used as an asset.
+                                          The policy's cash value acts as a collateral for the loan issued by the
+                                          Lender. </p>
                                     </div>
                                  </div>
                               </div>
-                              <div class="faq">
-                                 <div class="accordion">
-                                    <div class="accordion-item">
-                                       <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
-                                          adipiscing elit </a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-2">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-2"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-2"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">2.</div>
+                                             <div class="FAQ-h5">What are the
+                                                advantages of taking a
+                                                loan against the policy ?</div>
+                                          </div>
+                                       </h5>
                                     </div>
-                                    <div class="accordion-item">
-                                       <a><span>b.</span> Why is the sky blue?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>c.</span> Will we ever discover aliens?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>d.</span> How much does the Earth weigh?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>e.</span> How do airplanes stay up?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
+                                 </div>
+                                 <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>Taking a loan against the policy has many advantages.
+                                          Some of them are that interest rate is lower than personal
+                                          loans due to the secured nature of the loan. The Loan amount is
+                                          issued as an an overdraft facility, which means you only pay interest on the
+                                          amount you use and not the entire loan amount. More importantly,
+                                          you don’t have to surrender your policy in order to satisfy your immediate
+                                          monetary needs.</p>
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                           <div role="tabpanel"
-                              class="tab-pane fade"
-                              id="tab-2">
-                              <div class="faq">
-                                 <div class="accordion">
-                                    <div class="accordion-item">
-                                       <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
-                                          adipiscing elit </a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>b.</span> Why is the sky blue?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>c.</span> Will we ever discover aliens?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>d.</span> How much does the Earth weigh?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>e.</span> How do airplanes stay up?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-3">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-3"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-3"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">3.</div>
+                                             <div class="FAQ-h5">What are the steps
+                                                involved in
+                                                availing
+                                                a Policy Loan ?</div>
+                                          </div>
+                                       </h5>
                                     </div>
                                  </div>
-                              </div>
-                           </div>
-                           <div role="tabpanel"
-                              class="tab-pane fade"
-                              id="tab-3">
-                              <div class="faq">
-                                 <div class="accordion">
-                                    <div class="accordion-item">
-                                       <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
-                                          adipiscing elit </a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>b.</span> Why is the sky blue?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
+                                 <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>There are 5 steps involved</p>
 
-                                 </div>
-                              </div>
-                           </div>
-                           <div role="tabpanel"
-                              class="tab-pane fade"
-                              id="tab-4">
-                              <div class="faq">
-                                 <div class="accordion">
-                                    <div class="accordion-item">
-                                       <a><span>a.</span> Lorem ipsum dolor sit amet, consectetur
-                                          adipiscing elit </a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>b.</span> Why is the sky blue?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                       <a><span>c.</span> Will we ever discover aliens?</a>
-                                       <div class="content">
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                             do eiusmod tempor incididunt ut labore et dolore magna
-                                             aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                                             pretium viverra suspendisse potenti.</p>
-                                       </div>
+                                       <ul style="font-size: 18px;
+                                                 color: #2e2e2e;
+                                                   font-weight: 400;
+                                                line-height: 136%;">
+                                          <li> Step <span style="    margin-left: 4px;">1 :</span> Loan Eligiblity
+                                             Assessment. </li>
+                                          <li> Step 2 : Document Collection. </li>
+                                          <li> Step 3 : Loan Sanction.</li>
+                                          <li> Step 4 : Assignment Application with Insurance Company. </li>
+                                          <li> Step 5 : Loan Disbursment.</li>
+                                       </ul>
                                     </div>
                                  </div>
                               </div>
-                           </div>
-                        </div>
-                        <div role="tabpanel"
-                           class="tab-pane fade"
-                           id="tab-5">
-                           <div class="faq">
-                              <div class="accordion">
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-4">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-4"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-4"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">4.</div>
+                                             <div class="FAQ-h5">Who are we ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>ValuEnable acts as facilitator between life insurance customers who are
+                                          interested to avail loan against their life insurance policies and with
+                                          financial institutions who are willing to lend. We provide platform to chose
+                                          best loan offers from multiple
+                                          lenders and facilitate hassle free and swift processing of loans to avail
+                                          funds faster
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-5">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-5"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-5"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">5.</div>
+                                             <div class="FAQ-h5">What is the Loan
+                                                amount
+                                                available ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>One can normally avail a loan in the range of 50% to 80% of the policy's
+                                          surrender/cash value</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-6">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-6"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-6"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">6.</div>
+                                             <div class="FAQ-h5">What happens if the
+                                                applicant is
+                                                unable
+                                                to repay the loan ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>Incase if you are unable to make the required loan repayments (either in
+                                          terest or piricnipal) within the stipulated period,
+                                          the lender would surrender the policy and adjust the surrender value against
+                                          the outstanding loan amount and balance,
+                                          if any, would be given out to you.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-7">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title " data-toggle="collapse" data-target="#faqCollapse-7"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-7"
+                                          aria-expanded="false">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">7.</div>
+                                             <div class="FAQ-h5"> What happens if
+                                                the policyholder
+                                                dies
+                                                while he has taken a loan against the policy ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>Incase of any uncertain event that takes place post you have availed the loan,
+                                          the lender would get the death benefit to
+                                          the extent of loan outstanding and the balance amount, if any would be given
+                                          to your nominee.
+                                       </p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-8">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-8"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-8">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">8.</div>
+                                             <div class="FAQ-h5">What all lender
+                                                options are currently
+                                                available ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>We are currently working with Axis Bank, which is rated as one of the Best
+                                          Banks in India.
+                                          We intend to on-board 2 more banks & 2 NBFCs in the near future.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-9">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-9"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-9">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">9.</div>
+                                             <div class="FAQ-h5">Does the applicant
+                                                need to visit/go
+                                                anywhere to complete the process ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
 
-                                 <div class="accordion-item">
-                                    <a><span>c.</span> Will we ever discover aliens?</a>
-                                    <div class="content">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                          Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                                          viverra suspendisse potenti.</p>
-                                    </div>
-                                 </div>
-                                 <div class="accordion-item">
-                                    <a><span>d.</span> How much does the Earth weigh?</a>
-                                    <div class="content">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                          Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                                          viverra suspendisse potenti.</p>
-                                    </div>
-                                 </div>
-                                 <div class="accordion-item">
-                                    <a><span>e.</span> How do airplanes stay up?</a>
-                                    <div class="content">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                          Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                                          viverra suspendisse potenti.</p>
+                                 <div id="faqCollapse-9" class="collapse" aria-labelledby="faqHeading-9"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>The answer to this is simply No. To take a loan on your policy you do not need
+                                          to go anywhere,
+                                          the procedure would be hassle free provided at your door step and/or digitally
+                                          via our platform</p>
                                     </div>
                                  </div>
                               </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-10">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-10"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-10">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">10.</div>
+                                             <div class="FAQ-h5">What are the documents
+                                                required in this
+                                                process ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-10" class="collapse" aria-labelledby="faqHeading-10"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p> The documents required in this process are KYC documents & Original Policy
+                                          bond.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-11">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-11"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-11">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">11.</div>
+                                             <div class="FAQ-h5">How is the loan
+                                                amount paid out ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-12" class="collapse" aria-labelledby="faqHeading-12"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>The loan against insurance policy is mostly paid out as overdraft in your
+                                          account
+                                          . You can withdraw the funds from the account anytime. An account would be
+                                          opened with the
+                                          overdraft facility in the same bank and the policy would be assigned to the
+                                          bank.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-13">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-13"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-13">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">12.</div>
+                                             <div class="FAQ-h5">What are the
+                                                Benefits of Overdraft v/s
+                                                Normal Term Loan ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-13" class="collapse" aria-labelledby="faqHeading-13"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>In Overdraft account you can withdraw funds only to the extent required and
+                                          not the entire loan amount. Interest is charged only on the amount utilised.
+                                          Under Term Loan,
+                                          however a fixed amout of money is paid out and interest is charged on the
+                                          entire amount. Policy Loan is issued as a overdraft Loan.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card">
+                                 <div class="card-header" id="faqHeading-14">
+                                    <div class="mb-0">
+                                       <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-14"
+                                          data-aria-expanded="false" data-aria-controls="faqCollapse-14">
+                                          <div class="FAQ">
+                                             <div class="FAQ-pointer">13.</div>
+                                             <div class="FAQ-h5">What are the
+                                                Benefit of Interest only
+                                                Loan v/s EMI Loan ?</div>
+                                          </div>
+                                       </h5>
+                                    </div>
+                                 </div>
+                                 <div id="faqCollapse-14" class="collapse" aria-labelledby="faqHeading-14"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                       <p>Under an interest-only loan, you only pay the interest during the period of
+                                          the loan and the principal is paid in one shot at loan closure. Under a EMI
+                                          loan, one part of instalment goes towards interest payment and another part
+                                          goes towards principal re-payment, effectively
+                                          leading to a higher outgo during the tenure of the loan. Policy Loan are
+                                          typically issued as an interest only loan. </p>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+
+
                            </div>
                         </div>
                      </div>
+
                   </div>
                </div>
             </div>
          </div>
+      </div>
       </div>
    </section>
    <footer>
@@ -810,8 +707,7 @@
                <div class="col-sm-4 col-12">
                   <div class="logo">
                      <a href="https://www.valuenable.in/">
-                        <img src="../images/logo.png"
-                           alt="ValuEnable" />
+                        <img src="images/logo.png" alt="ValuEnable" />
                      </a>
                   </div>
                   <div class="information-raw">
@@ -826,48 +722,40 @@
                      <h5>Quick Links</h5>
                      <ul>
                         <li>
-                           <a href="https://www.valuenable.in/"
-                              target="_blank">Home</a>
+                           <a href="https://www.valuenable.in/" target="_blank">Home</a>
                         </li>
                         <li>
-                           <a href="https://www.valuenable.in/our-solutions.html"
-                              target="_blank">Our Solutions</a>
+                           <a href="https://www.valuenable.in/our-solutions.html" target="_blank">Our Solutions</a>
                         </li>
                         <li>
-                           <a href="https://www.valuenable.in/partner-with-us.html"
-                              target="_blank">Partner With Us</a>
+                           <a href="https://www.valuenable.in/partner-with-us.html" target="_blank">Partner With Us</a>
                         </li>
                         <li>
-                           <a href="https://www.valuenable.in/about-us.html"
-                              target="_blank">About Us</a>
+                           <a href="https://www.valuenable.in/about-us.html" target="_blank">About Us</a>
                         </li>
                         <li>
-                           <a href="https://www.valuenable.in/career.html"
-                              target="_blank">Careers</a>
+                           <a href="https://www.valuenable.in/career.html" target="_blank">Careers</a>
                         </li>
                         <li>
-                           <a href="https://www.valuenable.in/contact.html"
-                              target="_blank">Contact Us</a>
+                           <a href="https://www.valuenable.in/contact.html" target="_blank">Contact Us</a>
                         </li>
                         <li>
-                           <a href="https://www.valuenable.in/blog.html"
-                              target="_blank">Blogs</a>
+                           <a href="https://www.valuenable.in/blog.html" target="_blank">Blogs</a>
                         </li>
                      </ul>
                   </div>
                </div>
                <div class="col-sm-3 col-12">
                   <div class="links-wrap section">
-                     <h5>
-                        <a style="color: #2b3a67"
-                           id="link-add"
-                           onclick="adjustHeight()">
+
+                     <h5 class="footter-sec">
+                        <a style="color: #2b3a67" id="link-add" onclick="adjustHeight()">
                            Privacy Policy</a>
                      </h5>
+
                      <ul>
                         <li>
-                           <a href="https://www.valuenable.in/privacy.html"
-                              target="_blank">Policy</a>
+                           <a href="https://www.valuenable.in/privacy.html" target="_blank">Policy</a>
                         </li>
                      </ul>
                   </div>
@@ -875,11 +763,9 @@
                <div class="col-12 text-center">
                   <ul class="socials">
                      <li>
-                        <a href="https://www.linkedin.com/company/valuenable/?viewAsMember=true"
-                           target="_blank"
+                        <a href="https://www.linkedin.com/company/valuenable/?viewAsMember=true" target="_blank"
                            rel="noopener noreferrer">
-                           <i class="fa fa-linkedin"
-                              aria-hidden="true"></i>
+                           <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
                      </li>
                   </ul>
@@ -889,13 +775,12 @@
       </div>
    </footer>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"></script>
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
       integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
       crossorigin="anonymous"></script>
-   <script src="../js/main.js"></script>
+   <script src="js/main.js"></script>
    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
    <!-- <script defer src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
     <script defer src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script> -->
@@ -906,18 +791,24 @@
    <script>
       $('#maxUserForm').submit(event => {
          event.preventDefault();
-         let companyName = document.getElementById('companyName');
-         let policyNumber = document.getElementById('policyNumber');
-         let productName = document.getElementById('productName');
-         let surrenderValue = document.getElementById('surrenderValue');
+         let companyName = document.getElementById('companyName').value;
+         let policyNumber = document.getElementById('policyNumber').value;
+         let productName = document.getElementById('productName').value;
+         let surrenderValue = document.getElementById('surrenderValue').value;
          let customerFirstName =
-            document.getElementById('customerFirstName');
-         let customerLastName = document.getElementById('customerLastName');
+            document.getElementById('customerFirstName').value;
+         let customerLastName = document.getElementById('customerLastName').value;
          let customerMobileNumber = document.getElementById(
             'customerMobileNumber',
-         );
-         let customerEmail = document.getElementById('customerEmail');
-         let customerDOB = document.getElementById('customerDOB');
+         ).value;
+         let customerEmail = document.getElementById('customerEmail').value;
+         let customerDOB = document.getElementById('customerDOB').value;
+         if (customerEmail == '' || companyName == '' || customerFirstName == ''
+            || customerLastName == '' || customerMobileNumber == '' || customerDOB == '') {
+            alert("Kindly ensure all the relevant fields are filled in order for us to  process your request.");
+            event.preventDefault();
+            return;
+         }
          let obj = {
             companyName: companyName.value,
             policyNumber: policyNumber.value,
@@ -932,27 +823,28 @@
          console.log('Object=>', obj);
          let link = `https://main.valuenable.in/api/loan-details`;
          $.ajax({
-               type: 'POST',
-               url: link,
-               data: obj,
-               dataType: 'json',
-               encode: true,
-            })
+            type: 'POST',
+            url: link,
+            data: obj,
+            dataType: 'json',
+            encode: true,
+         })
             .done(data => {
                alert('Policy data added successfully');
                companyName.value = null;
                policyNumber.value = null;
                (productName.value = null),
-               (surrenderValue.value = null),
-               (customerFirstName.value = null),
-               (customerLastName.value = null),
-               (customerMobileNumber.value = null),
-               (customerEmail.value = null),
-               (customerDOB.value = null)
+                  (surrenderValue.value = null),
+                  (customerFirstName.value = null),
+                  (customerLastName.value = null),
+                  (customerMobileNumber.value = null),
+                  (customerEmail.value = null),
+                  (customerDOB.value = null)
             })
             .fail(error => {
                alert(`Something went wrong`);
             });
+
       });
    </script>
 </body>

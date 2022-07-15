@@ -41,8 +41,7 @@ h6, p, .img-wrap,
 .text-wrap,
 .section,
 ul, .header, .header .header-main, .header .header-right .nav-main .menu-main-menu-container {
-  width: 100%;
-  float: left; }
+  width: 100%; }
 
 strong {
   font-weight: 700; }
@@ -248,7 +247,8 @@ h5 {
   font-size: 18px;
   font-weight: 700;
   color: #232222;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  margin-left: 20px; }
 
 h6 {
   font-size: 16px;
@@ -1223,6 +1223,23 @@ section {
     .linearboxes ul li:nth-child(odd) {
       padding-top: 40px; }
 
+.head-contact ul li.phone {
+  background: url(../images/ic-phone.svg) left top 18px no-repeat;
+  background-size: 20px; }
+
+.head-contact ul li.whatsapp {
+  background: url(../images/whatsapp.png) left top 0px no-repeat;
+  background-size: 16px; }
+
+.head-contact ul li.mail {
+  background: url(../images/ic-mail.svg) left top 0px no-repeat;
+  background-size: 16px; }
+
+.head-contact ul li a {
+  width: auto;
+  padding-left: 35px;
+  color: #2b3a67; }
+
 .contact-wrapper {
   float: left;
   width: 100%; }
@@ -1847,7 +1864,8 @@ form ul {
       line-height: 136%;
       color: #2e2e2e;
       font-weight: 400;
-      text-align: center; }
+      text-align: center;
+      text-align: justify; }
     .inner-wrapper .innerpage .innercontainerwrap .teamwrap p {
       padding: 15px 0 15px 0px !important; }
     .inner-wrapper .innerpage .innercontainerwrap .about-wrap {
@@ -2526,7 +2544,7 @@ form ul {
   width: 100%;
   float: left;
   height: 124px;
-  margin-top: -124px;
+  margin-top: -80px;
   position: relative;
   z-index: -9; }
 

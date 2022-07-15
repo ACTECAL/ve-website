@@ -293,6 +293,7 @@ h5 {
   font-weight: 700;
   color: #232222;
   font-family: "Poppins", sans-serif;
+  margin-left:20px;
 }
 
 h6 {
@@ -1333,6 +1334,35 @@ ul {
   // }
 }
 
+
+.head-contact{
+ul{
+  li{
+      &.phone {
+              background: url(../images/ic-phone.svg) left top 18px no-repeat;
+              background-size: 20px;
+            }
+
+            &.whatsapp {
+              background: url(../images/whatsapp.png) left top 0px no-repeat;
+    background-size: 16px;
+
+            }
+
+            &.mail {
+              background: url(../images/ic-mail.svg) left top 0px no-repeat;
+              background-size: 16px;
+            }
+              a {
+              width: auto;
+              padding-left: 35px;
+              color: #2b3a67;
+            }
+  }
+}
+  
+}
+
 .contact-wrapper {
   float: left;
   width: 100%;
@@ -1437,6 +1467,7 @@ ul {
       float: left;
       width: 100%;
     }
+
 
     .customer-support {
       margin-top: 60px;
@@ -2214,6 +2245,7 @@ form {
         color: #2e2e2e;
         font-weight: 400;
         text-align: center;
+        text-align: justify;
         // padding-top: 10px;
       }
 
@@ -3283,7 +3315,7 @@ form {
   width: 100%;
   float: left;
   height: 124px;
-  margin-top: -124px;
+  margin-top: -80px;
   position: relative;
   z-index: -9;
 }
