@@ -41,7 +41,8 @@ h6, p, .img-wrap,
 .text-wrap,
 .section,
 ul, .header, .header .header-main, .header .header-right .nav-main .menu-main-menu-container {
-  width: 100%; }
+  width: 100%;
+  float: left; }
 
 strong {
   font-weight: 700; }
@@ -247,8 +248,7 @@ h5 {
   font-size: 18px;
   font-weight: 700;
   color: #232222;
-  font-family: "Poppins", sans-serif;
-  margin-left: 20px; }
+  font-family: "Poppins", sans-serif; }
 
 h6 {
   font-size: 16px;

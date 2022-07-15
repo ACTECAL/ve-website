@@ -293,7 +293,7 @@ h5 {
   font-weight: 700;
   color: #232222;
   font-family: "Poppins", sans-serif;
-  margin-left:20px;
+  // margin-left:20px;
 }
 
 h6 {
@@ -1335,32 +1335,33 @@ ul {
 }
 
 
-.head-contact{
-ul{
-  li{
+.head-contact {
+  ul {
+    li {
       &.phone {
-              background: url(../images/ic-phone.svg) left top 18px no-repeat;
-              background-size: 20px;
-            }
+        background: url(../images/ic-phone.svg) left top 18px no-repeat;
+        background-size: 20px;
+      }
 
-            &.whatsapp {
-              background: url(../images/whatsapp.png) left top 0px no-repeat;
-    background-size: 16px;
+      &.whatsapp {
+        background: url(../images/whatsapp.png) left top 0px no-repeat;
+        background-size: 16px;
 
-            }
+      }
 
-            &.mail {
-              background: url(../images/ic-mail.svg) left top 0px no-repeat;
-              background-size: 16px;
-            }
-              a {
-              width: auto;
-              padding-left: 35px;
-              color: #2b3a67;
-            }
+      &.mail {
+        background: url(../images/ic-mail.svg) left top 0px no-repeat;
+        background-size: 16px;
+      }
+
+      a {
+        width: auto;
+        padding-left: 35px;
+        color: #2b3a67;
+      }
+    }
   }
-}
-  
+
 }
 
 .contact-wrapper {
