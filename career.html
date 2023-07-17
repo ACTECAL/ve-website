@@ -14,6 +14,15 @@
     <meta property="og:title" content="ValuEnable"/>
     <meta property="og:description" content="" />
     <meta property="og:site_name" content="ValuEnable" />
+  <meta name="description" content="India’s most reliable company for loan against life insurance policy, loan against insurance policy, best loan rates against policy, loan against term plan, life policy loan">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2P5GVZ');</script>
+<!-- End Google Tag Manager -->
+
     <title>ValuEnable</title>
     <!-- Vendor Styles -->
     <!-- CSS only -->
@@ -35,6 +44,10 @@
 <!-- Body -->
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2P5GVZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
@@ -284,6 +297,7 @@
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="career.html">Careers</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
+                                	<li><a href="blog.html">Blogs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -353,10 +367,11 @@
 						summary: message.value
 				}
 
-				let link=`https://main.valuenable.in/careers`
+				let link=`https://microservice.valuenable.in/careers`
                 const xhr = new XMLHttpRequest();
                 xhr.onreadystatechange = function() {
-                    if (xhr.readyState == XMLHttpRequest.DONE && xhr.status==200) {
+                console.log(xhr);
+                    if (xhr.readyState == XMLHttpRequest.DONE && xhr.statusCode==201) {
                         name.value=null
                         email.value=null
                         mobile.value=null
@@ -408,5 +423,7 @@
             window.location.href = link;
         }
         </script> -->
+
+
     </body>
 </html>
