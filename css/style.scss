@@ -1198,8 +1198,11 @@ ul {
 
       p {
         // font-weight: 500;
-        font-size: 18px;
-        color: #333434;
+        font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #232222;
+    font-size: 17.97px;
+    line-height: 128%;
         padding-top: 40px;
         overflow: hidden;
         text-align: center;
@@ -2242,7 +2245,8 @@ form {
       p {
         // font-size: 18px;
         padding: 15px 0 15px 0px;
-        line-height: 136%;
+        // line-height: 136%;
+        line-height: 128%;
         // color: #2e2e2e;
         font-weight: 400;
         text-align: center;
@@ -2692,7 +2696,7 @@ list-style: disc;
             // padding-top: 45px;
             .policyholder {
               .rightwrap {
-                padding-top: 14% !important;
+                // padding-top: 14% !important;
               }
             }
 
@@ -2773,6 +2777,7 @@ list-style: disc;
                       font-weight: 400;
                       color: #232222;
                       font-size: 17.97px;
+                      line-height: 128%;
                       &::before {
                         position: absolute;
                         content: "";
@@ -2801,11 +2806,12 @@ width: 100%;
 position: relative;
 // font-size: 22px;
 color: #1f1c33;
-line-height: 30px;
+// line-height: 30px;
 font-weight: 400;
 text-align: start;
 letter-spacing: 1px;
 font-family: "Poppins", sans-serif;
+line-height: 128%;
     font-weight: 400;
     color: #232222;
     font-size: 17.97px;

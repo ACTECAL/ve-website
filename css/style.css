@@ -1128,8 +1128,11 @@ section {
       width: 25%;
       background-color: #2b3a67; }
   .career-wrapper .career-raw .small-title-raw p {
-    font-size: 18px;
-    color: #333434;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #232222;
+    font-size: 17.97px;
+    line-height: 128%;
     padding-top: 40px;
     overflow: hidden;
     text-align: center; }
@@ -1860,7 +1863,7 @@ form ul {
     padding: 0 170px; }
     .inner-wrapper .innerpage .innercontainerwrap p {
       padding: 15px 0 15px 0px;
-      line-height: 136%;
+      line-height: 128%;
       font-weight: 400;
       text-align: center;
       text-align: justify;
@@ -2160,8 +2163,6 @@ form ul {
               font-weight: 700;
               line-height: 120%;
               padding: 10px 0 10px; }
-      .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .policyholder .rightwrap {
-        padding-top: 14% !important; }
       .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .distributor .rightwrap {
         padding-top: 0% !important; }
       .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox {
@@ -2221,7 +2222,8 @@ form ul {
                 font-family: "Poppins", sans-serif;
                 font-weight: 400;
                 color: #232222;
-                font-size: 17.97px; }
+                font-size: 17.97px;
+                line-height: 128%; }
                 .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .leftwrap ul li::before {
                   position: absolute;
                   content: "";
@@ -2236,11 +2238,11 @@ form ul {
               width: 100%;
               position: relative;
               color: #1f1c33;
-              line-height: 30px;
               font-weight: 400;
               text-align: start;
               letter-spacing: 1px;
               font-family: "Poppins", sans-serif;
+              line-height: 128%;
               font-weight: 400;
               color: #232222;
               font-size: 17.97px; }
