@@ -1859,13 +1859,15 @@ form ul {
   .inner-wrapper .innerpage .innercontainerwrap {
     padding: 0 170px; }
     .inner-wrapper .innerpage .innercontainerwrap p {
-      font-size: 18px;
       padding: 15px 0 15px 0px;
       line-height: 136%;
-      color: #2e2e2e;
       font-weight: 400;
       text-align: center;
-      text-align: justify; }
+      text-align: justify;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      color: #232222;
+      font-size: 17.97px; }
     .inner-wrapper .innerpage .innercontainerwrap .teamwrap p {
       padding: 15px 0 15px 0px !important; }
     .inner-wrapper .innerpage .innercontainerwrap .about-wrap {
@@ -1893,7 +1895,9 @@ form ul {
       .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li {
         float: left;
         width: 25%;
-        padding: 0 15px; }
+        padding: 0 15px;
+        width: 100%;
+        list-style: disc; }
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .boxwrap {
           float: left;
           width: 100%; }
@@ -2211,10 +2215,13 @@ form ul {
                 position: relative;
                 font-size: 22px;
                 color: #1f1c33;
-                line-height: 22px;
                 font-weight: 400;
                 padding: 15px 0 15px 40px;
-                text-align: left; }
+                text-align: left;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                color: #232222;
+                font-size: 17.97px; }
                 .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .leftwrap ul li::before {
                   position: absolute;
                   content: "";
@@ -2228,11 +2235,15 @@ form ul {
               float: left;
               width: 100%;
               position: relative;
-              font-size: 22px;
               color: #1f1c33;
-              line-height: 23px;
+              line-height: 30px;
               font-weight: 400;
-              text-align: justify; }
+              text-align: start;
+              letter-spacing: 1px;
+              font-family: "Poppins", sans-serif;
+              font-weight: 400;
+              color: #232222;
+              font-size: 17.97px; }
           .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .rightwrap {
             float: left;
             width: 50%;

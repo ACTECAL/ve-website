@@ -2240,14 +2240,18 @@ form {
       padding: 0 170px;
 
       p {
-        font-size: 18px;
+        // font-size: 18px;
         padding: 15px 0 15px 0px;
         line-height: 136%;
-        color: #2e2e2e;
+        // color: #2e2e2e;
         font-weight: 400;
         text-align: center;
         text-align: justify;
         // padding-top: 10px;
+        font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #232222;
+    font-size: 17.97px;
       }
 
       .teamwrap {
@@ -2296,7 +2300,8 @@ form {
             float: left;
             width: 25%;
             padding: 0 15px;
-
+width: 100%;
+list-style: disc;
             .boxwrap {
               float: left;
               width: 100%;
@@ -2760,11 +2765,14 @@ form {
                       position: relative;
                       font-size: 22px;
                       color: #1f1c33;
-                      line-height: 22px;
+                      // line-height: 22px;
                       font-weight: 400;
                       padding: 15px 0 15px 40px;
                       text-align: left;
-
+                      font-family: "Poppins", sans-serif;
+                      font-weight: 400;
+                      color: #232222;
+                      font-size: 17.97px;
                       &::before {
                         position: absolute;
                         content: "";
@@ -2779,14 +2787,28 @@ form {
                   }
 
                   p {
-                    float: left;
-                    width: 100%;
-                    position: relative;
-                    font-size: 22px;
-                    color: #1f1c33;
-                    line-height: 23px;
-                    font-weight: 400;
-                    text-align: justify;
+                    // float: left;
+                    // width: 100%;
+                    // position: relative;
+                    // font-size: 22px;
+                    // color: #1f1c33;
+                    // line-height: 23px;
+                    // font-weight: 400;
+                    // text-align: justify;
+                    
+float: left;
+width: 100%;
+position: relative;
+// font-size: 22px;
+color: #1f1c33;
+line-height: 30px;
+font-weight: 400;
+text-align: start;
+letter-spacing: 1px;
+font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #232222;
+    font-size: 17.97px;
                   }
                 }
 
