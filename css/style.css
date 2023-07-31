@@ -6100,14 +6100,14 @@ form ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   background-color: #da1e37;
   border-radius: 10px;
   color: white;
   width: 145px;
   gap: 10px;
   margin-bottom: 10px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-left: 26px; }
 
 .ve-piller {
   font-size: 18.5px;
