@@ -1900,8 +1900,8 @@ form ul {
         float: left;
         width: 25%;
         padding: 0 15px;
-        width: 100%;
-        list-style: disc; }
+        list-style: none;
+        width: 100%; }
         .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .boxwrap {
           float: left;
           width: 100%; }
@@ -6113,5 +6113,8 @@ form ul {
   font-size: 18.5px;
   margin-top: -30px;
   text-align: left; }
+
+.about-us-li {
+  list-style: disc !important; }
 
 /*# sourceMappingURL=style.css.map */

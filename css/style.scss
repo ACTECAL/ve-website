@@ -2306,8 +2306,9 @@ form {
             float: left;
             width: 25%;
             padding: 0 15px;
+            list-style: none;
 width: 100%;
-list-style: disc;
+// list-style: disc;
             .boxwrap {
               float: left;
               width: 100%;
@@ -3734,4 +3735,7 @@ line-height: 128%;
 }
 .ve-piller{
   font-size: 18.5px;margin-top: -30px;text-align: left;
+}
+.about-us-li{
+  list-style: disc !important;
 }
