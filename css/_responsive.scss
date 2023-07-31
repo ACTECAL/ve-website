@@ -764,7 +764,7 @@
       }
 
       .img-wrap {
-        min-height: 130px;
+        min-height: 115px;
       }
 
       .top-wrap {
@@ -6498,9 +6498,14 @@
   .solutions-wrapper .solutions-raw .solutions-box .img-wrap img {
     max-width: 290px;
   }
+  .ve-piller{
+    font-size: 18.5px;margin-top: 0px !important;text-align: left;
+  }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 479px) {}
+@media only screen and (min-width: 350px) and (max-width: 479px) {
+  
+}
 
 @media only screen and (min-width: 400px) and (max-width: 479px) {}
 

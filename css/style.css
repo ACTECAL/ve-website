@@ -943,9 +943,9 @@ section {
     font-weight: 600;
     line-height: 50px; }
   .silver-row ul.pillar {
-    width: calc(100% + 140px);
+    width: calc(100% + 260px);
     padding: 0 5%;
-    margin: 30px -70px 0;
+    margin: 29px -137px 0;
     display: flex; }
     .silver-row ul.pillar li {
       float: left;
@@ -1000,7 +1000,8 @@ section {
             font-size: 18.5px;
             font-weight: 300;
             padding-bottom: 0px;
-            line-height: 30px;
+            line-height: 19px;
+            text-align: left;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             -ms-transition: all 0.3s;
@@ -2266,12 +2267,14 @@ form ul {
               float: left;
               width: 100%;
               position: relative;
-              font-size: 22px;
-              color: #1f1b33;
-              line-height: 23px;
               font-weight: 400;
-              padding: 10px 0;
-              text-align: left; }
+              text-align: start;
+              letter-spacing: 1px;
+              font-family: "Poppins", sans-serif;
+              line-height: 128%;
+              font-weight: 400;
+              color: #232222;
+              font-size: 17.97px; }
               .inner-wrapper .innerpage .innercontainerwrap .partnerwrap .partnerbox .partnerdetailbox .detailbox .middelbox .fullboxwrap p a {
                 float: none;
                 display: inline-block;
@@ -3207,7 +3210,7 @@ form ul {
     .reality-wrapper .blue-bg .img-fluid {
       max-width: 213px; }
     .reality-wrapper .blue-bg .img-wrap {
-      min-height: 130px; }
+      min-height: 115px; }
     .reality-wrapper .blue-bg .top-wrap {
       padding: 0 80px; }
     .reality-wrapper .blue-bg .silver-row p {
@@ -5995,7 +5998,11 @@ form ul {
   .inner-wrapper .innerpage .innercontainerwrap .about-wrap .imgwrap img {
     max-width: 290px; }
   .solutions-wrapper .solutions-raw .solutions-box .img-wrap img {
-    max-width: 290px; } }
+    max-width: 290px; }
+  .ve-piller {
+    font-size: 18.5px;
+    margin-top: 0px !important;
+    text-align: left; } }
 
 #maxUserForm ul {
   width: 100%;
@@ -6088,5 +6095,23 @@ form ul {
         margin: 0 auto;
         width: auto;
         font-size: 20px; }
+
+.know-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #da1e37;
+  border-radius: 10px;
+  color: white;
+  width: 145px;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.ve-piller {
+  font-size: 18.5px;
+  margin-top: -30px;
+  text-align: left; }
 
 /*# sourceMappingURL=style.css.map */
