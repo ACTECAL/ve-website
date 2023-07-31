@@ -113,9 +113,10 @@
                                             <li><a href="#faq">faqs</a></li>
                                         </ul> -->
                                     </li>
-                                    <li><a href="about-us.html">About Us </a></li>
 
                                     <li><a href="career.html">Careers & Blogs</a></li>
+                                    <li><a href="about-us.html">About Us </a></li>
+
                                     <!-- <li><a href="contact.html">Contact Us</a></li> -->
                                     <!-- <li><a href="blog.html">Blogs</a></li> -->
                                 </ul>
@@ -285,6 +286,7 @@
                                                         better alternative deal is available ?
                                                     </li> -->
                                                 </ul>
+                                                <p style="cursor: pointer;"><a href="about-us.html#about-us-section"><i>Contact Us <i class="fa fa-angle-right"></i></i></a></p>
                                             </div>
                                             <div class="rightwrap">
                                                 <img src="images/partner-policy-image.png">
@@ -315,13 +317,14 @@
                                                     persistency and customer engagement. If you want to explore this
                                                     further, let's connect.
                                                 </p>
-                                                <p id="toggleButton">Know more</p>
+                                               
+                                                <p style="font-weight: 900; cursor: pointer;" id="toggleButton">Know more <i class="fa fa-angle-down"></i></p>
                                             </div>
                                             <div class="rightwrap">
                                                 <img src="images/partner-life-Insurers-image.png">
-                                                <img style="display: none;" id="imageToShowHide" src="images/our-partner-image/Insurer Partner.png"/>
+                                                
                                             </div>
-                                            
+                                            <img style="display: none;" id="imageToShowHide" src="images/our-partner-image/Insurer Partner.png"/>
                                             <!-- <div class="fullboxwrap">
                                                 <p>We are working with India’s top-most life insurance companies
                                                     to help them manage their persistency and get the most optimized
@@ -350,11 +353,11 @@
                                                     help them assign their policies as an alternative to surrendering.
                                                     While your customer benefits, this also ensures that your renewal
                                                     commissions are not affected. </p>
-                                                    <p id="toggleButton1">Know more</p>
+                                                    <p style="font-weight: 900; cursor: pointer;" id="toggleButton1">Know more <i class="fa fa-angle-down"></i></p>
                                             </div>
                                             <div class="rightwrap">
                                                 <img src="images/partner-Distributor-image.png">
-                                                <img style="display: none;" id="imageToShowHide1" src="images/our-partner-image/Distributers-partners.png"/>
+                                                
                                             </div>
                                             <div class="fullboxwrap">
                                                 <p>Call us on xxx to know further details
@@ -363,7 +366,7 @@
                                                 <!-- <a href="contact.html#tabs-1">Contact Us</a> -->
                                             </div>
 
-                                         
+                                            <img style="display: none;" id="imageToShowHide1" src="images/our-partner-image/Distributers-partners.png"/>
                                             <!-- <div class="fullboxwrap tab-btn">
                                                 <p>Are you an LIC agent, who is worried that your customer's insistence
                                                     on surrendering their policy will lead to you losing out the renewal
@@ -397,13 +400,13 @@
                                                     for diversified investments, get in touch with us for this
                                                     innovative fixed income instrument
                                                 </p>
-                                                <p id="toggleButton2">Know more</p>
+                                                <p style="font-weight: 900;cursor: pointer;" id="toggleButton2">Know more <i class="fa fa-angle-down"></i></p>
                                             </div>
                                             <div class="rightwrap">
                                                 <img src="images/partner-investro-image.svg">
-                                                <img style="display: none;" id="imageToShowHide2" src="images/our-partner-image/Investors.png"/>
+                                                
                                             </div>
-                                        
+                                            <img style="display: none;" id="imageToShowHide2" src="images/our-partner-image/Investors.png"/>
                                             <!-- <div class="fullboxwrap">
                                                 <p> We are a platform offering an opportunity to invest in existing life
                                                     insurance policies. At the back-end, we have tied up with some
@@ -434,17 +437,17 @@
                                                     end-to-end digital solution from sourcing the policies to assignment
                                                     of policy (lien marking) in favour of the lender.
                                                 </p>
-                                                <p id="toggleButton3">Know more</p>
+                                                <p style="font-weight: 900;cursor: pointer;" id="toggleButton3">Know more <i class="fa fa-angle-down"></i></p>
                                             </div>
                                             <div class="rightwrap">
                                                 <img src="images/partner-leader-image.png">
-                                                <img style="display: none;" id="imageToShowHide3" src="images/our-partner-image/Lender Partners.png"/>
+                                                
                                             </div>
                                             <div class="fullboxwrap">
                                                 <p> Connect to know more</p>
                                                 <!-- <a href="contact.html#tabs-6">Contact Us</a> -->
                                             </div>
-
+                                            <img style="display: none;" id="imageToShowHide3" src="images/our-partner-image/Lender Partners.png"/>
                                        
                                         </div>
                                     </div>
@@ -983,9 +986,10 @@
                                 <li><a href="index.html">Home</a></li>
                                 <!-- <li><a href="our-solutions.html">Our Solutions</a></li> -->
                                 <li><a href="partner-with-us.html">Partner With Us</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
 
                                 <li><a href="career.html">Careers & Blogs</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+
                                 <!-- <li><a href="contact.html">Contact Us</a></li> -->
                             </ul>
                         </div>
@@ -1109,6 +1113,9 @@
             isImageVisible3 = !isImageVisible3;
             if (isImageVisible3) {
                 imageToShowHide3.style.display = "inline"; 
+                toggleButton3.querySelector("i").classList.remove("fa fa-angle-down");
+                toggleButton3.querySelector("i").classList.add("fa fa-angle-up");
+
             } else {
                 imageToShowHide3.style.display = "none"; 
             }
