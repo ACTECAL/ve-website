@@ -3749,3 +3749,18 @@ line-height: 128%;
 .contact-sec{
   margin-top: -130px;
 }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: 50%/100% 100% no-repeat;
+  // background-color: black;
+  color: white;
+}
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+}
+.partner-sec{
+  margin-top: -95px;
+}

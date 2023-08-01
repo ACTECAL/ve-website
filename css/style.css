@@ -6011,7 +6011,9 @@ form ul {
   .founding-team-sec {
     margin-top: 0px !important; }
   .contact-sec {
-    margin-top: -100px !important; } }
+    margin-top: -100px !important; }
+  .partner-sec {
+    margin-top: 0 !important; } }
 
 #maxUserForm ul {
   width: 100%;
@@ -6137,5 +6139,19 @@ form ul {
 
 .contact-sec {
   margin-top: -130px; }
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: 50%/100% 100% no-repeat;
+  color: white; }
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1; }
+
+.partner-sec {
+  margin-top: -95px; }
 
 /*# sourceMappingURL=style.css.map */
