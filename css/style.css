@@ -6009,7 +6009,9 @@ form ul {
     gap: 30px !important;
     flex-direction: column !important; }
   .founding-team-sec {
-    margin-top: 0px; } }
+    margin-top: 0px !important; }
+  .contact-sec {
+    margin-top: -100px !important; } }
 
 #maxUserForm ul {
   width: 100%;
@@ -6132,5 +6134,8 @@ form ul {
 
 .founding-team-sec {
   margin-top: -120px; }
+
+.contact-sec {
+  margin-top: -130px; }
 
 /*# sourceMappingURL=style.css.map */
