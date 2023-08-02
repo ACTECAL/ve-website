@@ -1665,14 +1665,15 @@
   /*-------solutions-page-end--*/
   .silver-row {
     ul.pillar {
-      width: 550px;
+      width: 680px;
       padding: 0 0%;
-      margin: 46px 16px 0;
+      margin-top: 50px !important;
+      margin-left: -62px !important;
       display: flex;
 
       li {
         float: left;
-        width: 140px;
+        width: 300px !important;
         padding: 0 0px;
 
         .text-wrap {
@@ -1684,12 +1685,14 @@
         }
 
         h5 {
-          font-size: 10.78px !important;
-          line-height: 11px !important;
+          font-size: 18px !important;
+          line-height: 23px !important;
+          margin-top: 0px;
+          
         }
 
         p {
-          font-size: 11.08px !important;
+          font-size: 14px !important;
           line-height: 18px !important;
         }
 
