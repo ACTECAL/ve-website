@@ -1105,12 +1105,21 @@
         font-size: 71.62px;
       }
     }
+
+    .contact-box {
+      margin-top: 4em;
+    }
+
+    .contact-raw {
+      margin-top: 0px !important;
+    }
   }
 
   .about-us {
     .titlewrap {
       margin-bottom: 30px;
     }
+
   }
 
   .reality-wrapper {
@@ -1491,11 +1500,27 @@
     .pdtb8090 {
       padding: 25px 170px;
     }
+
+    .partner-sec {
+      margin-top: 0px !important;
+    }
   }
 
   .about-us {
     .pdtb8090 {
       padding: 70px 170px 0px;
+    }
+
+    .investor-box {
+      min-height: 505px !important;
+    }
+
+    .founding-team-sec {
+      margin-top: 0px !important;
+    }
+
+    .rainmatter-section {
+      margin-top: 0px;
     }
   }
 
@@ -1507,7 +1532,7 @@
 
   .mgt206,
   .main-wrapper {
-    margin-top: 133px;
+    margin-top: 20px;
   }
 
   //parth
@@ -1688,7 +1713,7 @@
           font-size: 18px !important;
           line-height: 23px !important;
           margin-top: 0px;
-          
+
         }
 
         p {
@@ -1713,10 +1738,12 @@
       min-height: 350px;
     }
   }
-  .our-story-sec{
+
+  .our-story-sec {
     margin-top: 0px !important;
   }
-  .angle-investor-sec{
+
+  .angle-investor-sec {
     margin-top: 0px !important;
   }
 }
@@ -4293,7 +4320,7 @@
       .tabbing-raw {
         width: 100%;
         float: left;
-        margin-top: 50px;
+        margin-top: 0px !important;
 
         .nav-tabs {
           text-align: left;
@@ -6507,49 +6534,64 @@
   .solutions-wrapper .solutions-raw .solutions-box .img-wrap img {
     max-width: 290px;
   }
-  .ve-piller{
-    font-size: 18.5px;margin-top: 0px !important;text-align: left;
+
+  .ve-piller {
+    font-size: 18.5px;
+    margin-top: 0px !important;
+    text-align: left;
   }
-  .rainmatter-section{
-    margin-top: 0px !important;display: flex !important;gap: 30px !important;
+
+  .rainmatter-section {
+    margin-top: 0px !important;
+    display: flex !important;
+    gap: 30px !important;
     flex-direction: column !important;
   }
-  .founding-team-sec{
+
+  .founding-team-sec {
     margin-top: 0px !important;
   }
-  .contact-sec{
+
+  .contact-sec {
     margin-top: -100px !important;
   }
-  .partner-sec{
+
+  .partner-sec {
     margin-top: 0 !important;
   }
-  .carousel-image{
-    width: 100%;height: 100% !important;
+
+  .carousel-image {
+    width: 100%;
+    height: 100% !important;
   }
-  .angle-investor-sec{
+
+  .angle-investor-sec {
     margin-top: 0px !important;
   }
-  .our-story-sec{
+
+  .our-story-sec {
     margin-top: 0 !important;
   }
-  .distributor-image{
+
+  .distributor-image {
     display: block !important;
   }
-  .investor-sec{
+
+  .investor-sec {
     margin-bottom: 0px !important;
     margin-top: 30px !important;
   }
-  .investor-partner-img{
+
+  .investor-partner-img {
     display: none !important;
   }
-  .our-partner-p{
+
+  .our-partner-p {
     display: none !important;
   }
 }
 
-@media only screen and (min-width: 350px) and (max-width: 479px) {
- 
-}
+@media only screen and (min-width: 350px) and (max-width: 479px) {}
 
 @media only screen and (min-width: 400px) and (max-width: 479px) {}
 

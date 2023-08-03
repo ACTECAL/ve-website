@@ -3352,7 +3352,7 @@ form ul {
     width: calc(100% - 250px);
     padding: 20px 0; }
     .header .header-right .nav-main ul.menu > li {
-      margin-right: 30px; }
+      margin-right: 100px; }
       .header .header-right .nav-main ul.menu > li a {
         font-size: 17px; }
     .header .header-right .user-menu {
@@ -3365,6 +3365,10 @@ form ul {
     margin-bottom: 25px; }
     .partner-with-us .titlewrap h1 {
       font-size: 71.62px; }
+  .partner-with-us .contact-box {
+    margin-top: 4em; }
+  .partner-with-us .contact-raw {
+    margin-top: 0px !important; }
   .about-us .titlewrap {
     margin-bottom: 30px; }
   .reality-wrapper .yellow-bg .top-wrap {
@@ -3544,13 +3548,21 @@ form ul {
     padding: 70px 80px; }
   .partner-with-us .pdtb8090 {
     padding: 25px 170px; }
+  .partner-with-us .partner-sec {
+    margin-top: 0px !important; }
   .about-us .pdtb8090 {
     padding: 70px 170px 0px; }
+  .about-us .investor-box {
+    min-height: 505px !important; }
+  .about-us .founding-team-sec {
+    margin-top: 0px !important; }
+  .about-us .rainmatter-section {
+    margin-top: 0px; }
   .headZeroPad div {
     padding: 0% !important; }
   .mgt206,
   .main-wrapper {
-    margin-top: 133px; }
+    margin-top: 20px; }
   .title-text-main.small-title-raw h3 {
     font-size: 56px; }
   .title-text-main h2 {
@@ -3608,23 +3620,25 @@ form ul {
       padding-top: 0px; }
   /*-------solutions-page-end--*/
   .silver-row ul.pillar {
-    width: 550px;
+    width: 680px;
     padding: 0 0%;
-    margin: 20px 14px 0;
+    margin-top: 50px !important;
+    margin-left: -62px !important;
     display: flex; }
     .silver-row ul.pillar li {
       float: left;
-      width: 140px;
+      width: 300px !important;
       padding: 0 0px; }
       .silver-row ul.pillar li .text-wrap {
         padding: 34px 9px 9px 9px !important; }
       .silver-row ul.pillar li .img-fluid {
         max-width: 60px; }
       .silver-row ul.pillar li h5 {
-        font-size: 10.78px !important;
-        line-height: 11px !important; }
+        font-size: 18px !important;
+        line-height: 23px !important;
+        margin-top: 0px; }
       .silver-row ul.pillar li p {
-        font-size: 11.08px !important;
+        font-size: 14px !important;
         line-height: 18px !important; }
       .silver-row ul.pillar li .img-wrap {
         padding: 8px 0 !important;
@@ -3632,7 +3646,11 @@ form ul {
     .silver-row ul.pillar li:nth-child(2n) {
       margin: 0 65px; }
   .surrender-wrap .know-box {
-    min-height: 350px; } }
+    min-height: 350px; }
+  .our-story-sec {
+    margin-top: 0px !important; }
+  .angle-investor-sec {
+    margin-top: 0px !important; } }
 
 @media only screen and (min-width: 1121px) and (max-width: 1279px) {
   .container {
@@ -3661,7 +3679,7 @@ form ul {
     width: calc(100% - 200px);
     padding: 15px 0; }
     .header .header-right .nav-main ul.menu > li {
-      margin-right: 30px; }
+      margin-right: 75px; }
       .header .header-right .nav-main ul.menu > li a {
         font-size: 22px; }
     .header .header-right .user-menu {
@@ -4947,7 +4965,7 @@ form ul {
   .contact-wrapper .contact-raw .tabbing-raw {
     width: 100%;
     float: left;
-    margin-top: 50px; }
+    margin-top: 0px !important; }
     .contact-wrapper .contact-raw .tabbing-raw .nav-tabs {
       text-align: left; }
       .contact-wrapper .contact-raw .tabbing-raw .nav-tabs::before {
@@ -6020,7 +6038,16 @@ form ul {
   .angle-investor-sec {
     margin-top: 0px !important; }
   .our-story-sec {
-    margin-top: 0 !important; } }
+    margin-top: 0 !important; }
+  .distributor-image {
+    display: block !important; }
+  .investor-sec {
+    margin-bottom: 0px !important;
+    margin-top: 30px !important; }
+  .investor-partner-img {
+    display: none !important; }
+  .our-partner-p {
+    display: none !important; } }
 
 #maxUserForm ul {
   width: 100%;
@@ -6168,7 +6195,8 @@ form ul {
   margin-top: 45px; }
 
 .investor-sec {
-  margin-bottom: -100px; }
+  margin-bottom: -100px;
+  margin-top: 30px; }
 
 .carousel-image {
   width: 100%;
@@ -6179,5 +6207,17 @@ form ul {
 
 .our-story-sec {
   margin-top: 130px; }
+
+.distributor-image {
+  display: none !important; }
+
+.investor-partner-img1 {
+  display: none; }
+
+.investor-partner-img {
+  display: block; }
+
+.our-partner-p1 {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
