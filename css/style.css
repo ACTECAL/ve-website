@@ -3311,7 +3311,13 @@ form ul {
   .solutions-wrapper .solutions-raw .solutions-box .img-wrap img {
     max-width: 750px; }
   .partnerwrap.pdtb8090 {
-    padding: 50px 0px; } }
+    padding: 50px 0px; }
+  ul.pillar {
+    width: calc(100% +158px);
+    padding: 0 0%;
+    margin-top: 50px !important;
+    margin-left: -86px !important;
+    display: flex; } }
 
 @media only screen and (min-width: 1280px) and (max-width: 1499px) {
   .solutions-box h2 {
@@ -3620,10 +3626,10 @@ form ul {
       padding-top: 0px; }
   /*-------solutions-page-end--*/
   .silver-row ul.pillar {
-    width: 680px;
+    width: 750px;
     padding: 0 0%;
     margin-top: 50px !important;
-    margin-left: -62px !important;
+    margin-left: -86px !important;
     display: flex; }
     .silver-row ul.pillar li {
       float: left;
@@ -3646,11 +3652,14 @@ form ul {
     .silver-row ul.pillar li:nth-child(2n) {
       margin: 0 65px; }
   .surrender-wrap .know-box {
-    min-height: 350px; }
+    min-height: 350px;
+    margin-top: 110px; }
   .our-story-sec {
     margin-top: 0px !important; }
   .angle-investor-sec {
-    margin-top: 0px !important; } }
+    margin-top: 0px !important; }
+  .know-more-button {
+    margin-left: 7px !important; } }
 
 @media only screen and (min-width: 1121px) and (max-width: 1279px) {
   .container {
@@ -6047,7 +6056,9 @@ form ul {
   .investor-partner-img {
     display: none !important; }
   .our-partner-p {
-    display: none !important; } }
+    display: none !important; }
+  .footer-logo {
+    width: 0px; } }
 
 #maxUserForm ul {
   width: 100%;
@@ -6219,5 +6230,8 @@ form ul {
 
 .our-partner-p1 {
   display: none; }
+
+.footer-logo {
+  margin-left: 130px; }
 
 /*# sourceMappingURL=style.css.map */
