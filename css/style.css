@@ -6061,7 +6061,9 @@ form ul {
     width: 100%;
     margin-left: 0px !important; }
   .about-sec {
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .jd-box {
+    margin-left: 0px !important; } }
 
 #maxUserForm ul {
   width: 100%;
@@ -6236,5 +6238,8 @@ form ul {
 
 .footer-logo {
   margin-left: 109px; }
+
+.jd-box {
+  margin-left: 110px; }
 
 /*# sourceMappingURL=style.css.map */
