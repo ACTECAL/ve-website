@@ -3898,7 +3898,9 @@ form ul {
       padding: 0 30px; }
   .hard-reality-row p {
     font-size: 24px;
-    line-height: 37px; } }
+    line-height: 37px; }
+  .footer-logo {
+    margin-left: 98px !important; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
   .reality-wrapper .yellow-bg .title-wrap .title h3 {
@@ -6197,7 +6199,8 @@ form ul {
   background: 50%/100% 100% no-repeat;
   color: white; }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   opacity: 1; }
 
 .partner-sec {
@@ -6236,7 +6239,7 @@ form ul {
   display: none; }
 
 .footer-logo {
-  margin-left: 98px; }
+  margin-left: 158px; }
 
 .jd-box {
   margin-left: 110px; }
