@@ -1003,7 +1003,7 @@ ul {
             font-weight: 300;
             padding-bottom: 0px;
             line-height: 19px;
-    text-align: left;
+            text-align: left;
             @include transition(all 0.3s);
           }
 
@@ -1201,10 +1201,10 @@ ul {
       p {
         // font-weight: 500;
         font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #232222;
-    font-size: 17.97px;
-    line-height: 128%;
+        font-weight: 400;
+        color: #232222;
+        font-size: 17.97px;
+        line-height: 128%;
         padding-top: 40px;
         overflow: hidden;
         text-align: center;
@@ -2255,9 +2255,9 @@ form {
         text-align: justify;
         // padding-top: 10px;
         font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #232222;
-    font-size: 17.97px;
+        font-weight: 400;
+        color: #232222;
+        font-size: 17.97px;
       }
 
       .teamwrap {
@@ -2307,8 +2307,9 @@ form {
             width: 25%;
             padding: 0 15px;
             list-style: none;
-width: 100%;
-// list-style: disc;
+            width: 100%;
+
+            // list-style: disc;
             .boxwrap {
               float: left;
               width: 100%;
@@ -2781,6 +2782,7 @@ width: 100%;
                       color: #232222;
                       font-size: 17.97px;
                       line-height: 128%;
+
                       &::before {
                         position: absolute;
                         content: "";
@@ -2803,21 +2805,21 @@ width: 100%;
                     // line-height: 23px;
                     // font-weight: 400;
                     // text-align: justify;
-                    
-float: left;
-width: 100%;
-position: relative;
-// font-size: 22px;
-color: #1f1c33;
-// line-height: 30px;
-font-weight: 400;
-text-align: start;
-letter-spacing: 1px;
-font-family: "Poppins", sans-serif;
-line-height: 128%;
-    font-weight: 400;
-    color: #232222;
-    font-size: 17.97px;
+
+                    float: left;
+                    width: 100%;
+                    position: relative;
+                    // font-size: 22px;
+                    color: #1f1c33;
+                    // line-height: 30px;
+                    font-weight: 400;
+                    text-align: start;
+                    letter-spacing: 1px;
+                    font-family: "Poppins", sans-serif;
+                    line-height: 128%;
+                    font-weight: 400;
+                    color: #232222;
+                    font-size: 17.97px;
                   }
                 }
 
@@ -3719,36 +3721,47 @@ line-height: 128%;
   }
 
 }
-.know-more-button{
+
+.know-more-button {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   background-color: #da1e37;
   border-radius: 10px;
   color: white;
   width: 115px;
   gap: 10px;
   margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 26px;
-    font-size: 0.7rem !important;
+  margin-top: 10px;
+  margin-left: 26px;
+  font-size: 0.7rem !important;
 }
-.ve-piller{
-  font-size: 18.5px;margin-top: -30px;text-align: left;
+
+.ve-piller {
+  font-size: 18.5px;
+  margin-top: -30px;
+  text-align: left;
 }
-.about-us-li{
+
+.about-us-li {
   list-style: disc !important;
 }
-.rainmatter-section{
-  margin-top: -130px;display: flex;gap: 30px;
+
+.rainmatter-section {
+  margin-top: -130px;
+  display: flex;
+  gap: 30px;
 }
-.founding-team-sec{
+
+.founding-team-sec {
   margin-top: -100px;
 }
-.contact-sec{
+
+.contact-sec {
   margin-top: -130px;
 }
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: inline-block;
@@ -3758,46 +3771,62 @@ line-height: 128%;
   // background-color: black;
   color: white;
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
   opacity: 1;
 }
-.partner-sec{
+
+.partner-sec {
   margin-top: -95px;
 }
-.distributor-sec{
+
+.distributor-sec {
   margin-top: 45px;
 }
-.lender-sec{
+
+.lender-sec {
   margin-top: 45px;
 }
-.investor-sec{
+
+.investor-sec {
   margin-bottom: -100px;
   margin-top: 30px;
 }
-.carousel-image{
-  width: 100%;height: 450px;
+
+.carousel-image {
+  width: 100%;
+  height: 450px;
 }
-.angle-investor-sec{
+
+.angle-investor-sec {
   margin-top: -100px;
 }
-.our-story-sec{
+
+.our-story-sec {
   margin-top: -95px;
 }
-.distributor-image{
+
+.distributor-image {
   display: none !important;
 }
-.investor-partner-img1{
-  display: none 
+
+.investor-partner-img1 {
+  display: none
 }
-.investor-partner-img{
+
+.investor-partner-img {
   display: block;
 }
-.our-partner-p1{
+
+.our-partner-p1 {
   display: none;
 }
-.footer-logo{
-  margin-left: 98px;
+
+.footer-logo {
+  margin-left: 158px;
 }
-.jd-box{
+
+.jd-box {
   margin-left: 110px;
 }
