@@ -6059,7 +6059,9 @@ form ul {
     display: none !important; }
   .footer-logo {
     width: 100%;
-    margin-left: 0px !important; } }
+    margin-left: 0px !important; }
+  .about-sec {
+    margin-top: 15px; } }
 
 #maxUserForm ul {
   width: 100%;
