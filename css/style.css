@@ -6076,7 +6076,8 @@ form ul {
     display: none !important; }
   .footer-logo {
     width: 100%;
-    margin-left: 0px !important; }
+    margin-left: 0px !important;
+    display: block !important; }
   .about-sec {
     margin-top: 15px; }
   .jd-box {
@@ -6255,7 +6256,7 @@ form ul {
   display: none; }
 
 .footer-logo {
-  margin-left: 158px; }
+  display: none; }
 
 .jd-box {
   margin-left: 110px; }
