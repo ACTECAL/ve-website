@@ -5218,7 +5218,9 @@ form ul {
   .why-ve-wrapper {
     padding: 60px 0; }
     .why-ve-wrapper h2 {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .footer-logo {
+    display: block !important; } }
 
 @media (max-width: 767px) {
   .inner-wrapper .innerpage .innercontainerwrap .teamwrap ul li .boxwrap {
