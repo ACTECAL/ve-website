@@ -3154,7 +3154,11 @@ form ul {
     background-size: 0.4166666666666667vw; }
   .slick-arrow.slick-next {
     right: -2.6041666666666665vw;
-    background-size: 0.4166666666666667vw; } }
+    background-size: 0.4166666666666667vw; }
+  .footer-logo {
+    margin-left: 265px !important; }
+  .start-up-ind-logo {
+    margin-left: 90px !important; } }
 
 @media only screen and (min-width: 1500px) and (max-width: 1919px) {
   .yellow-bg {
@@ -3658,7 +3662,11 @@ form ul {
   .know-more-button {
     margin-left: 7px !important; }
   .title-text-main {
-    margin-top: 110px !important; } }
+    margin-top: 110px !important; }
+  .footer-logo {
+    margin-left: 107px !important; }
+  .start-up-ind-logo {
+    margin-left: 38px !important; } }
 
 @media only screen and (min-width: 1121px) and (max-width: 1279px) {
   .container {
@@ -4257,7 +4265,11 @@ form ul {
     .silver-row ul.holders-list li .holder-circle img {
       max-width: 40px; }
     .silver-row ul.holders-list li .holder-circle h6 {
-      font-size: 12px; } }
+      font-size: 12px; }
+  .footer-logo {
+    margin-left: 80px !important; }
+  .start-up-ind-logo {
+    margin-left: 32px !important; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .reality-wrapper .yellow-bg .left-con ul li .box {
@@ -4589,7 +4601,9 @@ form ul {
     line-height: 63px !important; }
   .valuenable-main .title-wrap h3 {
     font-size: 48px !important;
-    line-height: 66px !important; } }
+    line-height: 66px !important; }
+  .footer-logo {
+    margin-left: 0px !important; } }
 
 @media (max-width: 991px) {
   .customer-retention-raw .solution-one-details p {
