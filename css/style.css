@@ -3664,7 +3664,9 @@ form ul {
   .title-text-main {
     margin-top: 110px !important; }
   .footer-logo {
-    margin-left: 107px !important; } }
+    margin-left: 107px !important; }
+  .start-up-ind-logo {
+    margin-left: 40px !important; } }
 
 @media only screen and (min-width: 1121px) and (max-width: 1279px) {
   .container {
@@ -3906,7 +3908,9 @@ form ul {
     font-size: 24px;
     line-height: 37px; }
   .footer-logo {
-    margin-left: 110px !important; } }
+    margin-left: 110px !important; }
+  .start-up-ind-logo {
+    margin-left: 40px; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
   .reality-wrapper .yellow-bg .title-wrap .title h3 {
