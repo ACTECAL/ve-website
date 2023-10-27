@@ -2403,7 +2403,8 @@ form ul {
             -moz-appearance: none;
             appearance: none;
             border-radius: 100px;
-            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-i; }
+            transition: border-color 0.15s ease-in-out,
+ box-shadow 0.15s ease-i; }
       .inner-wrapper .innerpage .innercontainerwrap .faqwrap .project_con {
         float: left;
         float: left;
@@ -4633,7 +4634,8 @@ form ul {
     position: absolute;
     top: 0;
     left: 0;
-    transition: z-index 0s ease, opacity 0.2s 0.1s ease, border 0.2s ease, background 0.2s ease;
+    transition: z-index 0s ease, opacity 0.2s 0.1s ease, border 0.2s ease,
+ background 0.2s ease;
     text-align: center;
     padding: 6px 10px; }
     .nav-toggle span {
@@ -6265,5 +6267,96 @@ form ul {
 
 .start-up-ind-logo {
   margin-left: 30px; }
+
+  .filter-box-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    padding: 0px 30px;
+  }
+  
+  .f-toggle-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .f-toggle-btn {
+    cursor: pointer;
+    padding: 10px 4px;
+    border-bottom: 2px solid transparent;
+    text-align: center; 
+    white-space: nowrap;
+  }
+  
+  .f-toggle-btn:hover {
+    /* border-color: #da1e37; */
+    color: #da1e37;
+  }
+  
+  .f-toggle-btn.active {
+    border-color: #da1e37;
+    font-weight: bold;
+    color: #da1e37;
+  }
+  .advisor-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .advisor-table table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .advisor-table th,
+  .advisor-table td {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .advisor-table thead th {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .advisor-table th {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .advisor-table th.scope-col {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .advisor-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .advisor-table tbody tr:hover {
+    background-color: #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  .advisor-table tbody tr:last-child td,
+  .advisor-table tbody tr:last-child th {
+    border-bottom: 3px solid #da1e37;
+  }
+
+  .table-h-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
 
 /*# sourceMappingURL=style.css.map */
