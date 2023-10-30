@@ -191,7 +191,9 @@
                            <div class="f-toggle-btn-div">
                               <div class="f-toggle-btn t-btn-01" onclick="toggleButton(this)">
                                  Advisor Details</div>
-                              <div class="f-toggle-btn t-btn-02" onclick="toggleButton(this)">
+                              <div
+                              style="display: none;"
+                              class="f-toggle-btn t-btn-02" onclick="toggleButton(this)">
                                  Customer Details</div>
                            </div>
                         </div>
@@ -1577,7 +1579,7 @@
          document.getElementById('customerMobileNumber').value = '';
          document.getElementById('customerEmail').value = '';
       }
-
+      
       function getAllInputValues() {
          let inputs = document.querySelectorAll('#otp input');
          let values = [];
