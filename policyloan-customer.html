@@ -1448,6 +1448,7 @@
             type: 'POST',
             url: link,
             data: {
+               ...payload,
                customerMobileNumber
             },
             dataType: 'json',
@@ -1467,31 +1468,6 @@
             .fail(error => {
                alert(`Something went wrong`);
             });
-
-         // let link = `https://microservice.valuenable.in/api/loan-details`;
-         // $.ajax({
-         //       type: 'POST',
-         //       url: link,
-         //       data: obj,
-         //       dataType: 'json',
-         //       encode: true,
-         //    })
-         //    .done(data => {
-         //       alert('You request is successfully submitted, our Customer Representative will get back to you shortly.');
-         //       companyName = null;
-         //       policyNumber = null;
-         //       productName = null;
-         //       surrenderValue = null;
-         //       customerFirstName = null;
-         //       customerLastName = null;
-         //       customerMobileNumber = null;
-         //       customerEmail = null
-         //       // (customerDOB.value = null)
-         //    })
-         //    .fail(error => {
-         //       alert(`Something went wrong`);
-         //    });
-
       });
 
       $('#advisorForm').submit(event => {
@@ -1543,7 +1519,8 @@
             type: 'POST',
             url: link,
             data: {
-               customerMobileNumber: advisorMobileNumber
+               customerMobileNumber: advisorMobileNumber,
+               ...payload
             },
             dataType: 'json',
             encode: true,
