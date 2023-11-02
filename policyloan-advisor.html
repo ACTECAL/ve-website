@@ -1110,6 +1110,15 @@
                               Validate
                            </button>
                         </div>
+                        <div class="resend-otp-div">
+                           <div class="resend-text">
+                              Not received your OTP ?
+                           </div>
+                           <div class="timer-text-div">
+                              <span id="resend-button" onclick="resendOtp()"> Resend OTP </span>
+                              <span id="timer" style="display: none;">00:30</span>
+                           </div>
+                        </div>
                         <div></div>
                      </div>
                   </div>
@@ -1395,6 +1404,9 @@
       $('#maxUserForm').submit(event => {
          // console.log("maxUserForm submit called");
          event.preventDefault();
+
+         startTimer();
+
          let companyName = document.getElementById('companyName').value;
          let customerName =
             document.getElementById('customerName').value;
@@ -1476,8 +1488,10 @@
       });
 
       $('#advisorForm').submit(event => {
-         console.log("Advisor Form submit called");
          event.preventDefault();
+
+         startTimer();
+
          let advisorCompanyName = document.getElementById('advisorCompanyName').value;
          let advisorName =
             document.getElementById('advisorName').value;
@@ -1487,15 +1501,15 @@
          let advisorEmail = document.getElementById('advisorEmail').value;
          let advisorPinCode = document.getElementById('advisorPinCode').value;
 
-         if (advisorCompanyName === 'Insurance Company*') {
-            alert("Please select a company.");
-            return;
-         }
-
          if (advisorCompanyName == '' ||
             advisorName == '' || advisorMobileNumber == '' || advisorPinCode == ''
          ) {
             alert("Please ensure all required fields are filled and valid in order for us to process your request.");
+            return;
+         }
+
+         if (advisorCompanyName === 'Associated Insurance Company*') {
+            alert("Please select a company.");
             return;
          }
 
@@ -1599,6 +1613,50 @@
          }
       }
 
+      function resendOtp() {
+
+         startTimer();
+
+         let mobileNumber;
+
+         if (payload.detailsFor === 'customer') {
+            mobileNumber = payload.customerMobileNumber;
+         } else {
+            mobileNumber = payload.mobileNumber;
+         }
+
+         // console.log("Testing resend otp", mobileNumber);
+
+         let newPayload = {
+            mobileNumber,
+            detailsFor: "resendOtp"
+         }
+
+         let link = `https://microservice.valuenable.in/content-engine/generate-otp`
+
+         $.ajax({
+            type: 'POST',
+            url: link,
+            data: {
+               ...newPayload
+            },
+            dataType: 'json',
+            encode: true,
+         })
+            .done(data => {
+               // console.log("data", data);
+               if (data.status === "status") {
+                  $('#otpModal').modal('show');
+               } else {
+                  alert("Something went wrong");
+               }
+            })
+            .fail(error => {
+               alert(`Something went wrong`);
+            });
+
+      }
+
       function otpVerification() {
          const inputs = getAllInputValues();
          const otp = inputs.join('');
@@ -1663,6 +1721,45 @@
             advisorFaqsDivs.style.display = 'none';
             customerFaqsDivs.style.display = 'block';
          }
+      }
+
+
+      let initialCountdown = 15;
+      let countdown = initialCountdown;
+      let timerInterval;
+
+      function updateTimer() {
+         const timerElement = document.getElementById('timer');
+         const resendButtonElement = document.getElementById('resend-button');
+
+         if (countdown >= 0) {
+            const minutes = Math.floor(countdown / 60);
+            const seconds = countdown % 60;
+            const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            timerElement.textContent = formattedTime;
+            countdown--;
+         } else {
+            timerElement.style.display = 'none';
+            resendButtonElement.style.display = 'inline';
+            clearInterval(timerInterval);
+         }
+      }
+
+      function startTimer() {
+         const timerElement = document.getElementById('timer');
+         const resendButtonElement = document.getElementById('resend-button');
+
+         countdown = initialCountdown;
+
+         timerElement.style.display = 'inline';
+         resendButtonElement.style.display = 'none';
+
+         if (timerInterval) {
+            clearInterval(timerInterval);
+         }
+
+         updateTimer();
+         timerInterval = setInterval(updateTimer, 1000);
       }
 
       toggleButton(document.querySelector(".f-toggle-btn.t-btn-01"));
