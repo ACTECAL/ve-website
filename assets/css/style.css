@@ -3146,3 +3146,7 @@ span.prize-green {
   font-size: 16px;
   font-weight: 600;
 }
+
+.inner-wrapper .innerpage .innercontainerwrap p {
+    text-align: left !important;
+}

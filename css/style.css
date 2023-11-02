@@ -6382,4 +6382,8 @@ form ul {
   font-weight: 600;
 }
 
+.inner-wrapper .innerpage .innercontainerwrap p {
+    text-align: left !important;
+}
+
 /*# sourceMappingURL=style.css.map */
