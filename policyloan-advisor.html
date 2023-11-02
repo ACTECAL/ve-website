@@ -191,9 +191,7 @@
                            <div class="f-toggle-btn-div">
                               <div class="f-toggle-btn t-btn-01" onclick="toggleButton(this)">
                                  Advisor Details</div>
-                              <div
-                              style="display: none;"
-                              class="f-toggle-btn t-btn-02" onclick="toggleButton(this)">
+                              <div style="display: none;" class="f-toggle-btn t-btn-02" onclick="toggleButton(this)">
                                  Customer Details</div>
                            </div>
                         </div>
@@ -1131,7 +1129,8 @@
                      <div class="card p-2 text-center" style='width: 765px'>
                         <h6
                            style='color: #000; font-size: 18px; font-weight: 600; text-align: center; margin-bottom: 20px'>
-                           Thank you for visiting the ValuEnable policy loan platform. We acknowledge your inquiry. Our customer support team will connect you shortly.</h6>
+                           Thank you for visiting the ValuEnable policy loan platform. We acknowledge your inquiry. Our
+                           customer support team will connect you shortly.</h6>
                         <h5 class="mt-2">
                            <b>-Team ValuEnable</b>
                         </h5>
@@ -1279,63 +1278,60 @@
          let regex = new RegExp("^[6-9][0-9]{9}$");
 
          if (mobile_number == null) {
-            return "false";
+            return false;
          }
 
-         if (regex.test(mobile_number) == true) {
-            return "true";
-         } else {
-            return "false";
-         }
+         return regex.test(mobile_number);
       }
 
       function validatePhoneNumber(elementID) {
-         let mobile_number = document.getElementById(elementID).value;
-         let isValid = isValid_Mobile_Number(mobile_number);
+         let mobileInput = document.getElementById(elementID);
+         let mobile_number = mobileInput.value.trim();
 
-         // console.log("Mobile ", mobile_number, isValid);
-         if (isValid == "false") {
-            document.getElementById(elementID).classList.add("input-error");
-            document.getElementById(elementID).setCustomValidity("Please enter a valid mobile number");
-            document.getElementById(elementID).reportValidity();
+         if (mobile_number === '' || !isValid_Mobile_Number(mobile_number)) {
+            mobileInput.classList.add("input-error");
+            mobileInput.setCustomValidity("Please enter a valid mobile number");
+            mobileInput.reportValidity();
+            return false;
          } else {
-            document.getElementById(elementID).classList.remove("input-error");
-            document.getElementById(elementID).setCustomValidity("");
+            mobileInput.classList.remove("input-error");
+            mobileInput.setCustomValidity("");
          }
 
          if (mobile_number.length > 0 && mobile_number.length < 10) {
-            document.getElementById(elementID).classList.add("input-error");
-            document.getElementById(elementID).setCustomValidity("Please enter at least 10 digits");
-            document.getElementById(elementID).reportValidity();
+            mobileInput.classList.add("input-error");
+            mobileInput.setCustomValidity("Please enter at least 10 digits");
+            mobileInput.reportValidity();
+            return false;
          }
+
+         return true;
       }
+
 
       function isValid_Email(email) {
          let regex = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
 
          if (email == null) {
-            return "false";
+            return false;
          }
 
-         if (regex.test(email) == true) {
-            return "true";
-         } else {
-            return "false";
-         }
+         return regex.test(email);
       }
 
       function validateEmail(elementID) {
          let email = document.getElementById(elementID).value;
          let isValid = isValid_Email(email);
 
-         // console.log("Email ", email, isValid);
-         if (isValid == "false") {
+         if (!isValid) {
             document.getElementById(elementID).classList.add("input-error");
             document.getElementById(elementID).setCustomValidity("Please enter a valid email address");
             document.getElementById(elementID).reportValidity();
+            return false;
          } else {
             document.getElementById(elementID).classList.remove("input-error");
             document.getElementById(elementID).setCustomValidity("");
+            return true;
          }
       }
 
@@ -1367,33 +1363,31 @@
       //    }
       // }
 
-      function validatePincode(elementID) {
-         let pincode = document.getElementById(elementID).value;
+      function isValid_Pincode(pincode) {
          let regex = new RegExp("^[1-9][0-9]{5}$");
 
          if (pincode == null) {
-            return "false";
+            return false;
          }
 
-         if (regex.test(pincode) == true) {
-            return "true";
-         } else {
-            return "false";
-         }
+         return regex.test(pincode);
       }
 
       function validatePincodeInput(elementID) {
-         let pincode = document.getElementById(elementID).value;
-         let isValid = validatePincode(elementID);
+         let pincodeInput = document.getElementById(elementID);
+         let pincode = pincodeInput.value.trim();
 
-         if (isValid == "false") {
-            document.getElementById(elementID).classList.add("input-error");
-            document.getElementById(elementID).setCustomValidity("Please enter a valid pincode");
-            document.getElementById(elementID).reportValidity();
+         if (pincode === '' || !isValid_Pincode(pincode)) {
+            pincodeInput.classList.add("input-error");
+            pincodeInput.setCustomValidity("Please enter a valid pincode");
+            pincodeInput.reportValidity();
+            return false;
          } else {
-            document.getElementById(elementID).classList.remove("input-error");
-            document.getElementById(elementID).setCustomValidity("");
+            pincodeInput.classList.remove("input-error");
+            pincodeInput.setCustomValidity("");
          }
+
+         return true;
       }
 
       let payload = {};
@@ -1409,10 +1403,27 @@
          ).value;
          let customerEmail = document.getElementById('customerEmail').value;
 
+         if (companyName === 'Insurance Company*') {
+            alert("Please select a company.");
+            return;
+         }
+
          if (companyName == '' ||
-            customerName == '' || customerMobileNumber == '') {
-            alert("Kindly ensure all the relevant fields are filled in order for us to  process your request.");
-            event.preventDefault();
+            customerName == '' || customerMobileNumber == ''
+         ) {
+            alert("Please ensure all required fields are filled and valid in order for us to process your request.");
+            return;
+         }
+
+         if (customerEmail !== '') {
+            if (!validateEmail('customerEmail')) {
+               alert("Please enter a valid email address");
+               return;
+            }
+         }
+
+         if (!validatePhoneNumber('customerMobileNumber')) {
+            alert("Please enter a valid mobile number");
             return;
          }
 
@@ -1450,9 +1461,6 @@
             },
             dataType: 'json',
             encode: true,
-            headers: {
-               'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYxLCJ1c2VyIjp7Im5hbWUiOiJNaXRoaWwgU2VqcGFsIiwiZW1haWwiOiJtaXRoaWxAdmFsdWVuYWJsZS5pbiIsInJvbGVzIjpbIkFETUlOIl0sImNvbXBhbnkiOiJWQUxVRU5BQkxFIiwiY29tcGFueUlkIjo1fSwiaWF0IjoxNjk4Mzc1ODIwLCJleHAiOjE2OTgzOTc0MjB9.Vb-R6YBK3upHVAGPP2hBv1yA2Q-_HJ980Iv1HVgfQPA'
-            }
          })
             .done(data => {
                // console.log("data", data);
@@ -1479,10 +1487,32 @@
          let advisorEmail = document.getElementById('advisorEmail').value;
          let advisorPinCode = document.getElementById('advisorPinCode').value;
 
+         if (advisorCompanyName === 'Insurance Company*') {
+            alert("Please select a company.");
+            return;
+         }
+
          if (advisorCompanyName == '' ||
-            advisorName == '' || advisorMobileNumber == '' || advisorPinCode == '') {
-            alert("Kindly ensure all the relevant fields are filled in order for us to  process your request.");
-            event.preventDefault();
+            advisorName == '' || advisorMobileNumber == '' || advisorPinCode == ''
+         ) {
+            alert("Please ensure all required fields are filled and valid in order for us to process your request.");
+            return;
+         }
+
+         if (advisorEmail !== '') {
+            if (!validateEmail('advisorEmail')) {
+               alert("Please enter a valid email address");
+               return;
+            }
+         }
+
+         if (!validatePhoneNumber('advisorMobileNumber')) {
+            alert("Please enter a valid mobile number");
+            return;
+         }
+
+         if (!validatePincodeInput('advisorPinCode')) {
+            alert("Please enter a valid pincode");
             return;
          }
 
@@ -1521,9 +1551,6 @@
             },
             dataType: 'json',
             encode: true,
-            headers: {
-               'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYxLCJ1c2VyIjp7Im5hbWUiOiJNaXRoaWwgU2VqcGFsIiwiZW1haWwiOiJtaXRoaWxAdmFsdWVuYWJsZS5pbiIsInJvbGVzIjpbIkFETUlOIl0sImNvbXBhbnkiOiJWQUxVRU5BQkxFIiwiY29tcGFueUlkIjo1fSwiaWF0IjoxNjk4Mzc1ODIwLCJleHAiOjE2OTgzOTc0MjB9.Vb-R6YBK3upHVAGPP2hBv1yA2Q-_HJ980Iv1HVgfQPA'
-            }
          })
             .done(data => {
                // console.log("data", data);
@@ -1588,9 +1615,6 @@
             },
             dataType: 'json',
             encode: true,
-            headers: {
-               'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjcsInVzZXIiOnsibmFtZSI6IkkgQU0gQURNSU4iLCJlbWFpbCI6ImFkbWluYWRtaW5AZ21haWwuY29tIiwicm9sZXMiOlsiQURNSU4iXSwiY29tcGFueSI6IlZBTFVFTkFCTEUiLCJjb21wYW55SWQiOjV9LCJpYXQiOjE2OTgzODYwMjQsImV4cCI6MTY5ODQwNzYyNH0.CZx0JM-O89SGCUBNJyQsh2JpDMt8-839s_416xnE70Y'
-            }
          })
             .done(data => {
                // console.log("data", data);
