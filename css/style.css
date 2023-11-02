@@ -6358,4 +6358,28 @@ form ul {
     text-align: center;
   }
 
+  .resend-otp-div {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+.timer-text-div{
+  margin-left: 10px;
+}
+
+.timer {
+   font-size: 16px;
+   color: #555;
+}
+
+#resend-button{
+  color: #da1e37;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=style.css.map */

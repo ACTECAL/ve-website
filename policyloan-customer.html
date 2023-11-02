@@ -189,9 +189,7 @@
 
                         <div class="filter-box-div">
                            <div class="f-toggle-btn-div">
-                              <div 
-                              style="display: none;"
-                              class="f-toggle-btn t-btn-01" onclick="toggleButton(this)">
+                              <div style="display: none;" class="f-toggle-btn t-btn-01" onclick="toggleButton(this)">
                                  Advisor Details</div>
                               <div class="f-toggle-btn t-btn-02" onclick="toggleButton(this)">
                                  Customer Details</div>
@@ -1112,6 +1110,15 @@
                               Validate
                            </button>
                         </div>
+                        <div class="resend-otp-div">
+                           <div class="resend-text">
+                              Not received your OTP ?
+                           </div>
+                           <div class="timer-text-div">
+                              <span id="resend-button" onclick="resendOtp()"> Resend OTP </span>
+                              <span id="timer" style="display: none;">00:30</span>
+                           </div>
+                        </div>
                         <div></div>
                      </div>
                   </div>
@@ -1131,7 +1138,8 @@
                      <div class="card p-2 text-center" style='width: 765px'>
                         <h6
                            style='color: #000; font-size: 18px; font-weight: 600; text-align: center; margin-bottom: 20px'>
-                           Thank you for visiting the ValuEnable policy loan platform. We acknowledge your inquiry. Our customer support team will connect you shortly.</h6>
+                           Thank you for visiting the ValuEnable policy loan platform. We acknowledge your inquiry. Our
+                           customer support team will connect you shortly.</h6>
                         <h5 class="mt-2">
                            <b>-Team ValuEnable</b>
                         </h5>
@@ -1398,9 +1406,25 @@
 
       let payload = {};
 
+      // $('#otpModal').modal('show');
+
       $('#maxUserForm').submit(event => {
          // console.log("maxUserForm submit called");
          event.preventDefault();
+
+         const timerElement = document.getElementById('timer');
+         const resendButtonElement = document.getElementById('resend-button');
+
+         timerElement.style.display = 'inline';
+         resendButtonElement.style.display = 'none';
+
+         countdown = 15;
+         updateTimer();
+         timerInterval = setInterval(updateTimer, 1000);
+
+         const inputs = getAllInputValues();
+         const otp = inputs.join('');
+
          let companyName = document.getElementById('companyName').value;
          let customerName =
             document.getElementById('customerName').value;
@@ -1450,9 +1474,6 @@
             },
             dataType: 'json',
             encode: true,
-            headers: {
-               'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYxLCJ1c2VyIjp7Im5hbWUiOiJNaXRoaWwgU2VqcGFsIiwiZW1haWwiOiJtaXRoaWxAdmFsdWVuYWJsZS5pbiIsInJvbGVzIjpbIkFETUlOIl0sImNvbXBhbnkiOiJWQUxVRU5BQkxFIiwiY29tcGFueUlkIjo1fSwiaWF0IjoxNjk4Mzc1ODIwLCJleHAiOjE2OTgzOTc0MjB9.Vb-R6YBK3upHVAGPP2hBv1yA2Q-_HJ980Iv1HVgfQPA'
-            }
          })
             .done(data => {
                // console.log("data", data);
@@ -1470,6 +1491,17 @@
       $('#advisorForm').submit(event => {
          console.log("Advisor Form submit called");
          event.preventDefault();
+
+         const timerElement = document.getElementById('timer');
+         const resendButtonElement = document.getElementById('resend-button');
+
+         timerElement.style.display = 'inline';
+         resendButtonElement.style.display = 'none';
+
+         countdown = 15;
+         updateTimer();
+         timerInterval = setInterval(updateTimer, 1000);
+
          let advisorCompanyName = document.getElementById('advisorCompanyName').value;
          let advisorName =
             document.getElementById('advisorName').value;
@@ -1521,9 +1553,6 @@
             },
             dataType: 'json',
             encode: true,
-            headers: {
-               'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjYxLCJ1c2VyIjp7Im5hbWUiOiJNaXRoaWwgU2VqcGFsIiwiZW1haWwiOiJtaXRoaWxAdmFsdWVuYWJsZS5pbiIsInJvbGVzIjpbIkFETUlOIl0sImNvbXBhbnkiOiJWQUxVRU5BQkxFIiwiY29tcGFueUlkIjo1fSwiaWF0IjoxNjk4Mzc1ODIwLCJleHAiOjE2OTgzOTc0MjB9.Vb-R6YBK3upHVAGPP2hBv1yA2Q-_HJ980Iv1HVgfQPA'
-            }
          })
             .done(data => {
                // console.log("data", data);
@@ -1572,6 +1601,57 @@
          }
       }
 
+      function resendOtp() {
+         const timerElement = document.getElementById('timer');
+         const resendButtonElement = document.getElementById('resend-button');
+
+         timerElement.style.display = 'inline';
+         resendButtonElement.style.display = 'none';
+
+         countdown = 15;
+         updateTimer();
+         timerInterval = setInterval(updateTimer, 1000);
+
+         let mobileNumber;
+
+         if (payload.detailsFor === 'customer') {
+            mobileNumber = payload.customerMobileNumber;
+         } else {
+            mobileNumber = payload.mobileNumber;
+         }
+
+         console.log("Testing resend otp", mobileNumber);
+
+         let newPayload = {
+            mobileNumber,
+            detailsFor: "resendOtp"
+         }
+
+         let link = `https://microservice.valuenable.in/content-engine/generate-otp`
+
+         $.ajax({
+            type: 'POST',
+            url: link,
+            data: {
+               ...newPayload
+            },
+            dataType: 'json',
+            encode: true,
+         })
+            .done(data => {
+               // console.log("data", data);
+               if (data.status === "status") {
+                  $('#otpModal').modal('show');
+               } else {
+                  alert("Something went wrong");
+               }
+            })
+            .fail(error => {
+               alert(`Something went wrong`);
+            });
+
+      }
+
       function otpVerification() {
          const inputs = getAllInputValues();
          const otp = inputs.join('');
@@ -1588,9 +1668,6 @@
             },
             dataType: 'json',
             encode: true,
-            headers: {
-               'x-access-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjcsInVzZXIiOnsibmFtZSI6IkkgQU0gQURNSU4iLCJlbWFpbCI6ImFkbWluYWRtaW5AZ21haWwuY29tIiwicm9sZXMiOlsiQURNSU4iXSwiY29tcGFueSI6IlZBTFVFTkFCTEUiLCJjb21wYW55SWQiOjV9LCJpYXQiOjE2OTgzODYwMjQsImV4cCI6MTY5ODQwNzYyNH0.CZx0JM-O89SGCUBNJyQsh2JpDMt8-839s_416xnE70Y'
-            }
          })
             .done(data => {
                // console.log("data", data);
@@ -1642,6 +1719,27 @@
       }
 
       toggleButton(document.querySelector(".f-toggle-btn.t-btn-02"));
+
+      let countdown = 15;
+      let timerInterval;
+
+      function updateTimer() {
+         const timerElement = document.getElementById('timer');
+         const resendButtonElement = document.getElementById('resend-button');
+
+         if (countdown > 0) {
+            const minutes = Math.floor(countdown / 60);
+            const seconds = countdown % 60;
+            const formattedTime = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            timerElement.textContent = formattedTime;
+            countdown--;
+         } else {
+            timerElement.style.display = 'none';
+            resendButtonElement.style.display = 'inline';
+            clearInterval(timerInterval);
+         }
+      }
+
 
    </script>
 
