@@ -1462,7 +1462,7 @@
 
          let link = `https://microservice.valuenable.in/content-engine/generate-otp`
 
-         $('#otpModal').modal('show');
+         // $('#otpModal').modal('show');
 
          $.ajax({
             type: 'POST',
@@ -1477,7 +1477,8 @@
             .done(data => {
                // console.log("data", data);
                if (data.status === "success") {
-                  $('#otpModal').modal('show');
+                  // $('#otpModal').modal('show');
+                  $('#sentMessageModal').modal('show');
                } else {
                   // alert("Something went wrong");
                }
@@ -1572,7 +1573,8 @@
             .done(data => {
                // console.log("data", data);
                if (data.status === "success") {
-                  $('#otpModal').modal('show');
+                  // $('#otpModal').modal('show');
+                  $('#sentMessageModal').modal('show');
                } else {
                   // alert("Something went wrong");
                }
@@ -1583,7 +1585,7 @@
       });
 
       function resetField() {
-         document.getElementById('advisorCompanyName').value = 'Insurance Company*';
+         document.getElementById('advisorCompanyName').value = 'Associated Insurance Company*';
          document.getElementById('advisorName').value = '';
          document.getElementById('advisorMobileNumber').value = '';
          document.getElementById('advisorEmail').value = '';
@@ -1680,9 +1682,9 @@
             .done(data => {
                // console.log("data", data);
                if (data.status === "success") {
-                  $('#otpModal').modal('hide');
+                  // $('#otpModal').modal('hide');
                   resetOTPInputField();
-                  $('#sentMessageModal').modal('show');
+                  // $('#sentMessageModal').modal('show');
                   payload = {};
                } else {
                   alert("Please enter a valid OTP");
