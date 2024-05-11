@@ -6382,5 +6382,49 @@ form ul {
 .inner-wrapper .innerpage .innercontainerwrap p {
     text-align: left !important;
 }
+.reason-heading{
+  color: #000;
+  font-weight: 300;
+  font-size: 13px;
+}
+.reason-head{
+  color: #fff;
+  font-weight: 800;
+  font-size: 13px;
+  margin-top: 33px;
+}
+.reason-heading-head{
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+}
+.reason-container {
+  background: #fff; 
+  border: 2px solid #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 37px;
+}
+
+.sub-container{
+  border: 2px solid #f7f7f7;
+  margin-top: 16px;
+  height: 99px;
+  background-image: url(images/Downpayments.png);
+  background-size: cover;
+  background-position: center;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        gap: 9px;
+        border-radius: 10px;
+}
+
+
+.heading-content{
+  gap: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
