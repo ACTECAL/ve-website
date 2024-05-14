@@ -305,6 +305,22 @@
 	.policy-serviving-detail {
 	    flex-wrap: wrap;
 	}
+	.panel-responsive{
+		display: block !important;
+	}
+	.submit-btn-details{
+		text-align: center;
+		color: red;
+		margin-top: 23px;
+		display: block !important;
+	  }
+	.policy-form-box-responshive{
+		display: none !important;
+	}
+	.filter-box{
+box-shadow: none !important;
+margin-top: 34px !important;
+	}
 }
 @media screen and (max-width: 480px){
 	.login-form .button-box {
@@ -350,7 +366,23 @@
 	    padding: 9px 5px;
 	    font-size: 13px;
 	}
-
+	.panel-responsive{
+		display: block !important;
+	}
+	.submit-btn-details{
+		text-align: center;
+		color: red;
+		margin-top: 23px;
+		display: block !important;
+	  }
+	.policy-form-box-responshive{
+		display: none !important;
+	}
+	.filter-box{
+		box-shadow: none !important;
+		margin-top: 34px !important;
+			}
+	
 }
 @media screen and (max-width: 380px){
 	.policy-box {
@@ -371,5 +403,20 @@
 	.policy-serviving-detail .cardbox {
 	    width: 100%;
 	}
-
+	.panel-responsive{
+		display: block !important;
+	}
+	.policy-form-box-responshive{
+		display: none !important;
+	}
+	.filter-box{
+		box-shadow: none !important;
+		margin-top: 9px !important;
+			}
+			.submit-btn-details{
+				text-align: center;
+				color: red;
+				margin-top: 23px;
+				display: block !important;
+			  }
 }

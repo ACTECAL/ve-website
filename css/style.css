@@ -6426,5 +6426,9 @@ form ul {
 .heading-content{
   gap: 40px;
 }
-
-/*# sourceMappingURL=style.css.map */
+.panel-responsive{
+  display: none ;
+}
+.submit-btn-details{
+  display: none;
+}
