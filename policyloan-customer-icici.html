@@ -111,7 +111,6 @@
           line-height: 1;
           margin-top: 37px;
         }
-
       }
 
       @media (max-width: 768px) {
@@ -125,7 +124,6 @@
         .footter-sec {
           text-align: center;
         }
-
       }
 
       .FAQ-pointer {
@@ -138,10 +136,9 @@
         margin-right: 15px;
       }
 
-      .FAQ {  
+      .FAQ {
         display: flex;
       }
-      
     </style>
   </head>
   <!-- Body -->
@@ -219,161 +216,144 @@
                   </div>
                 </div>
               </div>
-              <div
-              class=" submit-btn-details"
-            
-            >
-              Submit Your Details
-            </div>
-<div class="panel-responsive">
-  <div class="filter-box">
-    <!-- <button class="accordion">Customer Details
+              <div class="submit-btn-details">Submit Your Details</div>
+              <div class="panel-responsive">
+                <div class="filter-box">
+                  <!-- <button class="accordion">Customer Details
             </button> -->
-    <div class="panel" style="display: block">
-      <div class="formbox-policy">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <select class="form-control" id="companysName">
-                <option>Insurance Company*</option>
-              
-              
-                <option>
-                  ICICI Prudential Life Insurance Co. Ltd
-                </option>
-              
-              </select>
-            </div>
-          </div>
+                  <div class="panel" style="display: block">
+                    <div class="formbox-policy">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <select class="form-control" id="companysName">
+                              <option>Insurance Company*</option>
 
-          <div class="col-md-12">
-            <div class="form-group">
-              <select class="form-control" id="prodctsType">
-                <option>Product Type*</option>
-                <option>ICICI Pru Wealth Builder II</option>
-                <option>ICICI Pru Elite Wealth II</option>
-                <option>ICICI Pru LifeTime Classic</option>
-                <option>ICICI Pru Guaranteed Wealth Protector</option>
-                <option>ICICI Pru Elite Life Super</option>
-              </select>
-            </div>
-          </div>
+                              <option>
+                                ICICI Prudential Life Insurance Co. Ltd
+                              </option>
+                            </select>
+                          </div>
+                        </div>
 
-          <div class="mt-3 col-md-12 mb-2">
-            <div class="row">
-              <div class="col-md-4 col-sm-6">
-                <div class="form-group">
-                  <input
-                    name="user"
-                    placeholder="Customer Name*"
-                    type="text"
-                    class="form-control"
-                    pattern="[A-Za-z]"
-                    title="Only text are allowed"
-                    id="customersName"
-                  />
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <select class="form-control" id="prodctsType">
+                              <option>Product Type*</option>
+                              <option>ICICI Pru Wealth Builder II</option>
+                              <option>ICICI Pru Elite Wealth II</option>
+                              <option>ICICI Pru LifeTime Classic</option>
+                              <option>
+                                ICICI Pru Guaranteed Wealth Protector
+                              </option>
+                              <option>ICICI Pru Elite Life Super</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="mt-3 col-md-12 mb-2">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  name="user"
+                                  placeholder="Customer Name*"
+                                  type="text"
+                                  class="form-control"
+                                  pattern="[A-Za-z]"
+                                  title="Only text are allowed"
+                                  id="customersName"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  name="user"
+                                  placeholder="Mobile*"
+                                  type="text"
+                                  class="form-control"
+                                  id="customersMobileNumber"
+                                  onkeyup="validatePhoneNumber('customersMobileNumber')"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  name="user"
+                                  placeholder="Email*"
+                                  type="text"
+                                  class="form-control"
+                                  id="customersEmail"
+                                  onkeyup="validateEmail('customersEmail')"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mt-3 col-md-12 mb-2">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  name="user"
+                                  placeholder="DOB*"
+                                  type="date"
+                                  class="form-control"
+                                  id="customersDOB"
+                                  onkeyup="validateEmail('customersDOB')"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                              <div
+                                class="form-group"
+                                style="display: flex; align-items: center"
+                              >
+                                <input
+                                  name="user"
+                                  type="file"
+                                  style="display: none"
+                                  id="attachment"
+                                  onchange="handleFileUpload(this.files)"
+                                />
+
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Upload Unit statement"
+                                  id="selectedFileName"
+                                />
+                                <span onclick="openFileUploader()"
+                                  ><i
+                                    class="fa fa-upload"
+                                    aria-hidden="true"
+                                  ></i
+                                ></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <form id="maxUsersForm">
+                    <!-- data-bs-toggle="modal"  data-bs-target="#otpModal" -->
+                    <div style="display: flex; justify-content: center">
+                      <button
+                        type="submit"
+                        class="form-control btn-main submit-btn"
+                        style="padding: 10px 60px; font-size: 20px"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="form-group">
-                  <input
-                    name="user"
-                    placeholder="Mobile*"
-                    type="text"
-                    class="form-control"
-                    id="customersMobileNumber"
-                    onkeyup="validatePhoneNumber('customersMobileNumber')"
-                  />
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                <div class="form-group">
-                  <input
-                    name="user"
-                    placeholder="Email*"
-                    type="text"
-                    class="form-control"
-                    id="customersEmail"
-                    onkeyup="validateEmail('customersEmail')"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-3 col-md-12 mb-2">
-            <div class="row">
-              <div class="col-md-4 col-sm-6">
-                <div class="form-group">
-                  <input
-                    name="user"
-                    placeholder="DOB*"
-                    type="date"
-                    class="form-control"
-                    id="customersDOB"
-                    onkeyup="validateEmail('customersDOB')"
-                
-                  />
-                </div>
-              </div>
-
-              <div class="col-md-4 col-sm-6">
-                <div
-                  class="form-group"
-                  style="display: flex; align-items: center"
-                >
-                  <input
-                    name="user"
-                    type="file"
-                    style="display: none"
-                    id="attachment"
-                    onchange="handleFileUpload(this.files)"
-                  />
-
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Upload Unit statement"
-                    id="selectedFileName"
-                  />
-                  <span onclick="openFileUploader()"
-                    ><i
-                      class="fa fa-upload"
-                      aria-hidden="true"
-                    ></i
-                  ></span>
-                </div>
-              </div>
-           
-        
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <form id="maxUsersForm">
-      <!-- data-bs-toggle="modal"  data-bs-target="#otpModal" -->
-      <div style="display: flex; justify-content: center">
-        <button
-          type="submit"
-          class="form-control btn-main submit-btn"
-          style="padding: 10px 60px; font-size: 20px"
-        >
-          Submit
-        </button>
-      </div>
-    </form>
-  </div>
-
-
-
-
-
-
-
-</div>
-              
 
               <div class="row reason-container">
                 <div>
@@ -429,7 +409,7 @@
                 </div>
               </div>
 
-              <div class="row reason-container" >
+              <div class="row reason-container">
                 <!-- style="width: 90%" -->
                 <div>
                   <h1 class="reason-heading-head">
@@ -437,9 +417,8 @@
                     loan
                   </h1>
                 </div>
-                <div 
-                style='display: flex; flex-wrap: wrap;'>
-                <!-- class="row" -->
+                <div style="display: flex; flex-wrap: wrap">
+                  <!-- class="row" -->
                   <div
                     class="col-sm-2 sub-container"
                     style="background-image: url(images/Downpayments.svg)"
@@ -736,12 +715,9 @@
                               <div class="form-group">
                                 <select class="form-control" id="companyName">
                                   <option>Insurance Company*</option>
-                                
-                                
                                   <option>
                                     ICICI Prudential Life Insurance Co. Ltd
                                   </option>
-                                
                                 </select>
                               </div>
                             </div>
@@ -753,7 +729,9 @@
                                   <option>ICICI Pru Wealth Builder II</option>
                                   <option>ICICI Pru Elite Wealth II</option>
                                   <option>ICICI Pru LifeTime Classic</option>
-                                  <option>ICICI Pru Guaranteed Wealth Protector</option>
+                                  <option>
+                                    ICICI Pru Guaranteed Wealth Protector
+                                  </option>
                                   <option>ICICI Pru Elite Life Super</option>
                                 </select>
                               </div>
@@ -806,14 +784,13 @@
                                 <div class="col-md-4 col-sm-6">
                                   <div class="form-group">
                                     <input
-                                    name="user"
-                                    placeholder="DOB*"
-                                    type="date"
-                                    class="form-control"
-                                    id="customerDOB"
-                                    onkeyup="validateEmail('customerDOB')"
-                                
-                                  />
+                                      name="user"
+                                      placeholder="DOB*"
+                                      type="date"
+                                      class="form-control"
+                                      id="customerDOB"
+                                      onkeyup="validateEmail('customerDOB')"
+                                    />
                                   </div>
                                 </div>
 
@@ -844,7 +821,6 @@
                                     ></span>
                                   </div>
                                 </div>
-                           
                               </div>
                             </div>
                           </div>
@@ -1815,96 +1791,89 @@
         </div>
       </div>
 
-
-<!-- responsive form modal -->
-<div
-class="modal fade"
-id="resOtpModal"
-tabindex="-1"
-role="dialog"
-aria-labelledby="otpModalLabel"
-aria-hidden="true"
->
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-body">
-      <div class="position-relative" id="otp-div">
-        <div class="card p-2 text-center">
-          <h6 style="font-size: 18px; font-weight: 600; color: #2e2e2e">
-            Please enter the one time password <br />
-            to verify your phone number
-          </h6>
-          <div
-            id="resOtp"
-            class="inputs d-flex flex-row justify-content-center mt-3"
-          >
-            <input
-              class="m-2 text-center form-control rounded"
-              type="text"
-              id="firstInput"
-              maxlength="1"
-            />
-            <input
-              class="m-2 text-center form-control rounded"
-              type="text"
-              id="secondInput"
-              maxlength="1"
-            />
-            <input
-              class="m-2 text-center form-control rounded"
-              type="text"
-              id="thirdInput"
-              maxlength="1"
-            />
-            <input
-              class="m-2 text-center form-control rounded"
-              type="text"
-              id="fourthInput"
-              maxlength="1"
-            />
-            <input
-              class="m-2 text-center form-control rounded"
-              type="text"
-              id="fifthInput"
-              maxlength="1"
-            />
-            <input
-              class="m-2 text-center form-control rounded"
-              type="text"
-              id="sixthInput"
-              maxlength="1"
-            />
-          </div>
-          <div class="mt-4" style="display: block">
-            <button
-              class="btn btn-danger px-4 validate"
-              onclick="otpResVerification()"
-            >
-              Validate
-            </button>
-          </div>
-          <div class="resend-otp-div">
-            <div class="resend-text">Not received your OTP ?</div>
-            <div class="timer-text-div">
-              <span id="resend-button-res" onclick="resendOtpNumber()">
-                Resend OTP
-              </span>
-              <span id="otp-timer" style="display: none">00:30</span>
+      <!-- responsive form modal -->
+      <div
+        class="modal fade"
+        id="resOtpModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="otpModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="position-relative" id="otp-div">
+                <div class="card p-2 text-center">
+                  <h6 style="font-size: 18px; font-weight: 600; color: #2e2e2e">
+                    Please enter the one time password <br />
+                    to verify your phone number
+                  </h6>
+                  <div
+                    id="resOtp"
+                    class="inputs d-flex flex-row justify-content-center mt-3"
+                  >
+                    <input
+                      class="m-2 text-center form-control rounded"
+                      type="text"
+                      id="firstInput"
+                      maxlength="1"
+                    />
+                    <input
+                      class="m-2 text-center form-control rounded"
+                      type="text"
+                      id="secondInput"
+                      maxlength="1"
+                    />
+                    <input
+                      class="m-2 text-center form-control rounded"
+                      type="text"
+                      id="thirdInput"
+                      maxlength="1"
+                    />
+                    <input
+                      class="m-2 text-center form-control rounded"
+                      type="text"
+                      id="fourthInput"
+                      maxlength="1"
+                    />
+                    <input
+                      class="m-2 text-center form-control rounded"
+                      type="text"
+                      id="fifthInput"
+                      maxlength="1"
+                    />
+                    <input
+                      class="m-2 text-center form-control rounded"
+                      type="text"
+                      id="sixthInput"
+                      maxlength="1"
+                    />
+                  </div>
+                  <div class="mt-4" style="display: block">
+                    <button
+                      class="btn btn-danger px-4 validate"
+                      onclick="otpResVerification()"
+                    >
+                      Validate
+                    </button>
+                  </div>
+                  <div class="resend-otp-div">
+                    <div class="resend-text">Not received your OTP ?</div>
+                    <div class="timer-text-div">
+                      <span id="resend-button-res" onclick="resendOtpNumber()">
+                        Resend OTP
+                      </span>
+                      <span id="otp-timer" style="display: none">00:30</span>
+                    </div>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
 
       <!-- Modal -->
       <div
@@ -2013,7 +1982,8 @@ aria-hidden="true"
                       margin-bottom: 20px;
                     "
                   >
-                  Thank You for your Application. Our Customer representative Team will connect shortly.
+                    Thank You for your Application. Our Customer representative
+                    Team will connect shortly.
                   </h6>
                   <h5 class="mt-2">
                     <b>-Team ValuEnable</b>
@@ -2183,9 +2153,8 @@ aria-hidden="true"
             });
           }
         }
-    
+
         OTPInput();
-  
       });
 
       document.addEventListener("DOMContentLoaded", function (event) {
@@ -2212,9 +2181,9 @@ aria-hidden="true"
             });
           }
         }
-    
+
         getOtpInput();
-  console.log(inputs)
+        console.log(inputs);
       });
 
       function isValid_Mobile_Number(mobile_number) {
@@ -2336,7 +2305,6 @@ aria-hidden="true"
       }
 
       let payload = {};
-      
 
       $("#maxUserForm").submit((event) => {
         console.log("maxUserForm submit called");
@@ -2351,7 +2319,7 @@ aria-hidden="true"
           "customerMobileNumber"
         ).value;
         let customerEmail = document.getElementById("customerEmail").value;
-       let customerDOB = document.getElementById("customerDOB").value;
+        let customerDOB = document.getElementById("customerDOB").value;
         if (companyName === "Insurance Company*") {
           alert("Please select a company.");
           return;
@@ -2361,10 +2329,9 @@ aria-hidden="true"
           companyName == "" ||
           prodctType == "" ||
           customerName == "" ||
-          customerMobileNumber == ""||
-          customerEmail == ""||
+          customerMobileNumber == "" ||
+          customerEmail == "" ||
           customerDOB == ""
-
         ) {
           alert(
             "Please ensure all required fields are filled and valid in order for us to process your request."
@@ -2413,7 +2380,7 @@ aria-hidden="true"
         let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
         // let link = `http://localhost:3001/content-engine/generate-otp`;
 
-        $('#otpModal').modal('show');
+        $("#otpModal").modal("show");
 
         $.ajax({
           type: "POST",
@@ -2428,10 +2395,10 @@ aria-hidden="true"
           .done((data) => {
             // console.log("data", data);
             if (data.status === "success") {
-                // document.getElementById('otpModal').style.display = 'block';
-            //   $("#sentMessageModal").modal("show");
+              // document.getElementById('otpModal').style.display = 'block';
+              //   $("#sentMessageModal").modal("show");
             } else {
-                document.getElementById('otpModal').style.display = 'none';
+              document.getElementById("otpModal").style.display = "none";
             }
           })
           .fail((error) => {
@@ -2439,13 +2406,6 @@ aria-hidden="true"
           });
       });
 
-
-
-
-
-
-
-     
       $("#maxUsersForm").submit((event) => {
         console.log("maxUserForm submit called");
         event.preventDefault();
@@ -2459,20 +2419,19 @@ aria-hidden="true"
           "customersMobileNumber"
         ).value;
         let customersEmail = document.getElementById("customersEmail").value;
-       let customersDOB = document.getElementById("customersDOB").value;
+        let customersDOB = document.getElementById("customersDOB").value;
         if (companyName === "Insurance Company*") {
           alert("Please select a company.");
           return;
         }
 
         if (
-        companysName == "" ||
+          companysName == "" ||
           prodctsType == "" ||
           customersName == "" ||
-          customersMobileNumber == ""||
-          customersEmail == ""||
+          customersMobileNumber == "" ||
+          customersEmail == "" ||
           customersDOB == ""
-
         ) {
           alert(
             "Please ensure all required fields are filled and valid in order for us to process your request."
@@ -2492,23 +2451,22 @@ aria-hidden="true"
           return;
         }
 
-        let [customerFirstName, customerLastName] = customersName.split(" ") || [
-          "",
-          "",
-        ];
+        let [customerFirstName, customerLastName] = customersName.split(
+          " "
+        ) || ["", ""];
 
         if (customerLastName === undefined) {
           customerLastName = "";
         }
 
         let customerObj = {
-          companyName:companysName,
+          companyName: companysName,
           customerFirstName,
           productName: prodctsType,
           customerDOB: customersDOB,
           customerLastName,
-          customerMobileNumber:customersMobileNumber,
-          customerEmail:customersEmail,
+          customerMobileNumber: customersMobileNumber,
+          customerEmail: customersEmail,
           detailsFor: "customer",
         };
 
@@ -2521,14 +2479,14 @@ aria-hidden="true"
         let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
         // let link = `http://localhost:3001/content-engine/generate-otp`;
 
-        $('#resOtpModal').modal('show');
+        $("#resOtpModal").modal("show");
 
         $.ajax({
           type: "POST",
           url: link,
           data: {
             ...payload,
-            customerMobileNumber:customersMobileNumber,
+            customerMobileNumber: customersMobileNumber,
           },
           dataType: "json",
           encode: true,
@@ -2536,8 +2494,8 @@ aria-hidden="true"
           .done((data) => {
             console.log("data", data);
             if (data.status === "success") {
-            //     document.getElementById('otpModal').style.display = 'block';
-            //   $("#sentMessageModal").modal("show");
+              //     document.getElementById('otpModal').style.display = 'block';
+              //   $("#sentMessageModal").modal("show");
             } else {
               // alert("Something went wrong");
             }
@@ -2546,13 +2504,6 @@ aria-hidden="true"
             // alert(`Something went wrong`);
           });
       });
-
-
-
-
-
-
-
 
       $("#advisorForm").submit((event) => {
         // console.log("Advisor Form submit called");
@@ -2671,19 +2622,21 @@ aria-hidden="true"
 
       function resetFieldForCustomer() {
         document.getElementById("companyName").value = "Insurance Company*";
+        document.getElementById("prodctType").value = "Product Type*";
         document.getElementById("customerName").value = "";
         document.getElementById("customerMobileNumber").value = "";
         document.getElementById("customerEmail").value = "";
-        document.getElementById("prodctType").value = "";
+     
         document.getElementById("customerDOB").value = "";
         document.getElementById("attachment").value = "";
       }
       function resetFieldForMobile() {
         document.getElementById("companysName").value = "Insurance Company*";
+        document.getElementById("prodctsType").value = "Product Type*";
         document.getElementById("customersName").value = "";
         document.getElementById("customersMobileNumber").value = "";
         document.getElementById("customersEmail").value = "";
-        document.getElementById("prodctsType").value = "";
+      
         document.getElementById("customersDOB").value = "";
         document.getElementById("attachments").value = "";
       }
@@ -2698,7 +2651,6 @@ aria-hidden="true"
 
         return values;
       }
-    
 
       function resetOTPInputField() {
         let inputs = document.querySelectorAll("#otp input");
@@ -2708,7 +2660,7 @@ aria-hidden="true"
       }
       function getAllOtpInputValues() {
         let inputs = document.querySelectorAll("#resOtp input");
-        console.log(inputs)
+        console.log(inputs);
         let values = [];
 
         for (var i = 0; i < inputs.length; i++) {
@@ -2717,7 +2669,7 @@ aria-hidden="true"
 
         return values;
       }
-      
+
       function resetOTPInputsField() {
         let inputs = document.querySelectorAll("#otp inputs");
         for (var i = 0; i < inputs.length; i++) {
@@ -2757,8 +2709,6 @@ aria-hidden="true"
           .done((data) => {
             // console.log("data", data);
             if (data.status === "success") {
-             
-       
             } else {
               // alert("Something went wrong");
             }
@@ -2800,8 +2750,6 @@ aria-hidden="true"
           .done((data) => {
             // console.log("data", data);
             if (data.status === "success") {
-             
-       
             } else {
               // alert("Something went wrong");
             }
@@ -2810,12 +2758,6 @@ aria-hidden="true"
             // alert(`Something went wrong`);
           });
       }
-
-
-
-
-
-
 
       function otpVerification() {
         const inputs = getAllInputValues();
@@ -2837,11 +2779,10 @@ aria-hidden="true"
           .done((data) => {
             // console.log("data", data);
             if (data.status === "success") {
-            
               resetOTPInputField();
-              $('#otpModal').modal('hide');
-              $('#sentMessageModal').modal('show');
-         
+              $("#otpModal").modal("hide");
+              $("#sentMessageModal").modal("show");
+
               payload = {};
             } else {
               alert("Please enter a valid OTP");
@@ -2852,10 +2793,9 @@ aria-hidden="true"
           });
       }
 
-
       function otpResVerification() {
         const inputs = getAllOtpInputValues();
-        console.log(inputs)
+        console.log(inputs);
         const otp = inputs.join("");
 
         let link = `https://microservice.valuenable.in/content-engine/verify-otp`;
@@ -2874,11 +2814,10 @@ aria-hidden="true"
           .done((data) => {
             console.log("data", data);
             if (data.status === "success") {
-            
-                resetOTPInputsField();
-              $('#resOtpModal').modal('hide');
-              $('#sentMessageModal').modal('show');
-         
+              resetOTPInputsField();
+              $("#resOtpModal").modal("hide");
+              $("#sentMessageModal").modal("show");
+
               payload = {};
             } else {
               alert("Please enter a valid OTP");
@@ -2888,9 +2827,6 @@ aria-hidden="true"
             alert("Please enter a valid OTP");
           });
       }
-
-
-
 
       function toggleButton(button) {
         const buttons = document.querySelectorAll(".f-toggle-btn");
@@ -2932,11 +2868,9 @@ aria-hidden="true"
       let countdown = initialCountdown;
       let timerInterval;
 
-
       let initialCountdownOtp = 15;
       let otpCountDown = initialCountdownOtp;
       let otpTimerInterval;
-
 
       function updateTimer() {
         const timerElement = document.getElementById("timer");
@@ -2957,10 +2891,10 @@ aria-hidden="true"
         }
       }
 
-
       function updateTime() {
         const timerElement = document.getElementById("otp-timer");
-        const resendButtonElement = document.getElementById("resend-button-res");
+        const resendButtonElement =
+          document.getElementById("resend-button-res");
 
         if (otpCountDown >= 0) {
           const minutes = Math.floor(otpCountDown / 60);
@@ -2979,7 +2913,8 @@ aria-hidden="true"
 
       function startTime() {
         const timerElement = document.getElementById("otp-timer");
-        const resendButtonElement = document.getElementById("resend-button-res");
+        const resendButtonElement =
+          document.getElementById("resend-button-res");
 
         otpCountDown = initialCountdownOtp;
 
@@ -2993,13 +2928,6 @@ aria-hidden="true"
         updateTime();
         otpTimerInterval = setInterval(updateTime, 1000);
       }
-
-
-
-
-
-
-
 
       function startTimer() {
         const timerElement = document.getElementById("timer");
