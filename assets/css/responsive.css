@@ -321,7 +321,15 @@
 box-shadow: none !important;
 margin-top: 34px !important;
 	}
+	.dob-row{
+		margin-top: -22px !important;
+	  }
+	  .customer-row{
+		margin-top: -17px !important;
+	  }
+	  
 }
+
 @media screen and (max-width: 480px){
 	.login-form .button-box {
 	    display: block;
@@ -382,8 +390,15 @@ margin-top: 34px !important;
 		box-shadow: none !important;
 		margin-top: 34px !important;
 			}
-	
+			.dob-row{
+				margin-top: -22px !important;
+			  }
+			  .customer-row{
+				margin-top: -17px !important;
+			  }
 }
+	
+
 @media screen and (max-width: 380px){
 	.policy-box {
 	    flex: 100%;
@@ -418,5 +433,11 @@ margin-top: 34px !important;
 				color: red;
 				margin-top: 23px;
 				display: block !important;
+			  }
+			  .dob-row{
+				margin-top: -22px !important;
+			  }
+			  .customer-row{
+				margin-top: -17px !important;
 			  }
 }
