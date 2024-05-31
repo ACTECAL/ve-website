@@ -167,8 +167,8 @@
                     <!-- <li class="whatsapp">
                                     <a href="https://wa.me/918645351065?text=Hi,Need a help!">+91 86453 51065</a>
                                  </li> -->
-                    <li class="whatsapp" style="margin: 10px 0px">
-                      <a href="https://wa.me/8369734011" target="_blank"
+                    <li class="phone" style="margin: 10px 0px">
+                      <a href="tel:+918369734011"
                         >+91 83697 34011</a
                       >
                     </li>
@@ -2380,6 +2380,9 @@
         ).value;
         let customerEmail = document.getElementById("customerEmail").value;
         let customerDOB = document.getElementById("customerDOB").value;
+        let attachmentsFile = document.getElementById("attachments");
+        let attachmentPancard = document.getElementById("attachment-pancard");
+
         if (companyName === "Insurance Company*") {
           alert("Please select a company.");
           return;
@@ -2408,6 +2411,16 @@
 
         if (!validatePhoneNumber("customerMobileNumber")) {
           alert("Please enter a valid mobile number");
+          return;
+        }
+
+        if(!attachmentsFile.files[0]){
+          alert("Please select a PAN/Passport/Driving License file");
+          return;
+        }
+
+        if(!attachmentPancard.files[0]){
+          alert("Please select a Unit statement file");
           return;
         }
 
@@ -2457,6 +2470,24 @@
             if (data.status === "success") {
               // document.getElementById('otpModal').style.display = 'block';
               //   $("#sentMessageModal").modal("show");
+              
+              uploadFile(data.panUrl, attachmentPancard.files[0])
+                    .then(response => {
+                        
+                        payload.panUrl = response.data;
+                        console.log('Upload response:', response);
+                    })
+                    .catch(error => {
+                        console.error('Upload error:', error);
+                    });
+              uploadFile(data.unitStatementUrl, attachmentsFile.files[0]) 
+                    .then(response => {
+                        payload.unitStatementUrl = response.data;
+                        console.log('Upload response:', response);
+                    })
+                    .catch(error => {
+                        console.error('Upload error:', error);
+                    });
             } else {
               document.getElementById("otpModal").style.display = "none";
             }
@@ -2466,8 +2497,32 @@
           });
       });
 
+      function uploadFile( url, file) {
+
+        if (! file) {
+            alert('Please select a file to upload');
+            return;
+        }
+
+        return new Promise((resolve, reject) => {
+        $.ajax({
+            type: 'PUT',
+            url: url,
+            data: file,
+            processData: false,
+            contentType: 'application/octet-stream',
+            success: function(response) {
+                resolve(response);
+            },
+            error: function(error) {
+                reject(error);   
+            }
+        });
+      });
+    }
+
       $("#maxUsersForm").submit((event) => {
-        console.log("maxUserForm submit called");
+        console.log("maxUsersForm submit called");
         event.preventDefault();
 
         startTime();
@@ -2480,6 +2535,9 @@
         ).value;
         let customersEmail = document.getElementById("customersEmail").value;
         let customersDOB = document.getElementById("customersDOB").value;
+        let attachmentsFile = document.getElementById("attachment");
+        let attachmentPancard = document.getElementById("attachment-pan");
+
         if (companyName === "Insurance Company*") {
           alert("Please select a company.");
           return;
@@ -2508,6 +2566,16 @@
 
         if (!validatePhoneNumber("customersMobileNumber")) {
           alert("Please enter a valid mobile number");
+          return;
+        }
+
+        if(!attachmentsFile.files[0]){
+          alert("Please select a PAN/Passport/Driving License file");
+          return;
+        }
+
+        if(!attachmentPancard.files[0]){
+          alert("Please select a Unit statement file");
           return;
         }
 
@@ -2556,6 +2624,25 @@
             if (data.status === "success") {
               //     document.getElementById('otpModal').style.display = 'block';
               //   $("#sentMessageModal").modal("show");
+                            
+              uploadFile(data.panUrl, attachmentPancard.files[0])
+                    .then(response => {
+                        
+                        payload.panUrl = response.data;
+                        console.log('Upload response:', response);
+                    })
+                    .catch(error => {
+                        console.error('Upload error:', error);
+                    });
+              uploadFile(data.unitStatementUrl, attachmentsFile.files[0]) 
+                    .then(response => {
+                        payload.unitStatementUrl = response.data;
+                        console.log('Upload response:', response);
+                    })
+                    .catch(error => {
+                        console.error('Upload error:', error);
+                    });
+
             } else {
               // alert("Something went wrong");
             }
