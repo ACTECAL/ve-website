@@ -2450,8 +2450,8 @@
           ...customerObj,
         };
 
-        // let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
-        let link = `http://localhost:3001/content-engine/generate-otp`;
+        let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
+        // let link = `http://localhost:3001/content-engine/generate-otp`;
 
         $("#otpModal").modal("show");
 
@@ -2471,23 +2471,23 @@
               // document.getElementById('otpModal').style.display = 'block';
               //   $("#sentMessageModal").modal("show");
               
-              // uploadFile(data.panUrl, attachmentPancard.files[0])
-              //       .then(response => {
+              uploadFile(data.panUrl, attachmentPancard.files[0])
+                    .then(response => {
                         
-              //           payload.panUrl = response.data;
-              //           console.log('Upload response:', response);
-              //       })
-              //       .catch(error => {
-              //           console.error('Upload error:', error);
-              //       });
-              // uploadFile(data.unitStatementUrl, attachmentsFile.files[0]) 
-              //       .then(response => {
-              //           payload.unitStatementUrl = response.data;
-              //           console.log('Upload response:', response);
-              //       })
-              //       .catch(error => {
-              //           console.error('Upload error:', error);
-              //       });
+                        payload.panUrl = response.data;
+                        console.log('Upload response:', response);
+                    })
+                    .catch(error => {
+                        console.error('Upload error:', error);
+                    });
+              uploadFile(data.unitStatementUrl, attachmentsFile.files[0]) 
+                    .then(response => {
+                        payload.unitStatementUrl = response.data;
+                        console.log('Upload response:', response);
+                    })
+                    .catch(error => {
+                        console.error('Upload error:', error);
+                    });
             } else {
               document.getElementById("otpModal").style.display = "none";
             }
