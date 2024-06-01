@@ -2450,8 +2450,8 @@
           ...customerObj,
         };
 
-        let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
-        // let link = `http://localhost:3001/content-engine/generate-otp`;
+        // let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
+        let link = `http://localhost:3001/content-engine/generate-otp`;
 
         $("#otpModal").modal("show");
 
@@ -2471,23 +2471,23 @@
               // document.getElementById('otpModal').style.display = 'block';
               //   $("#sentMessageModal").modal("show");
               
-              uploadFile(data.panUrl, attachmentPancard.files[0])
-                    .then(response => {
+              // uploadFile(data.panUrl, attachmentPancard.files[0])
+              //       .then(response => {
                         
-                        payload.panUrl = response.data;
-                        console.log('Upload response:', response);
-                    })
-                    .catch(error => {
-                        console.error('Upload error:', error);
-                    });
-              uploadFile(data.unitStatementUrl, attachmentsFile.files[0]) 
-                    .then(response => {
-                        payload.unitStatementUrl = response.data;
-                        console.log('Upload response:', response);
-                    })
-                    .catch(error => {
-                        console.error('Upload error:', error);
-                    });
+              //           payload.panUrl = response.data;
+              //           console.log('Upload response:', response);
+              //       })
+              //       .catch(error => {
+              //           console.error('Upload error:', error);
+              //       });
+              // uploadFile(data.unitStatementUrl, attachmentsFile.files[0]) 
+              //       .then(response => {
+              //           payload.unitStatementUrl = response.data;
+              //           console.log('Upload response:', response);
+              //       })
+              //       .catch(error => {
+              //           console.error('Upload error:', error);
+              //       });
             } else {
               document.getElementById("otpModal").style.display = "none";
             }
@@ -2497,28 +2497,48 @@
           });
       });
 
-      function uploadFile( url, file) {
+    async function uploadFile( url, file) {
 
-        if (! file) {
-            alert('Please select a file to upload');
-            return;
-        }
+        // if (!file) {
+        //     alert('Please select a file to upload');
+        //     return;
+        // }
 
-        return new Promise((resolve, reject) => {
-        $.ajax({
-            type: 'PUT',
-            url: url,
-            data: file,
-            processData: false,
-            contentType: 'application/octet-stream',
-            success: function(response) {
-                resolve(response);
-            },
-            error: function(error) {
-                reject(error);   
-            }
-        });
-      });
+        // return new Promise((resolve, reject) => {
+        // $.ajax({
+        //     type: 'PUT',
+        //     url: url,
+        //     data: file,
+        //     processData: false,
+        //     contentType: 'application/octet-stream',
+        //     success: function(response) {
+        //         resolve(response);
+        //     },
+        //     error: function(error) {
+        //         reject(error);   
+        //     }
+        // });
+      // });
+     
+      try {
+          const response = await fetch(url, {
+              method: 'PUT',
+              headers: {
+                  'Content-Type': 'application/octet-stream',
+              },
+              body: file,
+          });
+
+          if (!response.ok) {
+              throw new Error(`Error: ${response.statusText}`);
+          }
+
+          const data = await response.json();
+          return data;
+      } catch (error) {
+          console.error(error);
+          return error;
+      }
     }
 
       $("#maxUsersForm").submit((event) => {
@@ -2604,8 +2624,8 @@
           ...customerObj,
         };
 
-        let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
-        // let link = `http://localhost:3001/content-engine/generate-otp`;
+        // let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
+        let link = `http://localhost:3001/content-engine/generate-otp`;
 
         $("#resOtpModal").modal("show");
 
