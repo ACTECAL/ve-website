@@ -2454,6 +2454,7 @@
           "",
           "",
         ];
+        
 
         if (customerLastName === undefined) {
           customerLastName = "";
@@ -2463,7 +2464,7 @@
           companyName,
           productName: prodctType,
           customerDOB: customerDOB,
-          customerFirstName,
+          customerFirstName:customerName,
           customerLastName,
           customerMobileNumber,
           customerEmail,
@@ -2636,7 +2637,7 @@
 
         let customerObj = {
           companyName: companysName,
-          customerFirstName,
+          customerFirstName:customerName,
           productName: prodctsType,
           customerDOB: customersDOB,
           customerLastName,
