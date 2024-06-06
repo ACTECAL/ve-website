@@ -323,10 +323,13 @@ margin-top: 34px !important;
 	}
 	.dob-row{
 		margin-top: -22px !important;
+		margin-left: -29px !important;
 	  }
 	  .customer-row{
 		margin-top: -17px !important;
+		margin-left: -28px !important;
 	  }
+	
 	  
 }
 
@@ -392,10 +395,13 @@ margin-top: 34px !important;
 			}
 			.dob-row{
 				margin-top: -22px !important;
+				margin-left: -29px !important;
 			  }
 			  .customer-row{
 				margin-top: -17px !important;
+				margin-left: -28px !important;
 			  }
+		
 }
 	
 
@@ -436,8 +442,10 @@ margin-top: 34px !important;
 			  }
 			  .dob-row{
 				margin-top: -22px !important;
+				margin-left: -29px !important;
 			  }
 			  .customer-row{
 				margin-top: -17px !important;
+				margin-left: -28px !important;
 			  }
-}
+			}

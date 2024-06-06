@@ -174,8 +174,8 @@
                     </li>
 
                     <li class="mail" style="margin: 10px 0px">
-                      <a href="mailto: las@valuenable.in" target="_blank"
-                        >las@valuenable.in</a
+                      <a href="mailto: policyloans@valuenable.in" target="_blank"
+                        >policyloans@valuenable.in</a
                       >
                     </li>
                   </ul>
@@ -226,13 +226,17 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <select class="form-control" id="companysName">
-                              <!-- <option>Insurance Company*</option> -->
-
-                              <option>
-                                ICICI Prudential Life Insurance Co. Ltd
-                              </option>
-                            </select>
+                            <input
+                            name="user"
+                            placeholder="ICICI Prudential Life Insurance Co. Ltd*"
+                            type="text"
+                            class="form-control"
+                        
+                            id="companysName"
+                            readonly
+                            value="ICICI Prudential Life Insurance Co. Ltd"
+                          />
+                           
                           </div>
                         </div>
 
@@ -247,10 +251,17 @@
                                 ICICI Pru Guaranteed Wealth Protector
                               </option>
                               <option>ICICI Pru Elite Life Super</option>
+                              <option>ICICI Pru Life Time</option>
+                              <option>ICICI Pru Cash Advantage</option>
+                              <option>ICICI Pru Savings Suraksha</option>
+                              <option>ICICI Pru Signature</option>
+                              <option>ICICI Pru Smart Life</option>
+                              <option>ICICI Pru Elite Wealth Super</option>
+                              <option>ICICI Pru1 Wealth</option>
                             </select>
                           </div>
                         </div>
-
+                       </div>
                         <div class="mt-3 col-md-12 mb-2 ">
                           <div class="row customer-row">
                             <div class="col-md-4 col-sm-6">
@@ -310,7 +321,7 @@
                             </div>
 
                             <div class="col-md-4 col-sm-6">
-                              <div
+                            <div
                                 class="form-group"
                                 style="display: flex; align-items: center"
                               >
@@ -327,6 +338,7 @@
                                   class="form-control"
                                   placeholder="Upload Unit statement"
                                   id="selectedFileName"
+                                  readonly 
                                 />
                                 <span onclick="openFileUploader()"
                                   ><i
@@ -334,7 +346,8 @@
                                     aria-hidden="true"
                                   ></i
                                 ></span>
-                              </div>
+                              </div> 
+                         
                             </div>
                             
                             <div class="col-md-4 col-sm-6">
@@ -355,6 +368,7 @@
                                   class="form-control"
                                   placeholder="PAN/Passport/Driving License"
                                   id="selectedFilePan"
+                                  readonly 
                                 />
                                 <span onclick="openFileUploaderPancard()"
                                   ><i
@@ -742,13 +756,16 @@
                           <div class="row">
                             <div class="col-md-12">
                               <div class="form-group">
-                                <select class="form-control" id="companyName">
-                                  <!-- <option>Insurance Company*</option> -->
-                                  <option>
-                                    ICICI Prudential Life Insurance Co. Ltd
-                                  </option>
-                                </select>
-                              </div>
+                                <input
+                                    placeholder="ICICI Prudential Life Insurance Co. Ltd*"
+                                    type="text"
+                                    class="form-control"
+                                    id="companyName"
+                                    readonly
+                                    value="ICICI Prudential Life Insurance Co. Ltd"
+                                />
+                            </div>
+                            
                             </div>
 
                             <div class="col-md-12">
@@ -762,6 +779,13 @@
                                     ICICI Pru Guaranteed Wealth Protector
                                   </option>
                                   <option>ICICI Pru Elite Life Super</option>
+                                  <option>ICICI Pru Life Time</option>
+                                  <option>ICICI Pru Cash Advantage</option>
+                                  <option>ICICI Pru Savings Suraksha</option>
+                                  <option>ICICI Pru Signature</option>
+                                  <option>ICICI Pru Smart Life</option>
+                                  <option>ICICI Pru Elite Wealth Super</option>
+                                  <option>ICICI Pru1 Wealth</option>
                                 </select>
                               </div>
                             </div>
@@ -808,7 +832,7 @@
                               </div>
                             </div>
 
-                            <div class="mt-3 col-md-12 mb-2">
+                            <div class="mt-3 col-md-12 mb-2 ">
                               <div class="row">
                                 <div class="col-md-4 col-sm-6">
                                   <div class="form-group">
@@ -844,6 +868,7 @@
                                       class="form-control"
                                       placeholder="Upload Unit statement"
                                       id="selectedFileNames"
+                                      readonly 
                                     />
                                     <span onclick="openFileUploaders()"
                                       ><i
@@ -872,6 +897,7 @@
                                   class="form-control"
                                   placeholder="PAN/Passport/Driving License"
                                   id="selectedFilePancard"
+                                  readonly 
                                 />
                                 <span onclick="openFileUploaderPan()"
                                   ><i
@@ -2959,11 +2985,11 @@
 
               payload = {};
             } else {
-              alert("Please enter a valid OTP");
+              alert("Please enter the OTP");
             }
           })
           .fail((error) => {
-            alert("Please enter a valid OTP");
+            alert("Please enter the OTP");
           });
       }
 
@@ -2973,8 +2999,8 @@
         const otp = inputs.join("");
 
         // let link = `https://microservice.valuenable.in/content-engine/verify-otp`;
-        let link = `https://dev-microservice.valuenable.in/content-engine/verify-otp`;
-        // let link = `http://localhost:3001/content-engine/verify-otp`
+        // let link = `https://dev-microservice.valuenable.in/content-engine/verify-otp`;
+        let link = `http://localhost:3001/content-engine/verify-otp`
 
         $.ajax({
           type: "POST",
@@ -2995,11 +3021,11 @@
 
               payload = {};
             } else {
-              alert("Please enter a valid OTP");
+              alert("Please enter the OTP");
             }
           })
           .fail((error) => {
-            alert("Please enter a valid OTP");
+            alert("Please enter the OTP");
           });
       }
 
@@ -3174,6 +3200,29 @@
     }
     document.getElementById('date').addEventListener('click', function() {
     this.showPicker();
+});
+const dropArea = document.querySelector(".drop_box"),
+  button = dropArea.querySelector("button"),
+  dragText = dropArea.querySelector("header"),
+  input = dropArea.querySelector("input");
+let file;
+var filename;
+
+button.onclick = () => {
+  input.click();
+};
+
+input.addEventListener("change", function (e) {
+  var fileName = e.target.files[0].name;
+  let filedata = `
+    <form action="" method="post">
+    <div class="form">
+    <h4>${fileName}</h4>
+    <input type="email" placeholder="Enter email upload file">
+    <button class="btn">Upload</button>
+    </div>
+    </form>`;
+  dropArea.innerHTML = filedata;
 });
 
     </script>
