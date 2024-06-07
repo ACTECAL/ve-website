@@ -2637,7 +2637,7 @@
 
         let customerObj = {
           companyName: companysName,
-          customerFirstName:customerName,
+          customerFirstName:customersName,
           productName: prodctsType,
           customerDOB: customersDOB,
           customerLastName:"",
@@ -2651,7 +2651,7 @@
         payload = {
           ...customerObj,
         };
-
+console.log(payload)
         let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
         // let link = `https://dev-microservice.valuenable.in/content-engine/generate-otp`;
         // let link = `http://localhost:3001/content-engine/generate-otp`;
