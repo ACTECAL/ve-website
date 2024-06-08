@@ -3225,7 +3225,29 @@ input.addEventListener("change", function (e) {
     </form>`;
   dropArea.innerHTML = filedata;
 });
+document.addEventListener('DOMContentLoaded', (event) => {
+    const inputs = document.querySelectorAll('#resOtp input');
 
+    inputs.forEach((input, index) => {
+        input.addEventListener('input', (e) => {
+            if (input.value.length === 1) {
+                if (index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                } else {
+                    input.blur(); 
+                }
+            }
+        });
+
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Backspace' && input.value === '') {
+                if (index > 0) {
+                    inputs[index - 1].focus();
+                }
+            }
+        });
+    });
+});
     </script>
   </body>
 </html>
