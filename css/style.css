@@ -1228,8 +1228,9 @@ section {
       padding-top: 40px; }
 
 .head-contact ul li.phone {
-  background: url(../images/ic-phone.svg) left top 0px no-repeat;
-  background-size: 15px; }
+  background: url(../images/ic-phone.svg) left top -1px no-repeat;
+  background-size: 16px;
+}
 
 .head-contact ul li.whatsapp {
   background: url(../images/whatsapp.png) left top 0px no-repeat;
