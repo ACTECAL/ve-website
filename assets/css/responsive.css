@@ -335,7 +335,15 @@ margin-top: 34px !important;
 	  }
 	  .privacy-font {
 		font-size: 13px !important;
+	
 	}
+	.or-paragraph{
+		text-align: center !important;
+		
+	}
+
+
+
 }
 
 @media screen and (max-width: 480px){
@@ -412,6 +420,12 @@ margin-top: 34px !important;
 			  .privacy-font {
 				font-size: 13px !important;
 			}
+			.or-paragraph{
+				text-align: center !important;
+			}
+			/* .justify-div{
+				word-break: break-all !important;
+			  } */
 }
 	
 
@@ -464,4 +478,11 @@ margin-top: 34px !important;
 			  .privacy-font {
 				font-size: 13px !important;
 			}
+			.or-paragraph{
+				text-align: center !important;
+			}
+			/* .justify-div{
+				word-break: break-all !important;
+			  } */
+			  
 			}
