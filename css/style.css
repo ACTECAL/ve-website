@@ -6450,13 +6450,16 @@ input[type="date"]:focus::before,
 input[type="date"]:valid::before {
   content: "";
 }
-/* .justify-div{
-  text-align: justify ;
+.justify-div{
+  line-height: 20px;
 
-} */
+}
 .privacy-fontsize {
   font-size: 17px;
 }
 
-
+.terms-list li{
+  list-style: decimal;
+  margin-left: 10px;
+}
 
