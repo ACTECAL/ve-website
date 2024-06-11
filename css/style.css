@@ -6452,8 +6452,11 @@ input[type="date"]:valid::before {
 }
 /* .justify-div{
   text-align: justify ;
-  text-justify: distribute;
+
 } */
+.privacy-font {
+font-size: 16px;
+}
 
 
 
