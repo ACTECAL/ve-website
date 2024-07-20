@@ -125,7 +125,10 @@
 	.card-paragraph {
 		padding: 5px 0px 5px 42px;
 	}
-
+	.checker-container{
+		margin-left: 20px !important;
+		margin-top: -29px !important;
+	}
 	.accordion .card-header:before {
 		top: 0px;
 		height: 30px;
@@ -443,7 +446,20 @@
 		font-size: 13px !important;
 	}
 
-
+	.checker-container{
+		margin-left: 20px !important;
+		margin-top: -29px !important;
+	}
+	.checkbox-label {
+		margin-left: 2px !important;
+		font-size: 12px !important;
+		margin-top: -17px !important;
+	}
+	input[type="checkbox"] {
+		width: 18px !important;
+		height: 18px !important;
+		appearance: revert !important;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -543,7 +559,20 @@
 	.privacy-fontsize {
 		font-size: 13px !important;
 	}
-
+	.checker-container{
+		margin-left: 20px !important;
+		margin-top: -29px !important;
+	}
+	.checkbox-label {
+		margin-left: 2px !important;
+		font-size: 12px !important;
+		margin-top: -17px !important;
+	}
+	input[type="checkbox"] {
+		width: 18px !important;
+		height: 18px !important;
+		appearance: revert !important;
+	}
 }
 
 
@@ -616,6 +645,16 @@
 	.terms-list li {
 		list-style: decimal;
 		margin-left: 10px;
+	}
+	.checkbox-label {
+		margin-left: 2px !important;
+		font-size: 12px !important;
+		margin-top: -17px !important;
+	}
+	input[type="checkbox"] {
+		width: 18px !important;
+		height: 18px !important;
+		appearance: revert !important;
 	}
 	
 }

@@ -3150,3 +3150,24 @@ span.prize-green {
 .inner-wrapper .innerpage .innercontainerwrap p {
     text-align: left !important;
 }
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.checkbox-label {
+    margin-left: 5px;
+    font-size: 16px;
+    margin-top: 1px;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    appearance: revert;
+}
+#myCheckbox{
+    margin-top: -1px;
+}
+.checker-container{
+    margin-left: 29px;
+}
