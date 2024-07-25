@@ -127,7 +127,7 @@
 	}
 	.checker-container{
 		margin-left: 20px !important;
-		margin-top: -29px !important;
+		margin-top: 10px !important;
 	}
 	.accordion .card-header:before {
 		top: 0px;
@@ -448,7 +448,7 @@
 
 	.checker-container{
 		margin-left: 20px !important;
-		margin-top: -29px !important;
+		margin-top: 10px !important;
 	}
 	.checkbox-label {
 		margin-left: 2px !important;
@@ -456,10 +456,14 @@
 		margin-top: -17px !important;
 	}
 	input[type="checkbox"] {
-		width: 18px !important;
+		width: 13px !important;
 		height: 18px !important;
 		appearance: revert !important;
+		margin-top: -18px;
 	}
+	/* .checkbox{
+		margin-top: -10px !important;
+	} */
 }
 
 @media screen and (max-width: 480px) {
@@ -561,7 +565,7 @@
 	}
 	.checker-container{
 		margin-left: 20px !important;
-		margin-top: -29px !important;
+		margin-top: 10px !important;
 	}
 	.checkbox-label {
 		margin-left: 2px !important;
@@ -569,10 +573,12 @@
 		margin-top: -17px !important;
 	}
 	input[type="checkbox"] {
-		width: 18px !important;
+		width: 13px !important;
 		height: 18px !important;
 		appearance: revert !important;
+		margin-top: -18px !important;
 	}
+	
 }
 
 
@@ -652,9 +658,11 @@
 		margin-top: -17px !important;
 	}
 	input[type="checkbox"] {
-		width: 18px !important;
+		width: 13px !important;
 		height: 18px !important;
 		appearance: revert !important;
+		margin-top: -18px !important;
 	}
+	/* */
 	
 }
