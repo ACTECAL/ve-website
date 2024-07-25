@@ -3287,6 +3287,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+
+
+document.getElementById('myCheckbox').addEventListener('change', function(event) {
+            if (!this.checked) {
+                this.checked = true;
+            }
+        });
+        document.getElementById('myCheckbox1').addEventListener('click', function(event) {
+            event.preventDefault();
+        });
     </script>
   </body>
 </html>
