@@ -226,19 +226,19 @@
                       <div class="row customer-row">
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
-                            <input name="user" placeholder="Customer Name*" type="text" class="form-control"
+                            <input name="user" placeholder=" Name*" type="text" class="form-control"
                               pattern="[A-Za-z]" title="Only text are allowed" id="customersName" />
                           </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
-                            <input name="user" placeholder="Mobile*" type="text" class="form-control"
+                            <input name="user" placeholder="Mobile Number*" type="text" class="form-control"
                               id="customersMobileNumber" onkeyup="validatePhoneNumber('customersMobileNumber')" />
                           </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
-                            <input name="user" placeholder="Email*" type="text" class="form-control" id="customersEmail"
+                            <input name="user" placeholder="Email ID*" type="text" class="form-control" id="customersEmail"
                               onkeyup="validateEmail('customersEmail')" />
                           </div>
                         </div>
@@ -247,6 +247,7 @@
 
                     <div class="mt-3 col-md-12 mb-2">
                       <div class="row dob-row">
+
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
                             <!-- <input
@@ -261,19 +262,37 @@
                               class="form-control" type="date" required placeholder="DOB*">
                           </div>
                         </div>
-
+                        <div class="col-md-4 col-sm-6">
+                          <div class="form-group">
+                            <input name="user" placeholder="Mother Full Name*" type="text" class="form-control"
+                            pattern="[A-Za-z]" title="Only text are allowed" id="mothersName"/>
+                              
+                          </div>
+                        </div>
+                        <div style="color: red;  margin-top: -4px; text-align: center;  margin-bottom: 12px; margin-left: 74px;">Upload Documents</div>
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
                             <input name="user" type="file" style="display: none" id="attachment"
                               onchange="handleFileUpload(this.files)" />
 
-                            <input type="text" class="form-control" placeholder="Upload Unit statement"
+                            <input type="text" class="form-control" placeholder=" Unit statement"
                               id="selectedFileName" readonly />
                             <span onclick="openFileUploader()"><i class="fa fa-upload" aria-hidden="true"></i></span>
                           </div>
 
                         </div>
 
+                        <div class="col-md-4 col-sm-6">
+                          <div class="form-group" style="display: flex; align-items: center">
+                            <input name="user" type="file" style="display: none" id="uploadPolicyDocumentMob"
+                              onchange="handelUploadPolicyMob(this.files)" />
+
+                            <input type="text" class="form-control" placeholder=" Policy Document"
+                              id="uploadPolicyDocumentFileMob" readonly />
+                            <span onclick="openUploadPolicyMob()"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                          </div>
+
+                        </div>
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
                             <input name="user" type="file" style="display: none" id="attachment-pan"
@@ -285,17 +304,7 @@
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                          <div class="form-group" style="display: flex; align-items: center">
-                            <input name="user" type="file" style="display: none" id="uploadPolicyDocumentMob"
-                              onchange="handelUploadPolicyMob(this.files)" />
-
-                            <input type="text" class="form-control" placeholder="Upload Policy Document"
-                              id="uploadPolicyDocumentFileMob" readonly />
-                            <span onclick="openUploadPolicyMob()"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                          </div>
-
-                        </div>
+                      
 
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
@@ -308,19 +317,13 @@
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                          <div class="form-group">
-                            <input name="user" placeholder="Mother Name*" type="text" class="form-control"
-                            pattern="[A-Za-z]" title="Only text are allowed" id="mothersName"/>
-                              
-                          </div>
-                        </div>
+                   
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
                             <input name="user" type="file" style="display: none" id="applicantIdMob"
                               onchange="handelUploadPhotos(this.files)" />
   
-                            <input type="text" class="form-control" placeholder="Applicant photo "
+                            <input type="text" class="form-control" placeholder=" Click Selfie"
                               id="applicantIdMobFile" readonly />
                             <span onclick="openApplicantPhotos()"><i class="fa fa-upload"
                                 aria-hidden="true"></i></span>
@@ -331,7 +334,7 @@
                             <input name="user" type="file" style="display: none" id="cancelCheckIds"
                               onchange="handelCancelsChecks(this.files)" />
   
-                            <input type="text" class="form-control" placeholder="Cancel check"
+                            <input type="text" class="form-control" placeholder=" Cheque Copy/Bank Statement "
                               id="cancelCheckIdFiles" readonly />
                             <span onclick="openCancelsChecks()"><i class="fa fa-upload"
                                 aria-hidden="true"></i></span>
@@ -730,19 +733,19 @@
                         <div class="row">
                           <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                              <input name="user" placeholder="Customer Name*" type="text" class="form-control"
+                              <input name="user" placeholder=" Name*" type="text" class="form-control"
                                 pattern="[A-Za-z]" title="Only text are allowed" id="customerName" />
                             </div>
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                              <input name="user" placeholder="Mobile*" type="text" class="form-control"
+                              <input name="user" placeholder="Mobile Number*" type="text" class="form-control"
                                 id="customerMobileNumber" onkeyup="validatePhoneNumber('customerMobileNumber')" />
                             </div>
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                              <input name="user" placeholder="Email*" type="text" class="form-control"
+                              <input name="user" placeholder="Email ID*" type="text" class="form-control"
                                 id="customerEmail" onkeyup="validateEmail('customerEmail')" />
                             </div>
                           </div>
@@ -767,84 +770,94 @@
                                 class="form-control" type="date" required placeholder="DOB*">
                             </div>
                           </div>
-
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group" style="display: flex; align-items: center">
-                              <input name="user" type="file" style="display: none" id="attachments"
-                                onchange="handleFileUploads(this.files)" />
-
-                              <input type="text" class="form-control" placeholder="Upload Unit statement"
-                                id="selectedFileNames" readonly />
-                              <span onclick="openFileUploaders()"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                            </div>
-                          </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group" style="display: flex; align-items: center">
-                              <input name="user" type="file" style="display: none;" id="attachment-pancard"
-                                onchange="handleFileUploadPan(this.files)" />
-
-                              <input type="text" style="font-size: 13px;" class="form-control"
-                                placeholder="Signed PAN Copy" id="selectedFilePancard" readonly />
-                              <span onclick="openFileUploaderPan()"><i class="fa fa-upload"
-                                  aria-hidden="true"></i></span>
-                            </div>
-                          </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group" style="display: flex; align-items: center">
-                              <input name="user" type="file" style="display: none" id="uploadPolicyDocument"
-                                onchange="handelUploadPolicy(this.files)" />
-    
-                              <input type="text" class="form-control" placeholder="Upload Policy Document"
-                                id="uploadPolicyDocumentFile" readonly />
-                              <span onclick="openUploadPolicy()"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                            </div>
-    
-                          </div>
-    
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group" style="display: flex; align-items: center">
-                              <input name="user" type="file" style="display: none" id="signedAadhar"
-                                onchange="handelSignedAadhar(this.files)" />
-    
-                              <input type="text" class="form-control" placeholder="Signed Aadhar Copy"
-                                id="signedAadharFile" readonly />
-                              <span onclick="openAadharFile()"><i class="fa fa-upload"
-                                  aria-hidden="true"></i></span>
-                            </div>
-                          </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                              <input name="user" placeholder="Mother Name*" type="text" class="form-control"
+                              <input name="user" placeholder="Mother Full Name*" type="text" class="form-control"
                               pattern="[A-Za-z]" title="Only text are allowed" id="motherName"/>
                                 
                             </div>
                           </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group" style="display: flex; align-items: center">
-                              <input name="user" type="file" style="display: none" id="applicantIdDesk"
-                                onchange="handelUploadPhoto(this.files)" />
-    
-                              <input type="text" class="form-control" placeholder="Applicant photo "
-                                id="applicantIdDeskFile" readonly />
-                              <span onclick="openApplicantPhoto()"><i class="fa fa-upload"
-                                  aria-hidden="true"></i></span>
-                            </div>
-                          </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group" style="display: flex; align-items: center">
-                              <input name="user" type="file" style="display: none" id="cancelCheckId"
-                                onchange="handelCancelCheck(this.files)" />
-    
-                              <input type="text" class="form-control" placeholder="Cancel check  "
-                                id="cancelCheckIdFile" readonly />
-                              <span onclick="openCancelCheck()"><i class="fa fa-upload"
-                                  aria-hidden="true"></i></span>
-                            </div>
-                          </div>
+
+
+
+           
+
                         </div>
                       </div>
                     
                     </div>
+
+                    <div style="color: #da1e37; font-weight: bold; margin-top: -11px; border-bottom: 2px solid; width: 165px; margin-bottom: 12px;">Upload Documents</div>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none" id="attachments"
+                            onchange="handleFileUploads(this.files)" />
+
+                          <input type="text" class="form-control" placeholder=" Unit statement"
+                            id="selectedFileNames" readonly />
+                          <span onclick="openFileUploaders()"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none" id="uploadPolicyDocument"
+                            onchange="handelUploadPolicy(this.files)" />
+
+                          <input type="text" class="form-control" placeholder=" Policy Document"
+                            id="uploadPolicyDocumentFile" readonly />
+                          <span onclick="openUploadPolicy()"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                        </div>
+
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none;" id="attachment-pancard"
+                            onchange="handleFileUploadPan(this.files)" />
+
+                          <input type="text"  class="form-control"
+                            placeholder="Signed PAN Copy" id="selectedFilePancard" readonly />
+                          <span onclick="openFileUploaderPan()"><i class="fa fa-upload"
+                              aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                    
+
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none" id="signedAadhar"
+                            onchange="handelSignedAadhar(this.files)" />
+
+                          <input type="text" class="form-control" placeholder="Signed Aadhar Copy"
+                            id="signedAadharFile" readonly />
+                          <span onclick="openAadharFile()"><i class="fa fa-upload"
+                              aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                 
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none" id="applicantIdDesk"
+                            onchange="handelUploadPhoto(this.files)" />
+
+                          <input type="text" class="form-control" placeholder="Click Selfie "
+                            id="applicantIdDeskFile" readonly />
+                          <span onclick="openApplicantPhoto()"><i class="fa fa-upload"
+                              aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center; width: 247px;">
+                          <input name="user" type="file" style="display: none" id="cancelCheckId"
+                            onchange="handelCancelCheck(this.files)" />
+
+                          <input type="text" class="form-control" placeholder="Cheque Copy/Bank Statement "
+                            id="cancelCheckIdFile" readonly />
+                          <span onclick="openCancelCheck()"><i class="fa fa-upload"
+                              aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                      </div>
                   </div>
                 </div>
                 <div style="margin-left: 29px; width: 100%;">
