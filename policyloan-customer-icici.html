@@ -209,7 +209,7 @@
                                 ICICI Pru Guaranteed Wealth Protector
                               </option> -->
                             <option>ICICI Pru Elite Life Super</option>
-                            <option>ICICI Pru Life Time</option>
+                            <!-- <option>ICICI Pru Life Time</option> -->
                             <!-- <option>ICICI Pru Cash Advantage</option>
                               <option>ICICI Pru Savings Suraksha</option> -->
                             <option>ICICI Pru Signature</option>
@@ -217,6 +217,7 @@
                             <option>ICICI Pru Elite Wealth Super</option>
                             <option>ICICI Pru1 Wealth</option>
                             <option>ICICI Pru Elite Life II</option>
+                            <option>Guaranteed Wealth Protector</option>
                           </select>
                         </div>
                       </div>
@@ -307,41 +308,39 @@
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
+                        <div class="col-md-4 col-sm-6">
+                          <div class="form-group">
+                            <input name="user" placeholder="Mother Name*" type="text" class="form-control"
+                            pattern="[A-Za-z]" title="Only text are allowed" id="mothersName"/>
+                              
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <div class="form-group" style="display: flex; align-items: center">
+                            <input name="user" type="file" style="display: none" id="applicantIdMob"
+                              onchange="handelUploadPhotos(this.files)" />
+  
+                            <input type="text" class="form-control" placeholder="Applicant photo "
+                              id="applicantIdMobFile" readonly />
+                            <span onclick="openApplicantPhotos()"><i class="fa fa-upload"
+                                aria-hidden="true"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <div class="form-group" style="display: flex; align-items: center">
+                            <input name="user" type="file" style="display: none" id="cancelCheckIds"
+                              onchange="handelCancelsChecks(this.files)" />
+  
+                            <input type="text" class="form-control" placeholder="Cancel check"
+                              id="cancelCheckIdFiles" readonly />
+                            <span onclick="openCancelsChecks()"><i class="fa fa-upload"
+                                aria-hidden="true"></i></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
             
-                          <div class="mt-3 col-md-12 mb-2">
-                        <!-- <div class="row dob-row">
-                        <div class="col-md-4 col-sm-6">
-                          <div class="form-group" style="display: flex; align-items: center">
-                            <input name="user" type="file" style="display: none" id="uploadPolicyDocumentMob"
-                              onchange="handelUploadPolicyMob(this.files)" />
-
-                            <input type="text" class="form-control" placeholder="Upload Policy Document"
-                              id="uploadPolicyDocumentFileMob" readonly />
-                            <span onclick="openUploadPolicyMob()"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                          </div>
-
-                        </div>
-
-                        <div class="col-md-4 col-sm-6">
-                          <div class="form-group" style="display: flex; align-items: center">
-                            <input name="user" type="file" style="display: none" id="signedAadharCopyMob"
-                              onchange="handelSignedAadharCopyMob(this.files)" />
-
-                            <input type="text" class="form-control" placeholder="Signed Aadhar Copy"
-                              id="signedAadharCopyFileMob" readonly />
-                            <span onclick="openSignedAadharCopyFileMob()"><i class="fa fa-upload"
-                                aria-hidden="true"></i></span>
-                          </div>
-                        </div>
-                        </div>
-                      </div> -->
-
-
-                    
-                  </div>
 
 
 
@@ -713,7 +712,7 @@
                                     ICICI Pru Guaranteed Wealth Protector
                                   </option> -->
                             <option>ICICI Pru Elite Life Super</option>
-                            <option>ICICI Pru Life Time</option>
+                            <!-- <option>ICICI Pru Life Time</option> -->
                             <!-- <option>ICICI Pru Cash Advantage</option>
                                   <option>ICICI Pru Savings Suraksha</option> -->
                             <option>ICICI Pru Signature</option>
@@ -721,6 +720,7 @@
                             <option>ICICI Pru Elite Wealth Super</option>
                             <option>ICICI Pru1 Wealth</option>
                             <option>ICICI Pru Elite Life II</option>
+                            <option>Guaranteed Wealth Protector</option>
 
                           </select>
                         </div>
@@ -812,35 +812,38 @@
                                   aria-hidden="true"></i></span>
                             </div>
                           </div>
+                          <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <input name="user" placeholder="Mother Name*" type="text" class="form-control"
+                              pattern="[A-Za-z]" title="Only text are allowed" id="motherName"/>
+                                
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6">
+                            <div class="form-group" style="display: flex; align-items: center">
+                              <input name="user" type="file" style="display: none" id="applicantIdDesk"
+                                onchange="handelUploadPhoto(this.files)" />
+    
+                              <input type="text" class="form-control" placeholder="Applicant photo "
+                                id="applicantIdDeskFile" readonly />
+                              <span onclick="openApplicantPhoto()"><i class="fa fa-upload"
+                                  aria-hidden="true"></i></span>
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6">
+                            <div class="form-group" style="display: flex; align-items: center">
+                              <input name="user" type="file" style="display: none" id="cancelCheckId"
+                                onchange="handelCancelCheck(this.files)" />
+    
+                              <input type="text" class="form-control" placeholder="Cancel check  "
+                                id="cancelCheckIdFile" readonly />
+                              <span onclick="openCancelCheck()"><i class="fa fa-upload"
+                                  aria-hidden="true"></i></span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                         <!-- <div class="mt-3 col-md-12 mb-2">
-                      <div class="row dob-row">
-                      <div class="col-md-4 col-sm-6">
-                        <div class="form-group" style="display: flex; align-items: center">
-                          <input name="user" type="file" style="display: none" id="uploadPolicyDocument"
-                            onchange="handelUploadPolicy(this.files)" />
-
-                          <input type="text" class="form-control" placeholder="Upload Policy Document"
-                            id="uploadPolicyDocumentFile" readonly />
-                          <span onclick="openUploadPolicy()"><i class="fa fa-upload" aria-hidden="true"></i></span>
-                        </div>
-
-                      </div>
-
-                      <div class="col-md-4 col-sm-6">
-                        <div class="form-group" style="display: flex; align-items: center">
-                          <input name="user" type="file" style="display: none" id="signedAadhar"
-                            onchange="handelSignedAadhar(this.files)" />
-
-                          <input type="text" class="form-control" placeholder="Signed Aadhar Copy"
-                            id="signedAadharFile" readonly />
-                          <span onclick="openAadharFile()"><i class="fa fa-upload"
-                              aria-hidden="true"></i></span>
-                        </div>
-                      </div>
-                      </div>
-                    </div> -->
+                    
                     </div>
                   </div>
                 </div>
@@ -1853,22 +1856,22 @@
 
     function validatePhoneNumber(elementID) {
       let mobileInput = document.getElementById(elementID);
-      let mobile_number = mobileInput.value.trim();
+      let mobile_number = mobileInput?.value?.trim();
 
       if (mobile_number === "" || !isValid_Mobile_Number(mobile_number)) {
-        mobileInput.classList.add("input-error");
-        mobileInput.setCustomValidity("Please enter a valid mobile number");
-        mobileInput.reportValidity();
+        mobileInput?.classList.add("input-error");
+        mobileInput?.setCustomValidity("Please enter a valid mobile number");
+        mobileInput?.reportValidity();
         return false;
       } else {
-        mobileInput.classList.remove("input-error");
-        mobileInput.setCustomValidity("");
+        mobileInput?.classList?.remove("input-error");
+        mobileInput?.setCustomValidity("");
       }
 
       if (mobile_number.length > 0 && mobile_number.length < 10) {
-        mobileInput.classList.add("input-error");
-        mobileInput.setCustomValidity("Please enter at least 10 digits");
-        mobileInput.reportValidity();
+        mobileInput?.classList?.add("input-error");
+        mobileInput?.setCustomValidity("Please enter at least 10 digits");
+        mobileInput?.reportValidity();
         return false;
       }
 
@@ -1973,12 +1976,16 @@
       let customerMobileNumber = document.getElementById(
         "customerMobileNumber"
       ).value;
+      console.log(customerMobileNumber)
       let customerEmail = document.getElementById("customerEmail").value;
       let customerDOB = document.getElementById("customerDOB").value;
       let attachmentsFile = document.getElementById("attachments");
       let attachmentPancard = document.getElementById("attachment-pancard");
       let UploadPolicyDesk = document.getElementById("uploadPolicyDocument");
       let SignedAadharCopyDesk = document.getElementById("signedAadhar");
+      let applicantPhoto= document.getElementById("applicantIdDesk");
+      let cancelCheckData= document.getElementById("cancelCheckId");
+      let motherName= document.getElementById("motherName").value;
       console.log(SignedAadharCopyDesk,attachmentPancard)
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
@@ -1991,7 +1998,8 @@
         customerName == "" ||
         customerMobileNumber == "" ||
         customerEmail == "" ||
-        customerDOB == ""
+        customerDOB == ""||
+        motherName == ""
       ) {
         alert(
           "Please ensure all required fields are filled and valid in order for us to process your request."
@@ -2028,15 +2036,24 @@
         alert("Please select a Signed Aadhar Copy");
         return;
       }
-
-    
+      if (!applicantPhoto.files[0]) {
+        alert("Please select a Applicant photo  ");
+        return;
+      }
+      if (!cancelCheckData.files[0]) {
+        alert("Please select a Cancel check ");
+        return;
+      }
+  
 
       let [customerFirstName, customerLastName] = customerName.split(" ") || [
         "",
         "",
       ];
 
-
+      let [motherNames] = motherName.split(" ") || [
+        "",
+      ];
       if (customerLastName === undefined) {
         customerLastName = "";
       }
@@ -2049,6 +2066,7 @@
         customerLastName: "",
         customerMobileNumber,
         customerEmail,
+        motherName: motherName,
         detailsFor: "customer",
       };
 
@@ -2059,8 +2077,8 @@
       };
 
       // let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
-      let link = `https://dev-microservice.valuenable.in/content-engine/generate-otp`;
-      // let link = `http://localhost:3001/content-engine/generate-otp`;
+      // let link = `https://dev-microservice.valuenable.in/content-engine/generate-otp`;
+      let link = `http://localhost:3001/content-engine/generate-otp`;
 
       $("#otpModal").modal("show");
 
@@ -2073,7 +2091,10 @@
           panFileType: attachmentPancard.files[0].type,
           unitStatementFileType: attachmentsFile.files[0].type,
           UploadPolicyType: UploadPolicyDesk.files[0].type,
-          SignedAadharType: SignedAadharCopyDesk.files[0].type
+          SignedAadharType: SignedAadharCopyDesk.files[0].type,
+          applicantType:applicantPhoto.files[0].type,
+          cancelCheckType:cancelCheckData.files[0].type,
+
         },
         dataType: "json",
         encode: true,
@@ -2113,6 +2134,23 @@
               uploadFile(data.policyDocumentUrl, UploadPolicyDesk.files[0])
               .then(response => {
                 payload.policyDocumentUrl = response.data;
+                console.log('Upload response:', response);
+              })
+              .catch(error => {
+                console.error('Upload error:', error);
+              });
+
+              uploadFile(data.applicantUrl, applicantPhoto.files[0])
+              .then(response => {
+                payload.applicantUrl = response.data;
+                console.log('Upload response:', response);
+              })
+              .catch(error => {
+                console.error('Upload error:', error);
+              });
+              uploadFile(data.cancelCheckUrl, cancelCheckData.files[0])
+              .then(response => {
+                payload.cancelCheckUrl = response.data;
                 console.log('Upload response:', response);
               })
               .catch(error => {
@@ -2190,6 +2228,9 @@
       let attachmentPancard = document.getElementById("attachment-pan");
       let UploadPolicyMob = document.getElementById("uploadPolicyDocumentMob");
       let SignedAadharCopyMob = document.getElementById("signedAadharCopyMob");
+      let applicantPhotos= document.getElementById("applicantIdMob");
+      let cancelCheckDatas= document.getElementById("cancelCheckIds");
+      let mothersName= document.getElementById("mothersName").value;
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
         return;
@@ -2201,7 +2242,8 @@
         customersName == "" ||
         customersMobileNumber == "" ||
         customersEmail == "" ||
-        customersDOB == ""
+        customersDOB == ""|| 
+        mothersName == ""
       ) {
         alert(
           "Please ensure all required fields are filled and valid in order for us to process your request."
@@ -2239,6 +2281,14 @@
         alert("Please select a Upload Policy Document ");
         return; 
       }
+      if (!applicantPhotos.files[0]) {
+        alert("Please select a Applicant photo  ");
+        return;
+      }
+      if (!cancelCheckDatas.files[0]) {
+        alert("Please select a Cancel check ");
+        return;
+      }
       let [customerFirstName, customerLastName] = customersName.split(
         " "
       ) || ["", ""];
@@ -2246,7 +2296,9 @@
       if (customerLastName === undefined) {
         customerLastName = "";
       }
-
+      let [mothersNames] = mothersName.split(" ") || [
+        "",
+      ];
       let customerObj = {
         companyName: companysName,
         customerFirstName: customersName,
@@ -2255,6 +2307,7 @@
         customerLastName: "",
         customerMobileNumber: customersMobileNumber,
         customerEmail: customersEmail,
+        motherName:mothersName,
         detailsFor: "customer",
       };
 
@@ -2265,8 +2318,8 @@
       };
       console.log(payload)
       // let link = `https://microservice.valuenable.in/content-engine/generate-otp`;
-      let link = `https://dev-microservice.valuenable.in/content-engine/generate-otp`;
-      // let link = `http://localhost:3001/content-engine/generate-otp`;
+      // let link = `https://dev-microservice.valuenable.in/content-engine/generate-otp`;
+      let link = `http://localhost:3001/content-engine/generate-otp`;
 
       $("#resOtpModal").modal("show");
 
@@ -2279,7 +2332,9 @@
           panFileType: attachmentPancard.files[0].type,
           unitStatementFileType: attachmentsFile.files[0].type,
           UploadPolicyType: UploadPolicyMob.files[0].type,
-          SignedAadharType: SignedAadharCopyMob.files[0].type
+          SignedAadharType: SignedAadharCopyMob.files[0].type,
+          applicantType:applicantPhotos.files[0].type,
+          cancelCheckType:cancelCheckDatas.files[0].type,
 
         },
         dataType: "json",
@@ -2326,6 +2381,24 @@
                 console.error('Upload error:', error);
               });
 
+
+
+              uploadFile(data.applicantUrl, applicantPhotos.files[0])
+              .then(response => {
+                payload.applicantUrl = response.data;
+                console.log('Upload response:', response);
+              })
+              .catch(error => {
+                console.error('Upload error:', error);
+              });
+              uploadFile(data.cancelCheckUrl, cancelCheckDatas.files[0])
+              .then(response => {
+                payload.cancelCheckUrl = response.data;
+                console.log('Upload response:', response);
+              })
+              .catch(error => {
+                console.error('Upload error:', error);
+              });
           } else {
             // alert("Something went wrong");
           }
@@ -2468,7 +2541,11 @@
       document.getElementById("signedAadharCopyDesk").value = "";
       document.getElementById("uploadPolicyDocumentFileDesk").value = "";
       document.getElementById("signedAadharCopyFileDesk").value = "";
-      
+      document.getElementById("applicantIdDesk").value = "";
+      document.getElementById("applicantIdDeskFile").value = "";
+      document.getElementById("cancelCheckId").value = "";
+      document.getElementById("cancelCheckIdFile").value = "";
+      document.getElementById("motherName").value = "";
     }
     function resetFieldForMobile() {
       document.getElementById("companysName").value = "ICICI Prudential Life Insurance Co. Ltd";
@@ -2488,6 +2565,11 @@
       document.getElementById("signedAadharCopyMob").value = "";
       document.getElementById("uploadPolicyDocumentFileMob").value = "";
       document.getElementById("signedAadharCopyFileMob").value = "";
+      document.getElementById("applicantIdMob").value = "";
+      document.getElementById("applicantIdMobFile").value = "";
+      document.getElementById("cancelCheckId").value = "";
+      document.getElementById("cancelCheckIdFiles").value = "";
+      document.getElementById("mothersName").value = "";
       
     }
 
@@ -2616,8 +2698,8 @@
       const otp = inputs.join("");
 
       // let link = `https://microservice.valuenable.in/content-engine/verify-otp`;
-      let link = `https://dev-microservice.valuenable.in/content-engine/verify-otp`;
-      // let link = `http://localhost:3001/content-engine/verify-otp`
+      // let link = `https://dev-microservice.valuenable.in/content-engine/verify-otp`;
+      let link = `http://localhost:3001/content-engine/verify-otp`
 
       $.ajax({
         type: "POST",
@@ -2652,8 +2734,8 @@
       const otp = inputs.join("");
 
       // let link = `https://microservice.valuenable.in/content-engine/verify-otp`;
-      let link = `https://dev-microservice.valuenable.in/content-engine/verify-otp`;
-      // let link = `http://localhost:3001/content-engine/verify-otp`
+      // let link = `https://dev-microservice.valuenable.in/content-engine/verify-otp`;
+      let link = `http://localhost:3001/content-engine/verify-otp`
 
       $.ajax({
         type: "POST",
@@ -2866,6 +2948,41 @@
     function handelSignedAadharCopyMob(files) {
       var fileName = files[0].name;
       document.getElementById("signedAadharCopyFileMob").value = fileName;
+    }
+
+    function handelUploadPhoto(files){
+      console.log(files)
+      var fileName = files[0].name;
+      document.getElementById("applicantIdDeskFile").value = fileName;
+    }
+    function openApplicantPhoto(){
+ document.getElementById("applicantIdDesk").click();
+    }
+    function handelCancelCheck(files){
+      console.log(files)
+      var fileName = files[0].name;
+      document.getElementById("cancelCheckIdFile").value = fileName;
+    }
+    function openCancelCheck(){
+ document.getElementById("cancelCheckId").click();
+    }
+
+    function handelUploadPhotos(files){
+      console.log(files)
+      var fileName = files[0].name;
+      document.getElementById("applicantIdMobFile").value = fileName;
+    }
+    function openApplicantPhotos(){
+ document.getElementById("applicantIdMob").click();
+    }
+
+    function handelCancelsChecks(files){
+      console.log(files)
+      var fileName = files[0].name;
+      document.getElementById("cancelCheckIdFiles").value = fileName;
+    }
+    function openCancelsChecks(){
+ document.getElementById("cancelCheckIds").click();
     }
     toggleButton(document.querySelector(".f-toggle-btn.t-btn-02"));
     $(function () {
