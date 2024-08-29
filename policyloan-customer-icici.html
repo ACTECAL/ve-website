@@ -2094,7 +2094,7 @@
       // let link = `http://localhost:3001/content-engine/generate-otp`;
       // let link = `https://uat-microservice.valuenable.in/content-engine/generate-otp`;
 
-      $("#otpModal").modal("show");
+      // $("#otpModal").modal("show");
 
       $.ajax({
         type: "POST",
@@ -2127,7 +2127,10 @@
                 console.log('Upload response:', response);
               })
               .catch(error => {
-                console.error('Upload error:', error);
+                console.error("PAN file upload failed", error);
+            alert("PAN file upload failed. Please try again.");
+            return;  // Stop further processing
+
               });
             uploadFile(data.unitStatementUrl, attachmentsFile.files[0])
               .then(response => {
@@ -2136,6 +2139,8 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Unit statement file upload failed. Please try again.");
+            return;
               });
               uploadFile(data.aadhaarUrl, SignedAadharCopyDesk.files[0])
               .then(response => {
@@ -2144,6 +2149,8 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Aadhaar copy upload failed. Please try again.");
+            return;
               });
               uploadFile(data.policyDocumentUrl, UploadPolicyDesk.files[0])
               .then(response => {
@@ -2152,6 +2159,8 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Policy document upload failed. Please try again.");
+            return;
               });
 
               uploadFile(data.applicantUrl, applicantPhoto.files[0])
@@ -2161,14 +2170,19 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Applicant photo upload failed. Please try again.");
+                return;
               });
               uploadFile(data.cancelCheckUrl, cancelCheckData.files[0])
               .then(response => {
                 payload.cancelCheckUrl = response.data;
                 console.log('Upload response:', response);
+                $("#otpModal").modal("show");
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Cancel check upload failed. Please try again.");
+            return;
               });
               
           } else {
@@ -2336,7 +2350,7 @@
       // let link = `http://localhost:3001/content-engine/generate-otp`;
       // let link = `https://uat-microservice.valuenable.in/content-engine/generate-otp`;
 
-      $("#resOtpModal").modal("show");
+      // $("#resOtpModal").modal("show");
 
       $.ajax({
         type: "POST",
@@ -2369,6 +2383,10 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                
+            alert("PAN file upload failed. Please try again.");
+            return;  // Stop further processing
+
               });
             uploadFile(data.unitStatementUrl, attachmentsFile.files[0])
               .then(response => {
@@ -2377,6 +2395,8 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Unit statement file upload failed. Please try again.");
+            return;
               });
 
               uploadFile(data.aadhaarUrl, SignedAadharCopyMob.files[0])
@@ -2386,6 +2406,8 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Aadhaar copy upload failed. Please try again.");
+            return;
               });
               uploadFile(data.policyDocumentUrl, UploadPolicyMob.files[0])
               .then(response => {
@@ -2394,6 +2416,8 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Policy document upload failed. Please try again.");
+            return;
               });
 
 
@@ -2405,14 +2429,19 @@
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                alert("Applicant photo upload failed. Please try again.");
+                return;
               });
               uploadFile(data.cancelCheckUrl, cancelCheckDatas.files[0])
               .then(response => {
                 payload.cancelCheckUrl = response.data;
-                console.log('Upload response:', response);
+                $("#resOtpModal").modal("show")
               })
               .catch(error => {
                 console.error('Upload error:', error);
+                console.log('Upload response:', response);
+                alert("Cancel check upload failed. Please try again.");
+            return;
               });
           } else {
             // alert("Something went wrong");
