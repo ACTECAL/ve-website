@@ -191,98 +191,46 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input name="user" placeholder="ICICI Prudential Life Insurance Co. Ltd*" type="text"
+                          <input name="user" placeholder="HDFC Standard Life Insurance Co. Ltd.*" type="text"
                             class="form-control" id="companysName" readonly
-                            value="ICICI Prudential Life Insurance Co. Ltd" />
+                            value="HDFC Standard Life Insurance Co. Ltd." />
 
-                        </div>
-                      </div>
-
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <select class="form-control" id="prodctsType">
-                            <option>Product Name*</option>
-                            <option>ICICI Pru Wealth Builder II</option>
-                            <option>ICICI Pru Elite Wealth II</option>
-                            <option>ICICI Pru LifeTime Classic</option>
-                            <!-- <option>
-                                ICICI Pru Guaranteed Wealth Protector
-                              </option> -->
-                            <option>ICICI Pru Elite Life Super</option>
-                            <!-- <option>ICICI Pru Life Time</option> -->
-                            <!-- <option>ICICI Pru Cash Advantage</option>
-                              <option>ICICI Pru Savings Suraksha</option> -->
-                            <option>ICICI Pru Signature</option>
-                            <option>ICICI Pru Smart Life</option>
-                            <option>ICICI Pru Elite Wealth Super</option>
-                            <option>ICICI Pru1 Wealth</option>
-                            <option>ICICI Pru Elite Life II</option>
-                            <option>Guaranteed Wealth Protector</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <select class="form-control" id="branchNameResp">
-                            <option>Branch Name*</option>
-                            <option>Pune – Main branch</option>
-                            <option>Pune - PCMC</option>
-                            <option>Mumbai Kalyan</option>
-                            <option>
-                              Mumbai Amboli
-                                  </option>
-                            <option>Mumbai Borival</option>
-                            <option>Mumbai Ghatkopar</option>
-                            <option>Chennai</option>
-                                  <option>Hyderabad – Banjara Hills</option>
-                            <option>Bangalore – Residency road</option>
-                            <option>Delhi – Videocon towers</option>
-  
-                          </select>
                         </div>
                       </div>
                     </div>
                     
                     <div class="mt-3 col-md-12 mb-2 ">
                       <div class="row customer-row">
-                        <div class="col-md-4 col-sm-6">
+                        <!-- <div class="col-md-4 col-sm-6">
                           <div class="form-group">
-                            <input name="user" placeholder=" Name*" type="text" class="form-control"
+                            <input name="user" placeholder="Name*" type="text" class="form-control"
                               pattern="[A-Za-z]" title="Only text are allowed" id="customersName" />
                           </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
                             <input name="user" placeholder="Mobile Number*" type="text" class="form-control"
                               id="customersMobileNumber" onkeyup="validatePhoneNumber('customersMobileNumber')" />
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <!-- <div class="col-md-4 col-sm-6">
                           <div class="form-group">
-                            <input name="user" placeholder="Email ID*" type="text" class="form-control" id="customersEmail"
+                            <input name="user" placeholder="Email ID" type="text" class="form-control" id="customersEmail"
                               onkeyup="validateEmail('customersEmail')" />
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
 
                     <div class="mt-3 col-md-12 mb-2">
                       <div class="row dob-row">
-
+<!-- 
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
-                            <!-- <input
-                                  name="user"
-                                  placeholder="DOB*"
-                                  type="date"
-                                  class="form-control"
-                                  id="customersDOB"
-                                  onkeyup="validateEmail('customersDOB')"
-                                />  -->
-                            <input name="user" onkeyup="validateDate('customersDOB')" id="customersDOB"
+                            <input name="user" onkeyup="validateEmail('customersDOB')" id="customersDOB"
                               class="form-control" type="date" required placeholder="DOB*">
                           </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group">
                             <input name="user" placeholder="Mother Full Name*" type="text" class="form-control"
@@ -297,28 +245,28 @@
                               
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6" style="display: none;" id="respLaNameBox">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group">
                             <input name="user" placeholder="LA Name (If Applicable)" type="text" class="form-control"
                             id="laNameMob"/>
                               
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6" style="display: none;" id="respLaEmailBox">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group">
                             <input name="user" placeholder="LA Email (If Applicable)" type="text" class="form-control"
-                            id="laEmailMob" onkeyup="validateEmail('laEmailMob')"/>
+                            id="laEmailMob"/>
                               
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6" style="display: none;" id="respLaMobileBox">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group">
                             <input name="user" placeholder="LA Mobile (If Applicable)" type="text" class="form-control"
-                            id="laPhoneMob" onkeyup="validatePhoneNumber('laPhoneMob')"/>
+                            id="laPhoneMob"/>
                               
                           </div>
                         </div>
-                        <!-- <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group">
 
                             <input name="ladaterange" onkeyup="validateDate('laDOBResp')" id="laDOBResp"
@@ -334,7 +282,7 @@
                               <option>Other</option>
                             </select>
                           </div>
-                        </div> -->
+                        </div>
                         <div style="color: red;  margin-top: -4px; text-align: center;  margin-bottom: 12px; margin-left: 74px;">Upload Documents</div>
                         <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
@@ -383,21 +331,18 @@
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6" style="display: none;" id="laPhotoBoxresp">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
-                            <input name="user" type="file" style="display: none" id="laPhotoMob"
-                              onchange="handelLaPhotoMob(this.files)" />
+                            <input name="user" type="file" style="display: none" id="laKycMob"
+                              onchange="handelLaKycMob(this.files)" />
 
-                            <input type="text" class="form-control" placeholder="LA Photo (If Applicable)"
-                              id="laPhotoIdMob" readonly />
-                            <span onclick="openPhotoMob()"><i class="fa fa-upload"
+                            <input type="text" class="form-control" placeholder="LA KYC (If Applicable)"
+                              id="laKycFileMob" readonly />
+                            <span onclick="openLaKycFileMob()"><i class="fa fa-upload"
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
-
-
-                   
-                         <div class="col-md-4 col-sm-6" style="display: none;" id="respLaPanBox">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
                             <input name="user" type="file" style="display: none" id="laPanCardMob"
                               onchange="handelLaPanMob(this.files)" />
@@ -408,7 +353,7 @@
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
-                        <div class="col-md-4 col-sm-6" style="display: none;" id="respLaAadharBox">
+                        <div class="col-md-4 col-sm-6">
                           <div class="form-group" style="display: flex; align-items: center">
                             <input name="user" type="file" style="display: none" id="laAadharMob"
                               onchange="handelLaAadharMob(this.files)" />
@@ -419,43 +364,8 @@
                                 aria-hidden="true"></i></span>
                           </div>
                         </div>
-                        <!-- <div class="col-md-4 col-sm-6">
-                          <div class="form-group" style="display: flex; align-items: center">
-                            <input name="user" type="file" style="display: none" id="applicantIdMob"
-                              onchange="handelUploadPhotos(this.files)" />
-  
-                            <input type="text" class="form-control" placeholder=" Click Selfie"
-                              id="applicantIdMobFile" readonly />
-                            <span onclick="openApplicantPhotos()"><i class="fa fa-upload"
-                                aria-hidden="true"></i></span>
-                          </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                          <div class="form-group" style="display: flex; align-items: center">
-                            <input name="user" type="file" style="display: none" id="cancelCheckIds"
-                              onchange="handelCancelsChecks(this.files)" />
-  
-                            <input type="text" class="form-control" placeholder=" Cheque Copy/Bank Statement "
-                              id="cancelCheckIdFiles" readonly />
-                            <span onclick="openCancelsChecks()"><i class="fa fa-upload"
-                                aria-hidden="true"></i></span>
-                          </div>
-                        </div> -->
                       </div>
                     </div>
-
-            
-
-
-
-
-
-
-
-
-
-
-
 
                 </div>
               </div>
@@ -467,15 +377,7 @@
               </form>
 
             </div>
-
-            <div style="width: 100%; margin-top: 20px;">
-              <form  class="checker-container" style="display: flex;gap: 10px;">
-                <input type="checkbox" id="laCheckBoxResp" onchange="toggleFileUpload()">
-                <label for="" class="checkbox-label">If LA Applicable</label>
-              </form>
-
-            </div>
-         <form id="maxUsersForm"> 
+         <form id="hdfcUsersForm"> 
               <!-- data-bs-toggle="modal"  data-bs-target="#otpModal" -->
               <div style="display: flex; justify-content: center; margin-top: 12px;">
                 <button type="submit" class="form-control btn-main submit-btn"
@@ -541,80 +443,7 @@
           </div>
         </div>
       </div>
-        <!-- <div class="row reason-container">
-              
-                <div>
-                  <h1 class="reason-heading-head">
-                    Empowering you to achieve all your aspirations with a single
-                    loan
-                  </h1>
-                </div>
-                <div style="display: flex; flex-wrap: wrap">
-                
-                  <div
-                    class="col-sm-2 sub-container"
-                    style="background-image: url(images/Downpayments.svg)"
-                  >
-                    <h1 class="reason-head">Down payments</h1>
-                  </div>
-                  <div
-                    class="col-sm-2 sub-container"
-                    style="
-                      background-image: url('images/higher.svg');
-                      background-repeat: no-repeat;
-                      background-position: center;
-                      background-size: cover;
-                    "
-                  >
-                    <h1 class="reason-head">Higher Education</h1>
-                  </div>
-                  <div
-                    class="col-sm-2 sub-container"
-                    style="
-                      background-image: url('images/special.svg');
-                      background-repeat: no-repeat;
-                      background-position: center;
-                      background-size: cover;
-                    "
-                  >
-                    <h1 class="reason-head">special Occasion</h1>
-                  </div>
-                  <div
-                    class="col-sm-2 sub-container"
-                    style="
-                      background-image: url('images/home.svg');
-                      background-repeat: no-repeat;
-                      background-position: center;
-                      background-size: cover;
-                    "
-                  >
-                    <h1 class="reason-head">Home renovations</h1>
-                  </div>
-                  <div
-                    class="col-sm-2 sub-container"
-                    style="
-                      background-image: url('images/medical.svg');
-                      background-repeat: no-repeat;
-                      background-position: center;
-                      background-size: cover;
-                    "
-                  >
-                    <h1 class="reason-head">Medical Expense</h1>
-                  </div>
-                  <div
-                    class="col-sm-2 sub-container"
-                    style="
-                      background-image: url('images/pay.svg');
-                      background-repeat: no-repeat;
-                      background-position: center;
-                      background-size: cover;
-                    "
-                  >
-                    <h1 class="reason-head">Pay your pending premium</h1>
-                  </div>
-                </div>
-              </div> -->
-
+     
         <div class="contacts-raws">
           <div class="policy-form-box policy-form-box-responshive">
             <div class="filter-box-div">
@@ -656,95 +485,6 @@
                         </div>
                       </div>
 
-                      <div class="col-md-12">
-                        <div class="row">
-                          <div class="form-group col-md-8 col-sm-8">
-                            <select class="form-control" id="advisorCompanyName">
-                              <option>
-                                Associated Insurance Company*
-                              </option>
-                              <option>
-                                Life Insurance Corporation of India
-                              </option>
-                              <option>HDFC Life Insurance Co. Ltd</option>
-                              <option>Max Life Insurance Co. Ltd.</option>
-                              <option>
-                                ICICI Prudential Life Insurance Co. Ltd
-                              </option>
-                              <option>
-                                Kotak Mahindra Life Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                Aditya Birla SunLife Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                TATA AIA Life Insurance Co. Ltd.
-                              </option>
-                              <option>SBI Life Insurance Co. Ltd.</option>
-                              <option>
-                                Exide Life Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                Bajaj Allianz Life Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                PNB MetLife India Insurance Co. Ltd
-                              </option>
-                              <option>
-                                Reliance Nippon Life Insurance Company
-                              </option>
-                              <option>
-                                Aviva Life Insurance Company India Ltd.
-                              </option>
-                              <option>
-                                Sahara India Life Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                Shriram Life Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                Bharti AXA Life Insurance Company Ltd
-                              </option>
-                              <option>
-                                Future Generali India Life Insurance
-                                Company Limited
-                              </option>
-                              <option>
-                                Ageas Federal Life Insurance Company
-                                Limited
-                              </option>
-                              <option>
-                                Canara HSBC Oriental Bank of Commerce Life
-                                Insurance Company Limited
-                              </option>
-                              <option>
-                                Aegon Life Insurance Company Limited
-                              </option>
-                              <option>
-                                Pramerica Life Insurance Co. Ltd.
-                              </option>
-                              <option>
-                                Star Union Dai-Ichi Life Insurance Co.
-                                Ltd.
-                              </option>
-                              <option>
-                                IndiaFirst Life Insurance Company Ltd.
-                              </option>
-                              <option>
-                                Edelweiss Tokio Life Insurance Company
-                                Limited
-                              </option>
-                            </select>
-                          </div>
-
-                          <div class="col-md-4 col-sm-4">
-                            <div class="form-group">
-                              <input name="user" placeholder="Pin Code*" type="text" class="form-control"
-                                id="advisorPinCode" onkeyup="validatePincodeInput('advisorPinCode')" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -807,95 +547,23 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group">
-                          <input placeholder="ICICI Prudential Life Insurance Co. Ltd*" type="text" class="form-control"
-                            id="companyName" readonly value="ICICI Prudential Life Insurance Co. Ltd" />
+                          <input placeholder="HDFC Standard Life Insurance Co. Ltd.*" type="text" class="form-control"
+                            id="companyName" readonly value="HDFC Standard Life Insurance Co. Ltd." />
                         </div>
 
-                      </div>
-
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <select class="form-control" id="prodctType">
-                            <option>Product Name*</option>
-                            <option>ICICI Pru Wealth Builder II</option>
-                            <option>ICICI Pru Elite Wealth II</option>
-                            <option>ICICI Pru LifeTime Classic</option>
-                            <!-- <option>
-                                    ICICI Pru Guaranteed Wealth Protector
-                                  </option> -->
-                            <option>ICICI Pru Elite Life Super</option>
-                            <!-- <option>ICICI Pru Life Time</option> -->
-                            <!-- <option>ICICI Pru Cash Advantage</option>
-                                  <option>ICICI Pru Savings Suraksha</option> -->
-                            <option>ICICI Pru Signature</option>
-                            <option>ICICI Pru Smart Life</option>
-                            <option>ICICI Pru Elite Wealth Super</option>
-                            <option>ICICI Pru1 Wealth</option>
-                            <option>ICICI Pru Elite Life II</option>
-                            <option>Guaranteed Wealth Protector</option>
-
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <select class="form-control" id="branchName">
-                            <option>Branch Name*</option>
-                            <option>Pune – Main branch</option>
-                            <option>Pune - PCMC</option>
-                            <option>Mumbai Kalyan</option>
-                            <option>
-                              Mumbai Amboli
-                                  </option>
-                            <option>Mumbai Borival</option>
-                            <option>Mumbai Ghatkopar</option>
-                            <option>Chennai</option>
-                                  <option>Hyderabad – Banjara Hills</option>
-                            <option>Bangalore – Residency road</option>
-                            <option>Delhi – Videocon towers</option>
-
-                          </select>
-                        </div>
                       </div>
                       <div class="mt-3 col-md-12 mb-2">
                         <div class="row">
-                          <div class="col-md-4 col-sm-6">
+                          <!-- <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                              <input name="user" placeholder=" Name*" type="text" class="form-control"
+                              <input name="user" placeholder="Name *" type="text" class="form-control"
                                 pattern="[A-Za-z]" title="Only text are allowed" id="customerName" />
                             </div>
-                          </div>
+                          </div> -->
                           <div class="col-md-4 col-sm-6">
                             <div class="form-group">
                               <input name="user" placeholder="Mobile Number*" type="text" class="form-control"
                                 id="customerMobileNumber" onkeyup="validatePhoneNumber('customerMobileNumber')" />
-                            </div>
-                          </div>
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group">
-                              <input name="user" placeholder="Email ID*" type="text" class="form-control"
-                                id="customerEmail" onkeyup="validateEmail('customerEmail')" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="mt-3 col-md-12 mb-2 ">
-                        <div class="row">
-                          <div class="col-md-4 col-sm-6">
-                            <div class="form-group">
-
-                              <!-- <input
-                                      name="daterange"
-                                      placeholder="DOB*"
-                                      type="date"
-                                      aria-placeholder="DOB"
-                                      class="form-control"
-                                      id="customerDOB"
-                                      onkeyup="validateDate('customerDOB')"
-                                    /> -->
-                              <input name="daterange" onkeyup="validateDate('customerDOB')" id="customerDOB"
-                                class="form-control" type="date" required placeholder="DOB*">
                             </div>
                           </div>
                           <div class="col-md-4 col-sm-6">
@@ -905,37 +573,46 @@
                                 
                             </div>
                           </div>
-
                           <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                              <input name="user" placeholder="Enter Your Policy Number" type="text" class="form-control"
+                              <input name="user" placeholder="Enter Your Policy Number*" type="text" class="form-control"
                                id="policyNumber"/>
                                 
                             </div>
                           </div>
-                          <div class="col-md-4 col-sm-6" style="display: none;" id="laNameBox">
+                          <!-- <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <input name="user" placeholder="Email ID" type="text" class="form-control"
+                                id="customerEmail" onkeyup="validateEmail('customerEmail')" />
+                            </div>
+                          </div> -->
+                        </div>
+                      </div>
+
+                      <div class="mt-3 col-md-12 mb-2 ">
+                        <div class="row">
+                          <div class="col-md-4 col-sm-6">
                             <div class="form-group">
                               <input name="user" placeholder="LA Name (If Applicable)" type="text" class="form-control"
                                id="laName"/>
                                 
                             </div>
                           </div>
-                          <div class="col-md-4 col-sm-6" style="display: none;" id="laEmailBox">
+                          <div class="col-md-4 col-sm-6">
                             <div class="form-group">
                               <input name="user" placeholder="LA Email (If Applicable)" type="text" class="form-control"
-                               id="laEmail" onkeyup="validateEmail('laEmail')"/>
+                               id="laEmail"/>
                                 
                             </div>
                           </div>
-                          <div class="col-md-4 col-sm-6" style="display: none;" id="laPhoneBox">
+                          <div class="col-md-4 col-sm-6">
                             <div class="form-group">
                               <input name="user" placeholder="LA Mobile (If Applicable)" type="text" class="form-control"
-                               id="laPhone" onkeyup="validatePhoneNumber('laPhone')"/>
+                               id="laPhone"/>
                                 
                             </div>
                           </div>
-
-                          <!-- <div class="col-md-4 col-sm-6">
+                          <div class="col-md-4 col-sm-6">
                             <div class="form-group">
 
                               <input name="ladaterange" onkeyup="validateDate('laDOB')" id="laDOB"
@@ -951,7 +628,32 @@
                                 <option>Other</option>
                               </select>
                             </div>
+                          </div>
+                          <!-- <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <input name="daterange" onkeyup="validateDate('customerDOB')" id="customerDOB"
+                                class="form-control" type="date" required placeholder="DOB*">
+                            </div>
                           </div> -->
+                          <!-- <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <input name="user" placeholder="Mother Full Name*" type="text" class="form-control"
+                              pattern="[A-Za-z]" title="Only text are allowed" id="motherName"/>
+                                
+                            </div>
+                          </div> -->
+
+                          <!-- <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <input name="user" placeholder="Enter Your Policy Number*" type="text" class="form-control"
+                               id="policyNumber"/>
+                                
+                            </div>
+                          </div> -->
+
+
+           
+
                         </div>
                       </div>
                     
@@ -1004,8 +706,18 @@
                               aria-hidden="true"></i></span>
                         </div>
                       </div>
-                      
-                      <div class="col-md-4 col-sm-6" id="laPanBox" style="display: none;">
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none" id="laKyc"
+                            onchange="handelLaKycForm(this.files)" />
+
+                          <input type="text" class="form-control" placeholder="LA KYC"
+                            id="laKycFile" readonly />
+                          <span onclick="openLaKycFile()"><i class="fa fa-upload"
+                              aria-hidden="true"></i></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6">
                         <div class="form-group" style="display: flex; align-items: center">
                           <input name="user" type="file" style="display: none" id="laPanCard"
                             onchange="handelLaPan(this.files)" />
@@ -1016,7 +728,7 @@
                               aria-hidden="true"></i></span>
                         </div>
                       </div>
-                      <div class="col-md-4 col-sm-6" id="laAadharBox" style="display: none;">
+                      <div class="col-md-4 col-sm-6">
                         <div class="form-group" style="display: flex; align-items: center">
                           <input name="user" type="file" style="display: none" id="laAadhar"
                             onchange="handelLaAadhar(this.files)" />
@@ -1024,40 +736,6 @@
                           <input type="text" class="form-control" placeholder="LA Aadhar Card (If Applicable)"
                             id="laAadharFile" readonly />
                           <span onclick="openLaAadharFile()"><i class="fa fa-upload"
-                              aria-hidden="true"></i></span>
-                        </div>
-                      </div>
-
-                      <div class="col-md-4 col-sm-6" style="display: none;" id="laPhotoBox">
-                        <div class="form-group" style="display: flex; align-items: center">
-                          <input name="user" type="file" style="display: none" id="laPhoto"
-                            onchange="handelLaPhoto(this.files)" />
-
-                          <input type="text" class="form-control" placeholder="LA Photo (If Applicable)"
-                            id="laPhotoFile" readonly />
-                          <span onclick="openLaPhoto()"><i class="fa fa-upload"
-                              aria-hidden="true"></i></span>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                        <div class="form-group" style="display: flex; align-items: center">
-                          <input name="user" type="file" style="display: none" id="applicantIdDesk"
-                            onchange="handelUploadPhoto(this.files)" />
-
-                          <input type="text" class="form-control" placeholder="Click Selfie "
-                            id="applicantIdDeskFile" readonly />
-                          <span onclick="openApplicantPhoto()"><i class="fa fa-upload"
-                              aria-hidden="true"></i></span>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-sm-6">
-                        <div class="form-group" style="display: flex; align-items: center; width: 247px;">
-                          <input name="user" type="file" style="display: none" id="cancelCheckId"
-                            onchange="handelCancelCheck(this.files)" />
-
-                          <input type="text" class="form-control" placeholder="Cheque Copy/Bank Statement "
-                            id="cancelCheckIdFile" readonly />
-                          <span onclick="openCancelCheck()"><i class="fa fa-upload"
                               aria-hidden="true"></i></span>
                         </div>
                       </div>
@@ -1072,14 +750,7 @@
 
                 </div>
 
-                <div style="margin-left: 29px; width: 100%; margin-top: 20px;">
-                  <form style="display: flex;gap: 10px;">
-                    <input type="checkbox" id="laCheckBox" onchange="toggleFileUpload()">
-                    <label for="" class="checkbox-label">If LA Applicable</label>
-                  </form>
-
-                </div>
-                <form id="maxUserForm">
+                <form id="hdfcUserForm">
                   <!-- data-bs-toggle="modal"  data-bs-target="#otpModal" -->
                   <div style="display: flex; justify-content: center; margin-top: 12px;">
                     <button type="submit" class="form-control btn-main submit-btn"
@@ -2166,9 +1837,10 @@
   aadharCardKey:"",
   applicantPhotoKey:"",
   cancelCheckKey:"",
-  laPhotoKey:"",
-  laPanCardKey:"",
+  laKycKey:"",
+   laPanCardKey:"",
   laAadharCardKey:""
+
 }
 
     function isValid_Pincode(pincode) {
@@ -2201,42 +1873,39 @@
     console.log(documentKeys)
     let payload = {};
 
-    $("#maxUserForm").submit((event) => {
-      console.log("maxUserForm submit called");
+    $("#hdfcUserForm").submit((event) => {
+      console.log("hdfcUserForm submit called");
       event.preventDefault();
 
       startTimer();
 
       let companyName = document.getElementById("companyName").value;
-      let prodctType = document.getElementById("prodctType").value;
-      let branchName = document.getElementById("branchName").value;
+      // let prodctType = document.getElementById("prodctType").value;
+      // let branchName = document.getElementById("branchName").value;
 
-      let customerName = document.getElementById("customerName").value;
+      // let customerName = document.getElementById("customerName").value;
       let customerMobileNumber = document.getElementById(
         "customerMobileNumber"
       ).value;
       console.log(customerMobileNumber)
-      let customerEmail = document.getElementById("customerEmail").value;
-      let customerDOB = document.getElementById("customerDOB").value;
+      // let customerEmail = document.getElementById("customerEmail").value;
+      // let customerDOB = document.getElementById("customerDOB").value;
       let attachmentsFile = document.getElementById("attachments");
       let attachmentPancard = document.getElementById("attachment-pancard");
       let UploadPolicyDesk = document.getElementById("uploadPolicyDocument");
       let SignedAadharCopyDesk = document.getElementById("signedAadhar");
-      let applicantPhoto= document.getElementById("applicantIdDesk");
-      let cancelCheckData= document.getElementById("cancelCheckId");
-      let laPhoto= document.getElementById("laPhoto");
-
+      // let applicantPhoto= document.getElementById("applicantIdDesk");
+      // let cancelCheckData= document.getElementById("cancelCheckId");
       let motherName= document.getElementById("motherName").value;
       let policyNumber= document.getElementById("policyNumber").value;
       let laName= document.getElementById("laName").value;
       let laEmail= document.getElementById("laEmail").value;
       let laPhone= document.getElementById("laPhone").value;
-      // let laDOB = document.getElementById("laDOB").value;
-      // let laGender = document.getElementById("gender").value;
+      let laKyc= document.getElementById("laKyc");
+      let laDOB = document.getElementById("laDOB").value;
+      let laGender = document.getElementById("gender").value;
       let laPanCard= document.getElementById("laPanCard");
       let laAadhar= document.getElementById("laAadhar");
-
-
 
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
@@ -2246,12 +1915,12 @@
 
       if (
         companyName == "" ||
-        prodctType == "" ||
-        branchName == "" ||
-        customerName == "" ||
+        // prodctType == "" ||
+        // branchName == "" ||
+        // customerName == "" ||
         customerMobileNumber == "" ||
-        customerEmail == "" ||
-        customerDOB == ""||
+        // customerEmail == "" ||
+        // customerDOB == ""||
         motherName == ""||
         policyNumber==""
       ) {
@@ -2280,20 +1949,20 @@ if (documentKeys?.aadharCardKey =="") {
     alert("Aadhar Document Not Uploaded Successfully. Please select again.");
     return;
 }
-if (documentKeys?.applicantPhotoKey =="") {
-    alert("applicant Photo  Not Uploaded Successfully. Please select again.");
-    return;
-}
-if (documentKeys?.cancelCheckKey =="") {
-    alert("cancel Check  Not Uploaded Successfully. Please select again.");
-    return;
-}
-      if (customerEmail !== "") {
-        if (!validateEmail("customerEmail")) {
-          alert("Please enter a valid email address");
-          return;
-        }
-      }
+// if (documentKeys?.applicantPhotoKey =="") {
+//     alert("applicant Photo  Not Uploaded Successfully. Please select again.");
+//     return;
+// }
+// if (documentKeys?.cancelCheckKey =="") {
+//     alert("cancel Check  Not Uploaded Successfully. Please select again.");
+//     return;
+// }
+      // if (customerEmail !== "") {
+      //   if (!validateEmail("customerEmail")) {
+      //     alert("Please enter a valid email address");
+      //     return;
+      //   }
+      // }
 
       if (!validatePhoneNumber("customerMobileNumber")) {
         alert("Please enter a valid mobile number");
@@ -2317,45 +1986,45 @@ if (documentKeys?.cancelCheckKey =="") {
         alert("Please select a Signed Aadhar Copy");
         return;
       }
-      if (!applicantPhoto.files[0]) {
-        alert("Please select a Applicant photo  ");
-        return;
-      }
-      if (!cancelCheckData.files[0]) {
-        alert("Please select a Cancel check ");
-        return;
-      }
+      // if (!applicantPhoto.files[0]) {
+      //   alert("Please select a Applicant photo  ");
+      //   return;
+      // }
+      // if (!cancelCheckData.files[0]) {
+      //   alert("Please select a Cancel check ");
+      //   return;
+      // }
   
 
-      let [customerFirstName, customerLastName] = customerName.split(" ") || [
-        "",
-        "",
-      ];
+      // let [customerFirstName, customerLastName] = customerName.split(" ") || [
+      //   "",
+      //   "",
+      // ];
 
       let [motherNames] = motherName.split(" ") || [
         "",
       ];
-      if (customerLastName === undefined) {
-        customerLastName = "";
-      }
+      // if (customerLastName === undefined) {
+      //   customerLastName = "";
+      // }
 
       let customerObj = {
         companyName,
-        productName: prodctType,
-        customerDOB: customerDOB,
-        customerFirstName: customerName,
-        customerLastName: "",
+        // productName: prodctType,
+        // customerDOB: customerDOB,
+        // customerFirstName: customerName,
+        // customerLastName: "",
         customerMobileNumber,
-        customerEmail,
+        // customerEmail,
         motherName: motherName,
         policyNumber:policyNumber,
         detailsFor: "customer",
-        branchName,
         laName,
         laEmail,
         laPhone,
-        // laDOB:laDOB,
-        // laGender:laGender
+        laDOB:laDOB,
+        laGender:laGender
+        // branchName
       };
 
       // console.log("customerObj", customerObj);
@@ -2381,12 +2050,11 @@ if (documentKeys?.cancelCheckKey =="") {
           unitStatementFilePath: documentKeys?.unitStatementKey,
           policyDocumentPath: documentKeys?.policyDocument,
           signedAadharPath: documentKeys?.aadharCardKey,
-          laPhotoPath:documentKeys?.laPhotoKey,
+          laKycPath:documentKeys?.laKycKey,
           laPanPath:documentKeys?.laPanCardKey,
           laAadharPath:documentKeys?.laAadharCardKey,
-
-          cancelCheckPath:documentKeys?.cancelCheckKey,
-          applicantPhotoPath:documentKeys?.applicantPhotoKey
+          // cancelCheckPath:documentKeys?.cancelCheckKey,
+          // applicantPhotoPath:documentKeys?.applicantPhotoKey
 
         },
         dataType: "json",
@@ -2452,44 +2120,38 @@ console.log(response)
       }
     }
 
-    $("#maxUsersForm").submit((event) => {
-      console.log("maxUsersForm submit called");
+    $("#hdfcUsersForm").submit((event) => {
+      console.log("hdfcUsersForm submit called");
       event.preventDefault();
 
       startTime();
 
       let companysName = document.getElementById("companysName").value;
-      let prodctsType = document.getElementById("prodctsType").value;
-      let branchNameResp = document.getElementById("branchNameResp").value;
+      // let prodctsType = document.getElementById("prodctsType").value;
+      // let branchNameResp = document.getElementById("branchNameResp").value;
 
-      let customersName = document.getElementById("customersName").value;
+      // let customersName = document.getElementById("customersName").value;
       let customersMobileNumber = document.getElementById(
         "customersMobileNumber"
       ).value;
-      let customersEmail = document.getElementById("customersEmail").value;
-      let customersDOB = document.getElementById("customersDOB").value;
+      // let customersEmail = document.getElementById("customersEmail").value;
+      // let customersDOB = document.getElementById("customersDOB").value;
       let attachmentsFile = document.getElementById("attachment");
       let attachmentPancard = document.getElementById("attachment-pan");
       let UploadPolicyMob = document.getElementById("uploadPolicyDocumentMob");
       let SignedAadharCopyMob = document.getElementById("signedAadharCopyMob");
-      let laPhotoMob = document.getElementById("laPhotoMob");
-      let laPanCard = document.getElementById("laPanCardMob");
-      let laAadharCard = document.getElementById("laAadharMob");
-
-
-
-      let applicantPhotos= document.getElementById("applicantIdMob");
-      let cancelCheckDatas= document.getElementById("cancelCheckIds");
+      // let applicantPhotos= document.getElementById("applicantIdMob");
+      // let cancelCheckDatas= document.getElementById("cancelCheckIds");
       let mothersName= document.getElementById("mothersName").value;
       let policyNumberMob= document.getElementById("policyNumberMob").value;
       let laNameMob= document.getElementById("laNameMob").value;
       let laEmailMob= document.getElementById("laEmailMob").value;
       let laPhoneMob= document.getElementById("laPhoneMob").value;
-      // let laDOBResp = document.getElementById("laDOBResp").value;
-      // let laGenderResp = document.getElementById("genderResp").value;
-
-
-
+      let laKycMob = document.getElementById("laKycMob");
+      let laPanCard = document.getElementById("laPanCardMob");
+      let laAadharCard = document.getElementById("laAadharMob");
+      let laDOBResp = document.getElementById("laDOBResp").value;
+      let laGenderResp = document.getElementById("genderResp").value;
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
         return;
@@ -2497,12 +2159,12 @@ console.log(response)
 
       if (
         companysName == "" ||
-        prodctsType == "" ||
-        branchNameResp == "" ||
-        customersName == "" ||
+        // prodctsType == "" ||
+        // branchNameResp == "" ||
+        // customersName == "" ||
         customersMobileNumber == "" ||
-        customersEmail == "" ||
-        customersDOB == ""|| 
+        // customersEmail == "" ||
+        // customersDOB == ""|| 
         mothersName == ""||
         policyNumberMob==""
       ) {
@@ -2530,20 +2192,20 @@ if (documentKeys?.aadharCardKey == "") {
     alert("Aadhar Document Not Uploaded Successfully. Please select again.");
     return;
 }
-if (documentKeys?.applicantPhotoKey =="") {
-    alert("applicant Photo  Not Uploaded Successfully. Please select again.");
-    return;
-}
-if (documentKeys?.cancelCheckKey =="") {
-    alert("cancel Check  Not Uploaded Successfully. Please select again.");
-    return;
-}
-      if (customersEmail !== "") {
-        if (!validateEmail("customersEmail")) {
-          alert("Please enter a valid email address");
-          return;
-        }
-      }
+// if (documentKeys?.applicantPhotoKey =="") {
+//     alert("applicant Photo  Not Uploaded Successfully. Please select again.");
+//     return;
+// }
+// if (documentKeys?.cancelCheckKey =="") {
+//     alert("cancel Check  Not Uploaded Successfully. Please select again.");
+//     return;
+// }
+      // if (customersEmail !== "") {
+      //   if (!validateEmail("customersEmail")) {
+      //     alert("Please enter a valid email address");
+      //     return;
+      //   }
+      // }
 
       if (!validatePhoneNumber("customersMobileNumber")) {
         alert("Please enter a valid mobile number");
@@ -2568,41 +2230,41 @@ if (documentKeys?.cancelCheckKey =="") {
         alert("Please select a Upload Policy Document ");
         return; 
       }
-      if (!applicantPhotos.files[0]) {
-        alert("Please select a Applicant photo  ");
-        return;
-      }
-      if (!cancelCheckDatas.files[0]) {
-        alert("Please select a Cancel check ");
-        return;
-      }
-      let [customerFirstName, customerLastName] = customersName.split(
-        " "
-      ) || ["", ""];
+      // if (!applicantPhotos.files[0]) {
+      //   alert("Please select a Applicant photo  ");
+      //   return;
+      // }
+      // if (!cancelCheckDatas.files[0]) {
+      //   alert("Please select a Cancel check ");
+      //   return;
+      // }
+      // let [customerFirstName, customerLastName] = customersName.split(
+      //   " "
+      // ) || ["", ""];
 
-      if (customerLastName === undefined) {
-        customerLastName = "";
-      }
+      // if (customerLastName === undefined) {
+      //   customerLastName = "";
+      // }
       let [mothersNames] = mothersName.split(" ") || [
         "",
       ];
       let customerObj = {
         companyName: companysName,
-        customerFirstName: customersName,
-        productName: prodctsType,
-        customerDOB: customersDOB,
+        // customerFirstName: customersName,
+        // productName: prodctsType,
+        // customerDOB: customersDOB,
         customerLastName: "",
         customerMobileNumber: customersMobileNumber,
-        customerEmail: customersEmail,
+        // customerEmail: customersEmail,
         motherName:mothersName,
         policyNumber:policyNumberMob,
         detailsFor: "customer",
-        branchName:branchNameResp,
         laName:laNameMob,
         laEmail:laEmailMob,
         laPhone:laEmailMob,
-        // laDOB:laDOBResp,
-        // laGender:laGenderResp
+        laDOB:laDOBResp,
+        laGender:laGenderResp
+        // branchName:branchNameResp
       };
 
       // console.log("customerObj", customerObj);
@@ -2628,11 +2290,11 @@ if (documentKeys?.cancelCheckKey =="") {
           unitStatementFilePath: documentKeys?.unitStatementKey,
           policyDocumentPath: documentKeys?.policyDocument,
           signedAadharPath: documentKeys?.aadharCardKey,
-          laPhotoPath:documentKeys?.laPhotoKey,
+          laKycPath:documentKeys?.laKycKey,
           laPanPath:documentKeys?.laPanCardKey,
           laAadharPath:documentKeys?.laAadharCardKey,
-          cancelCheckPath:documentKeys?.cancelCheckKey,
-          applicantPhotoPath:documentKeys?.applicantPhotoKey
+          // cancelCheckPath:documentKeys?.cancelCheckKey,
+          // applicantPhotoPath:documentKeys?.applicantPhotoKey
         },
         dataType: "json",
         encode: true,
@@ -2756,24 +2418,19 @@ if (documentKeys?.cancelCheckKey =="") {
     });
 
     function resetField() {
-      document.getElementById("advisorCompanyName").value =
-        "Associated Insurance Company*";
-      document.getElementById("advisorName").value = "";
-      document.getElementById("advisorMobileNumber").value = "";
-      document.getElementById("advisorEmail").value = "";
-      document.getElementById("advisorPinCode").value = "";
       resetFieldForCustomer();
       resetFieldForMobile();
     }
 
     function resetFieldForCustomer() {
-      document.getElementById("companyName").value = "ICICI Prudential Life Insurance Co. Ltd";
-      document.getElementById("prodctType").value = "Product Name*";
-      document.getElementById("branchName").value = "Branch Name*";
-      document.getElementById("customerName").value = "";
+      document.getElementById("companyName").value = "HDFC Standard Life Insurance Co. Ltd.";
+      document.getElementById("gender").value = "LA Gender (If Applicable)";
+      // document.getElementById("prodctType").value = "Product Name*";
+      // document.getElementById("branchName").value = "Branch Name*";
+      // document.getElementById("customerName").value = "";
       document.getElementById("customerMobileNumber").value = "";
-      document.getElementById("customerEmail").value = "";
-      document.getElementById("customerDOB").value = "";
+      // document.getElementById("customerEmail").value = "";
+      // document.getElementById("customerDOB").value = "";
       document.getElementById("attachments").value = "";
       document.getElementById("attachment-pancard").value = "";
       document.getElementById("selectedFileNames").value = "";
@@ -2783,38 +2440,35 @@ if (documentKeys?.cancelCheckKey =="") {
       document.getElementById("signedAadhar").value = "";
       document.getElementById("uploadPolicyDocumentFile").value = "";
       document.getElementById("signedAadharFile").value = "";
-      document.getElementById("laPhotoFile").value = "";
-      document.getElementById("laPhoto").value = "";
-      document.getElementById("laPanCard").value = "";
-      document.getElementById("laPanFile").value = "";
-      document.getElementById("laAadharFile").value = "";
-      document.getElementById("laAadhar").value = "";
-
-
-
-      document.getElementById("applicantIdDesk").value = "";
-      document.getElementById("applicantIdDeskFile").value = "";
-      document.getElementById("cancelCheckId").value = "";
-      document.getElementById("cancelCheckIdFile").value = "";
+      // document.getElementById("applicantIdDesk").value = "";
+      // document.getElementById("applicantIdDeskFile").value = "";
+      // document.getElementById("cancelCheckId").value = "";
+      // document.getElementById("cancelCheckIdFile").value = "";
       document.getElementById("motherName").value = "";
       document.getElementById("policyNumber").value = "";
       document.getElementById("laName").value = "";
       document.getElementById("laEmail").value = "";
       document.getElementById("laPhone").value = "";
-      // document.getElementById("laDOB").value = "";
-      // document.getElementById("gender").value = "LA Gender (If Applicable)";
-     
+      document.getElementById("laKycFile").value = "";
+      document.getElementById("laKyc").value = "";
+      document.getElementById("laPanCard").value = "";
+      document.getElementById("laPanFile").value = "";
+      document.getElementById("laAadharFile").value = "";
+      document.getElementById("laAadhar").value = "";
+      document.getElementById("laDOB").value = "";
+
     }
     function resetFieldForMobile() {
-      document.getElementById("companysName").value = "ICICI Prudential Life Insurance Co. Ltd";
-      document.getElementById("prodctsType").value = "Product Name*";
-      document.getElementById("branchNameResp").value = "Branch Name*";
-      // document.getElementById("genderResp").value = "LA Gender (If Applicable)";
-      document.getElementById("customersName").value = "";
+      document.getElementById("companysName").value = "HDFC Standard Life Insurance Co. Ltd.*";
+      document.getElementById("genderResp").value = "LA Gender (If Applicable)";
+      // document.getElementById("prodctsType").value = "Product Name*";
+      // document.getElementById("branchNameResp").value = "Branch Name*";
+
+      // document.getElementById("customersName").value = "";
       document.getElementById("customersMobileNumber").value = "";
-      document.getElementById("customersEmail").value = "";
-      document.getElementById("customersDOB").value = "";
-      document.getElementById("attachment").value = "";
+      // document.getElementById("customersEmail").value = "";
+      // document.getElementById("customersDOB").value = "";
+      // document.getElementById("attachment").value = "";
       document.getElementById("attachment-pan").value = "";
       document.getElementById("selectedFileName").value = "";
       document.getElementById("selectedFilePan").value = "";
@@ -2829,19 +2483,16 @@ if (documentKeys?.cancelCheckKey =="") {
       // document.getElementById("applicantIdMobFile").value = "";
       document.getElementById("mothersName").value = "";
       document.getElementById("policyNumberMob").value = "";
-      document.getElementById("laPhotoIdMob").value = "";
-      document.getElementById("laPhotoMob").value = "";
       document.getElementById("laNameMob").value = "";
       document.getElementById("laEmailMob").value = "";
       document.getElementById("laPhoneMob").value = "";
-      // document.getElementById("laDOBResp").value = "";
+      document.getElementById("laKycMob").value = "";
+      document.getElementById("laKycFileMob").value = "";
+      document.getElementById("laDOBResp").value = "";
       document.getElementById("laPanCardMob").value = "";
       document.getElementById("laPanFileMob").value = "";
       document.getElementById("laAadharMob").value = "";
       document.getElementById("laAadharFileMob").value = "";
-
-
-      
     }
 
     function getAllInputValues() {
@@ -3381,18 +3032,17 @@ if (documentKeys?.cancelCheckKey =="") {
       }
       document.getElementById("signedAadharCopyFileMob").value = fileName;
     }
-
-    function handelUploadPhoto(files){
+    function handelLaKycMob(files){
       console.log(files)
       var fileName = files[0].name;
       if(fileName){
-        let attachmentsFile = document.getElementById("applicantIdDesk");
-        uploadDocument("applicantPhoto",attachmentsFile.files[0].type).then((result) => {
+        let attachmentsFile = document.getElementById("laKycMob");
+        uploadDocument("laKyc",attachmentsFile.files[0].type).then((result) => {
           console.log(result)
       if (result.status=="success") {
         uploadFile(result.uploadUrl, attachmentsFile.files[0])
               .then(response => {
-                documentKeys.applicantPhotoKey = result.uploadKey;
+                documentKeys.laKycKey = result.uploadKey;
               })
               .catch(error => {
                 console.error('Upload error:', error);
@@ -3404,50 +3054,22 @@ if (documentKeys?.cancelCheckKey =="") {
   }
 })
       }
-      document.getElementById("applicantIdDeskFile").value = fileName;
+      document.getElementById("laKycFileMob").value = fileName;
     }
-    function openApplicantPhoto(){
- document.getElementById("applicantIdDesk").click();
+    function openLaKycFileMob(){
+ document.getElementById("laKycMob").click();
     }
-    function handelCancelCheck(files){
+    function handelLaKycForm(files){
       console.log(files)
       var fileName = files[0].name;
       if(fileName){
-        let attachmentsFile = document.getElementById("cancelCheckId");
-        uploadDocument("cancelCheck",attachmentsFile.files[0].type).then((result) => {
+        let attachmentsFile = document.getElementById("laKyc");
+        uploadDocument("laKyc",attachmentsFile.files[0].type).then((result) => {
           console.log(result)
       if (result.status=="success") {
         uploadFile(result.uploadUrl, attachmentsFile.files[0])
               .then(response => {
-                documentKeys.cancelCheckKey = result.uploadKey;
-              })
-              .catch(error => {
-                console.error('Upload error:', error);
-                
-            alert("cancel Check upload failed. Please try again.");
-            return;
-
-              })
-  }
-})
-      }
-      document.getElementById("cancelCheckIdFile").value = fileName;
-    }
-    function openCancelCheck(){
- document.getElementById("cancelCheckId").click();
-    }
-
-    function handelUploadPhotos(files){
-      console.log(files)
-      var fileName = files[0].name;
-      if(fileName){
-        let attachmentsFile = document.getElementById("applicantIdMob");
-        uploadDocument("applicantPhoto",attachmentsFile.files[0].type).then((result) => {
-          console.log(result)
-      if (result.status=="success") {
-        uploadFile(result.uploadUrl, attachmentsFile.files[0])
-              .then(response => {
-                documentKeys.applicantPhotoKey = result.uploadKey;
+                documentKeys.laKycKey = result.uploadKey;
               })
               .catch(error => {
                 console.error('Upload error:', error);
@@ -3459,97 +3081,11 @@ if (documentKeys?.cancelCheckKey =="") {
   }
 })
       }
-      document.getElementById("applicantIdMobFile").value = fileName;
-    }
-    function openApplicantPhotos(){
- document.getElementById("applicantIdMob").click();
-    }
-
-    function handelCancelsChecks(files){
-      console.log(files)
-      var fileName = files[0].name;
-      if(fileName){
-        let attachmentsFile = document.getElementById("cancelCheckIds");
-        uploadDocument("cancelCheck",attachmentsFile.files[0].type).then((result) => {
-          console.log(result)
-      if (result.status=="success") {
-        uploadFile(result.uploadUrl, attachmentsFile.files[0])
-              .then(response => {
-                documentKeys.cancelCheckKey = result.uploadKey;
-              })
-              .catch(error => {
-                console.error('Upload error:', error);
-                
-            alert("cancel Check upload failed. Please try again.");
-            return;
-
-              })
-  }
-})
-      }
-      document.getElementById("cancelCheckIdFiles").value = fileName;
-    }
-    function openCancelsChecks(){
- document.getElementById("cancelCheckIds").click();
-    }
-
-
-    function handelLaPhoto(files){
-      console.log(files)
-      var fileName = files[0].name;
-      if(fileName){
-        let attachmentsFile = document.getElementById("laPhoto");
-        uploadDocument("laPhoto",attachmentsFile.files[0].type).then((result) => {
-          console.log(result)
-      if (result.status=="success") {
-        uploadFile(result.uploadUrl, attachmentsFile.files[0])
-              .then(response => {
-                documentKeys.laPhotoKey = result.uploadKey;
-              })
-              .catch(error => {
-                console.error('Upload error:', error);
-                
-            alert("Photo upload failed. Please try again.");
-            return;
-
-              })
-  }
-})
-      }
-      document.getElementById("laPhotoFile").value = fileName;
+      document.getElementById("laKycFile").value = fileName;
 
     }
-    function openLaPhoto(){
- document.getElementById("laPhoto").click();
-    }
-
-
-        function handelLaPhotoMob(files){
-      console.log(files)
-      var fileName = files[0].name;
-      if(fileName){
-        let attachmentsFile = document.getElementById("laPhotoMob");
-        uploadDocument("laPhoto",attachmentsFile.files[0].type).then((result) => {
-          console.log(result)
-      if (result.status=="success") {
-        uploadFile(result.uploadUrl, attachmentsFile.files[0])
-              .then(response => {
-                documentKeys.laPhotoKey = result.uploadKey;
-              })
-              .catch(error => {
-                console.error('Upload error:', error);
-                
-            alert("Photo upload failed. Please try again.");
-            return;
-
-              })
-  }
-})
-      }
-      document.getElementById("laPhotoIdMob").value = fileName;
-    }
-    function openPhotoMob(){
- document.getElementById("laPhotoMob").click();
+    function openLaKycFile(){
+ document.getElementById("laKyc").click();
     }
 
 
@@ -3784,55 +3320,7 @@ if (documentKeys?.cancelCheckKey =="") {
       return null;
     });
 }
-function toggleFileUpload() {
-        const isChecked = document.getElementById("laCheckBox").checked;
-        const laCheckBoxResp = document.getElementById("laCheckBoxResp").checked;
 
-        const panCardGroup = document.getElementById("laPanBox");
-        const aadharGroup = document.getElementById("laAadharBox");
-        const nameGroup = document.getElementById("laNameBox");
-        const emailGroup = document.getElementById("laEmailBox");
-        const phoneGroup = document.getElementById("laPhoneBox");
-        const laPhotoBoxresp = document.getElementById("laPhotoBoxresp");
-        const laPhotoBox = document.getElementById("laPhotoBox");
-
-        
-        if (isChecked) {
-            panCardGroup.style.display = "flex"; 
-            aadharGroup.style.display = "flex"; 
-            nameGroup.style.display = "flex"; 
-            emailGroup.style.display = "flex"; 
-            phoneGroup.style.display = "flex"; 
-            laPhotoBox.style.display = "flex"; 
-
-        } else {
-            panCardGroup.style.display = "none"; 
-            aadharGroup.style.display = "none"; 
-            nameGroup.style.display = "none"; 
-            emailGroup.style.display = "none"; 
-            phoneGroup.style.display = "none"; 
-            laPhotoBox.style.display = "none"; 
-
-        }
-
-        if (laCheckBoxResp) {
-          respLaPanBox.style.display = "block"; 
-          respLaAadharBox.style.display = "block"; 
-          respLaNameBox.style.display = "block"; 
-          respLaMobileBox.style.display = "block"; 
-          respLaEmailBox.style.display = "block"; 
-          laPhotoBoxresp.style.display = "block"; 
-
-        } else {
-          respLaPanBox.style.display = "none"; 
-          respLaAadharBox.style.display = "none"; 
-          respLaNameBox.style.display = "none"; 
-          respLaMobileBox.style.display = "none"; 
-          respLaEmailBox.style.display = "none"; 
-          laPhotoBoxresp.style.display = "none"; 
-
-        }
-    }
 
 
   </script>
