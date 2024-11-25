@@ -929,10 +929,11 @@ ul {
   }
 
   ul.pillar {
-    width: calc(100% + 140px);
+    width: calc(100% + 260px);
     padding: 0 5%;
-    margin: 30px -70px 0;
+    margin: 29px -137px 0;
     display: flex;
+
 
     li {
       float: left;
@@ -1001,7 +1002,8 @@ ul {
             font-size: 18.5px;
             font-weight: 300;
             padding-bottom: 0px;
-            line-height: 30px;
+            line-height: 19px;
+            text-align: left;
             @include transition(all 0.3s);
           }
 
@@ -1198,8 +1200,11 @@ ul {
 
       p {
         // font-weight: 500;
-        font-size: 18px;
-        color: #333434;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #232222;
+        font-size: 17.97px;
+        line-height: 128%;
         padding-top: 40px;
         overflow: hidden;
         text-align: center;
@@ -1393,7 +1398,7 @@ ul {
     .tabbing-raw {
       width: 100%;
       float: left;
-      margin-top: 50px;
+      //margin-top: 50px;
 
       .nav-tabs {
         text-align: center;
@@ -2240,14 +2245,19 @@ form {
       padding: 0 170px;
 
       p {
-        font-size: 18px;
+        // font-size: 18px;
         padding: 15px 0 15px 0px;
-        line-height: 136%;
-        color: #2e2e2e;
+        // line-height: 136%;
+        line-height: 128%;
+        // color: #2e2e2e;
         font-weight: 400;
         text-align: center;
         text-align: justify;
         // padding-top: 10px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #232222;
+        font-size: 17.97px;
       }
 
       .teamwrap {
@@ -2296,7 +2306,10 @@ form {
             float: left;
             width: 25%;
             padding: 0 15px;
+            list-style: none;
+            width: 100%;
 
+            // list-style: disc;
             .boxwrap {
               float: left;
               width: 100%;
@@ -2687,7 +2700,7 @@ form {
             // padding-top: 45px;
             .policyholder {
               .rightwrap {
-                padding-top: 14% !important;
+                // padding-top: 14% !important;
               }
             }
 
@@ -2760,10 +2773,15 @@ form {
                       position: relative;
                       font-size: 22px;
                       color: #1f1c33;
-                      line-height: 22px;
+                      // line-height: 22px;
                       font-weight: 400;
                       padding: 15px 0 15px 40px;
                       text-align: left;
+                      font-family: "Poppins", sans-serif;
+                      font-weight: 400;
+                      color: #232222;
+                      font-size: 17.97px;
+                      line-height: 128%;
 
                       &::before {
                         position: absolute;
@@ -2779,14 +2797,29 @@ form {
                   }
 
                   p {
+                    // float: left;
+                    // width: 100%;
+                    // position: relative;
+                    // font-size: 22px;
+                    // color: #1f1c33;
+                    // line-height: 23px;
+                    // font-weight: 400;
+                    // text-align: justify;
+
                     float: left;
                     width: 100%;
                     position: relative;
-                    font-size: 22px;
+                    // font-size: 22px;
                     color: #1f1c33;
-                    line-height: 23px;
+                    // line-height: 30px;
                     font-weight: 400;
-                    text-align: justify;
+                    text-align: start;
+                    letter-spacing: 1px;
+                    font-family: "Poppins", sans-serif;
+                    line-height: 128%;
+                    font-weight: 400;
+                    color: #232222;
+                    font-size: 17.97px;
                   }
                 }
 
@@ -2815,12 +2848,15 @@ form {
                     float: left;
                     width: 100%;
                     position: relative;
-                    font-size: 22px;
-                    color: #1f1b33;
-                    line-height: 23px;
+                    // color: #1f1c33;
                     font-weight: 400;
-                    padding: 10px 0;
-                    text-align: left;
+                    text-align: start;
+                    letter-spacing: 1px;
+                    font-family: "Poppins", sans-serif;
+                    line-height: 128%;
+                    font-weight: 400;
+                    color: #232222;
+                    font-size: 17.97px;
 
                     a {
                       float: none;
@@ -3684,4 +3720,118 @@ form {
     }
   }
 
+}
+
+.know-more-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #da1e37;
+  border-radius: 10px;
+  color: white;
+  width: 115px;
+  gap: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 26px;
+  font-size: 0.7rem !important;
+}
+
+.ve-piller {
+  font-size: 18.5px;
+  margin-top: -30px;
+  text-align: left;
+}
+
+.about-us-li {
+  list-style: disc !important;
+}
+
+.rainmatter-section {
+  margin-top: -130px;
+  display: flex;
+  gap: 30px;
+}
+
+.founding-team-sec {
+  margin-top: -100px;
+}
+
+.contact-sec {
+  margin-top: -130px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: 50%/100% 100% no-repeat;
+  // background-color: black;
+  color: white;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.partner-sec {
+  margin-top: -95px;
+}
+
+.distributor-sec {
+  margin-top: 45px;
+}
+
+.lender-sec {
+  margin-top: 45px;
+}
+
+.investor-sec {
+  margin-bottom: -100px;
+  margin-top: 30px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 450px;
+}
+
+.angle-investor-sec {
+  margin-top: -100px;
+}
+
+.our-story-sec {
+  margin-top: -95px;
+}
+
+.distributor-image {
+  display: none !important;
+}
+
+.investor-partner-img1 {
+  display: none
+}
+
+.investor-partner-img {
+  display: block;
+}
+
+.our-partner-p1 {
+  display: none;
+}
+
+.footer-logo {
+  // margin-left: 158px;
+  display: none;
+}
+
+.jd-box {
+  // margin-left: 110px;
+}
+
+.start-up-ind-logo {
+  margin-left: 30px;
 }
