@@ -411,7 +411,7 @@
                             <input name="user" type="file" style="display: none" id="uploadPolicyDocumentMob"
                               onchange="handelUploadPolicyMob(this.files)" />
 
-                            <input type="text" class="form-control" placeholder=" Policy Document"
+                            <input type="text" class="form-control" placeholder=" Policy Bond"
                               id="uploadPolicyDocumentFileMob" readonly />
                             <span onclick="openUploadPolicyMob()"><i class="fa fa-upload" aria-hidden="true"></i></span>
                           </div>
@@ -1077,7 +1077,7 @@
                           <input name="user" type="file" style="display: none" id="uploadPolicyDocument"
                             onchange="handelUploadPolicy(this.files)" />
 
-                          <input type="text" class="form-control" placeholder=" Policy Document"
+                          <input type="text" class="form-control" placeholder=" Policy Bond"
                             id="uploadPolicyDocumentFile" readonly />
                           <span onclick="openUploadPolicy()"><i class="fa fa-upload" aria-hidden="true"></i></span>
                         </div>
@@ -2399,7 +2399,7 @@ if (documentKeys?.unitStatementKey == "") {
 }
 
 if (documentKeys?.policyDocument =="") {
-    alert("Policy Document Not Uploaded Successfully. Please select again.");
+    alert("Policy Bond Not Uploaded Successfully. Please select again.");
     return;
 }
 
@@ -2441,7 +2441,7 @@ if(branchName=="Branch Name*"){
       //   return;
       // }
       if (!UploadPolicyDesk.files[0]) {
-        alert("Please select a Upload Policy Document ");
+        alert("Please select a Upload Policy Bond ");
         return;
       }
       // if (!SignedAadharCopyDesk.files[0]) {
@@ -2656,7 +2656,7 @@ if (documentKeys?.unitStatementKey == "") {
 }
 
 if (documentKeys?.policyDocument == "") {
-    alert("Policy Document Not Uploaded Successfully. Please select again.");
+    alert("Policy Bond Not Uploaded Successfully. Please select again.");
     return;
 }
 
@@ -2703,7 +2703,7 @@ if(branchNameResp=="Branch Name*"){
       // }
 
       if (!UploadPolicyMob.files[0]) {
-        alert("Please select a Upload Policy Document ");
+        alert("Please select a Upload Policy Bond ");
         return; 
       }
       // if (!applicantPhotos.files[0]) {
