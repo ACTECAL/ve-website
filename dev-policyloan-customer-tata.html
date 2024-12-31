@@ -148,7 +148,7 @@
                                     <a href="https://wa.me/918645351065?text=Hi,Need a help!">+91 86453 51065</a>
                                  </li> -->
                   <li class="phone" style="margin: 10px 0px">
-                    <a href="tel:+918369734011">+91 9136682574</a>
+                    <a href="tel:+919136622049">+91 9136622049</a>
                   </li>
 
                   <li class="mail" style="margin: 10px 0px">
@@ -406,6 +406,17 @@
                             <input type="text" class="form-control" placeholder=" Policy Bond"
                               id="uploadPolicyDocumentFileMob" readonly />
                             <span onclick="openUploadPolicyMob()"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                          </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                          <div class="form-group" style="display: flex; align-items: center">
+                            <input name="user" type="file" style="display: none" id="uploadPolicyStatementMob"
+                              onchange="handelUploadPolicyStatementMob(this.files)" />
+
+                            <input type="text" class="form-control" placeholder=" Policy Statement"
+                              id="uploadPolicyStatementFileMob" readonly />
+                            <span onclick="openUploadPolicyStatementMob()"><i class="fa fa-upload" aria-hidden="true"></i></span>
                           </div>
 
                         </div>
@@ -1063,6 +1074,17 @@
                           <input type="text" class="form-control" placeholder=" Policy Bond"
                             id="uploadPolicyDocumentFile" readonly />
                           <span onclick="openUploadPolicy()"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                        </div>
+
+                      </div>
+                      <div class="col-md-4 col-sm-6">
+                        <div class="form-group" style="display: flex; align-items: center">
+                          <input name="user" type="file" style="display: none" id="uploadPolicyStatement"
+                            onchange="handelUploadPolicyStatement(this.files)" />
+
+                          <input type="text" class="form-control" placeholder=" Policy Statement"
+                            id="uploadPolicyStatementFile" readonly />
+                          <span onclick="openUploadPolicyStatement()"><i class="fa fa-upload" aria-hidden="true"></i></span>
                         </div>
 
                       </div>
@@ -2278,7 +2300,8 @@ otpModalInstance.show();
   cancelCheckKey:"",
   laPhotoKey:"",
   laPanCardKey:"",
-  laAadharCardKey:""
+  laAadharCardKey:"",
+  policyStatementKey:""
 }
 
     function isValid_Pincode(pincode) {
@@ -2331,6 +2354,7 @@ otpModalInstance.show();
       let attachmentsFile = document.getElementById("attachments");
       // let attachmentPancard = document.getElementById("attachment-pancard");
       let UploadPolicyDesk = document.getElementById("uploadPolicyDocument");
+      let UploadPolicyStatementDesk = document.getElementById("uploadPolicyStatement");
       let SignedAadharCopyDesk = document.getElementById("signedAadhar");
       // let applicantPhoto= document.getElementById("applicantIdDesk");
       // let cancelCheckData= document.getElementById("cancelCheckId");
@@ -2496,6 +2520,7 @@ if(branchName=="Branch Name*"){
           panFilePath: documentKeys?.panCardKey,
           unitStatementFilePath: documentKeys?.unitStatementKey,
           policyDocumentPath: documentKeys?.policyDocument,
+          policyStatementPath: documentKeys?.policyStatementKey,
           signedAadharPath: documentKeys?.aadharCardKey,
           laPhotoPath:documentKeys?.laPhotoKey,
           laPanPath:documentKeys?.laPanCardKey,
@@ -2588,6 +2613,7 @@ console.log(response)
       let attachmentsFile = document.getElementById("attachment");
       let attachmentPancard = document.getElementById("attachment-pan");
       let UploadPolicyMob = document.getElementById("uploadPolicyDocumentMob");
+      let UploadPolicyStatementMob = document.getElementById("uploadPolicyStatementMob");
       let SignedAadharCopyMob = document.getElementById("signedAadharCopyMob");
       let laPhotoMob = document.getElementById("laPhotoMob");
       let laPanCard = document.getElementById("laPanCardMob");
@@ -2750,6 +2776,7 @@ if(branchNameResp=="Branch Name*"){
           panFilePath: documentKeys?.panCardKey,
           unitStatementFilePath: documentKeys?.unitStatementKey,
           policyDocumentPath: documentKeys?.policyDocument,
+          policyStatementPath: documentKeys?.policyStatementKey,
           signedAadharPath: documentKeys?.aadharCardKey,
           laPhotoPath:documentKeys?.laPhotoKey,
           laPanPath:documentKeys?.laPanCardKey,
@@ -2906,8 +2933,10 @@ if(branchNameResp=="Branch Name*"){
       document.getElementById("selectedFileNames").value = "";
       // document.getElementById("selectedFilePancard").value = "";
       document.getElementById("uploadPolicyDocument").value = "";
+      document.getElementById("uploadPolicyStatement").value = "";
       // document.getElementById("signedAadhar").value = "";
       document.getElementById("uploadPolicyDocumentFile").value = "";
+      document.getElementById("uploadPolicyStatementFile").value = "";
       // document.getElementById("signedAadharFile").value = "";
       document.getElementById("laPhotoFile").value = "";
       document.getElementById("laPhoto").value = "";
@@ -2946,8 +2975,10 @@ if(branchNameResp=="Branch Name*"){
       // document.getElementById("selectedFilePan").value = "";
       document.getElementById("selectedFileNames").value = "";
       document.getElementById("uploadPolicyDocumentMob").value = "";
+      document.getElementById("uploadPolicyStatementMob").value = "";
       // document.getElementById("signedAadharCopyMob").value = "";
       document.getElementById("uploadPolicyDocumentFileMob").value = "";
+      document.getElementById("uploadPolicyStatementFileMob").value = "";
       // document.getElementById("signedAadharCopyFileMob").value = "";
       // document.getElementById("applicantIdMob").value = "";
       // document.getElementById("cancelCheckIds").value = "";
@@ -3444,6 +3475,34 @@ if(branchNameResp=="Branch Name*"){
     function openUploadPolicy() {
       document.getElementById("uploadPolicyDocument").click();
     }
+    function handelUploadPolicyStatement(files) {
+      var fileName = files[0].name;
+      console.log(files)
+      if(fileName){
+        let attachmentsFile = document.getElementById("uploadPolicyStatement");
+        uploadDocument("policyStatement",attachmentsFile.files[0].type).then((result) => {
+          console.log(result)
+      if (result.status=="success") {
+        uploadFile(result.uploadUrl, attachmentsFile.files[0])
+              .then(response => {
+                documentKeys.policyStatementKey = result.uploadKey;
+                console.log(documentKeys)
+              })
+              .catch(error => {
+                console.error('Upload error:', error);
+                
+            alert("Policy stetment upload failed. Please try again.");
+            return;
+
+              })
+  }
+})
+      }
+      document.getElementById("uploadPolicyStatementFile").value = fileName;
+    }
+    function openUploadPolicyStatement() {
+      document.getElementById("uploadPolicyStatement").click();
+    }
     
     function handelSignedAadhar(files) {
       var fileName = files[0].name;
@@ -3499,6 +3558,34 @@ if(branchNameResp=="Branch Name*"){
     }
     function openUploadPolicyMob() {
       document.getElementById("uploadPolicyDocumentMob").click();
+    }
+    function handelUploadPolicyStatementMob(files) {
+      var fileName = files[0].name;
+      if(fileName){
+        let attachmentsFile = document.getElementById("uploadPolicyStatementMob");
+        uploadDocument("policyStatement",attachmentsFile.files[0].type).then((result) => {
+          console.log(result)
+      if (result.status=="success") {
+        uploadFile(result.uploadUrl, attachmentsFile.files[0])
+              .then(response => {
+                documentKeys.policyStatementKey = result.uploadKey;
+                console.log(documentKeys)
+              })
+              .catch(error => {
+                console.error('Upload error:', error);
+                
+            alert("unit stetment upload failed. Please try again.");
+            return;
+
+              })
+  }
+})
+      }
+      document.getElementById("uploadPolicyStatementFileMob").value = fileName;
+
+    }
+    function openUploadPolicyStatementMob() {
+      document.getElementById("uploadPolicyStatementMob").click();
     }
     
     function openSignedAadharCopyFileMob() {
