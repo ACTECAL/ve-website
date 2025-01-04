@@ -2350,10 +2350,7 @@ if (documentKeys?.policyDocument =="") {
 
 
 if(laCheckBoxClick){
-  if (documentKeys?.laPhotoKey == "") {
-    alert("LA Phote Not Uploaded Successfully. Please select again.");
-    return;
-}
+ 
 
 if (documentKeys?.laPanCardKey == "") {
     alert("LA Pan Card Not Uploaded Successfully. Please select again.");
@@ -2363,7 +2360,11 @@ if (documentKeys?.laAadharCardKey == "") {
     alert("LA aadhar Not Uploaded Successfully. Please select again.");
     return;
 }
-
+ 
+if (documentKeys?.laPhotoKey == "") {
+    alert("LA Photo Not Uploaded Successfully. Please select again.");
+    return;
+}
 }
 // if (documentKeys?.aadharCardKey =="") {
 //     alert("Aadhar Document Not Uploaded Successfully. Please select again.");
@@ -2634,10 +2635,7 @@ if (documentKeys?.policyDocument == "") {
     return;
 }
 if(laCheckBoxMobClick){
-  if (documentKeys?.laPhotoKey == "") {
-    alert("LA Phote Not Uploaded Successfully. Please select again.");
-    return;
-}
+
 
 if (documentKeys?.laPanCardKey == "") {
     alert("LA Pan Card Not Uploaded Successfully. Please select again.");
@@ -2647,7 +2645,10 @@ if (documentKeys?.laAadharCardKey == "") {
     alert("LA aadhar Not Uploaded Successfully. Please select again.");
     return;
 }
-
+if (documentKeys?.laPhotoKey == "") {
+    alert("LA Photo Not Uploaded Successfully. Please select again.");
+    return;
+}
 }
 
 // if (documentKeys?.aadharCardKey == "") {
