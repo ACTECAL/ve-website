@@ -2114,6 +2114,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   <script>
+     let laCheckBoxClick,laCheckBoxMobClick;
     var openOtpModal = document.getElementById('otpModal');
     var otpModalInstance = new bootstrap.Modal(openOtpModal);
       $(document).ready(function() {
@@ -2363,7 +2364,18 @@ otpModalInstance.show();
       let laPanCard= document.getElementById("laPanCard");
       let laAadhar= document.getElementById("laAadhar");
 
-
+      if(laCheckBoxClick){
+  if (
+    laName == "" ||
+    laEmail == "" ||
+    laEmail == "" 
+      ) {
+        alert(
+          "Please ensure all LA required fields are filled and valid in order for us to process your request."
+        );
+        return;
+      }
+}
 
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
@@ -2403,6 +2415,23 @@ if (documentKeys?.policyDocument =="") {
     return;
 }
 
+
+if(laCheckBoxClick){
+  if (documentKeys?.laPhotoKey == "") {
+    alert("LA Phote Not Uploaded Successfully. Please select again.");
+    return;
+}
+
+if (documentKeys?.laPanCardKey == "") {
+    alert("LA Pan Card Not Uploaded Successfully. Please select again.");
+    return;
+}
+if (documentKeys?.laAadharCardKey == "") {
+    alert("LA aadhar Not Uploaded Successfully. Please select again.");
+    return;
+}
+
+}
 // if (documentKeys?.aadharCardKey =="") {
 //     alert("Aadhar Document Not Uploaded Successfully. Please select again.");
 //     return;
@@ -2623,7 +2652,18 @@ console.log(response)
       // let laGenderResp = document.getElementById("genderResp").value;
 
 
-
+      if(laCheckBoxMobClick){
+  if (
+    laNameMob == "" ||
+    laEmailMob == "" ||
+    laPhoneMob == "" 
+      ) {
+        alert(
+          "Please ensure all LA required fields are filled and valid in order for us to process your request."
+        );
+        return;
+      }
+}
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
         return;
@@ -2660,6 +2700,22 @@ if (documentKeys?.policyDocument == "") {
     return;
 }
 
+if(laCheckBoxMobClick){
+  if (documentKeys?.laPhotoKey == "") {
+    alert("LA Phote Not Uploaded Successfully. Please select again.");
+    return;
+}
+
+if (documentKeys?.laPanCardKey == "") {
+    alert("LA Pan Card Not Uploaded Successfully. Please select again.");
+    return;
+}
+if (documentKeys?.laAadharCardKey == "") {
+    alert("LA aadhar Not Uploaded Successfully. Please select again.");
+    return;
+}
+
+}
 // if (documentKeys?.aadharCardKey == "") {
 //     alert("Aadhar Document Not Uploaded Successfully. Please select again.");
 //     return;
@@ -4077,7 +4133,8 @@ if(branchNameResp=="Branch Name*"){
 function toggleFileUpload() {
         const isChecked = document.getElementById("laCheckBox").checked;
         const laCheckBoxResp = document.getElementById("laCheckBoxResp").checked;
-
+        laCheckBoxClick=isChecked;
+        laCheckBoxMobClick=laCheckBoxResp;
         const panCardGroup = document.getElementById("laPanBox");
         const aadharGroup = document.getElementById("laAadharBox");
         const nameGroup = document.getElementById("laNameBox");
