@@ -2042,7 +2042,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
   <script>
-    let laCheckBoxClick,laCheckBoxMobClick;
     var openOtpModal = document.getElementById('otpModal');
     var otpModalInstance = new bootstrap.Modal(openOtpModal);
       $(document).ready(function() {
@@ -2294,18 +2293,7 @@ otpModalInstance.show();
       let laPanCard= document.getElementById("laPanCard");
       let laAadhar= document.getElementById("laAadhar");
 
-      if(laCheckBoxClick){
-  if (
-    laName == "" ||
-    laEmail == "" ||
-    laEmail == "" 
-      ) {
-        alert(
-          "Please ensure all LA required fields are filled and valid in order for us to process your request."
-        );
-        return;
-      }
-}
+
 
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
@@ -2345,25 +2333,6 @@ if (documentKeys?.policyDocument =="") {
     return;
 }
 
-
-
-if(laCheckBoxClick){
- 
-
-if (documentKeys?.laPanCardKey == "") {
-    alert("LA Pan Card Not Uploaded Successfully. Please select again.");
-    return;
-}
-if (documentKeys?.laAadharCardKey == "") {
-    alert("LA aadhar Not Uploaded Successfully. Please select again.");
-    return;
-}
- 
-if (documentKeys?.laPhotoKey == "") {
-    alert("LA Photo Not Uploaded Successfully. Please select again.");
-    return;
-}
-}
 // if (documentKeys?.aadharCardKey =="") {
 //     alert("Aadhar Document Not Uploaded Successfully. Please select again.");
 //     return;
@@ -2459,7 +2428,7 @@ if(branchName=="Branch Name*"){
       // let link = `https://microservice.valuenable.in/generate-otp`;
       // let link = `https://dev-microservice.valuenable.in/generate-otp`;
       // let link = `http://localhost:3001/generate-otp`;
-      let link = `https://api-dev.valuenable.in/webhook/generate-otp`;
+      let link = `https://api.valuenable.in/webhook/generate-otp`;
 
       // let link = `https://uat-microservice.valuenable.in/generate-otp`;
 
@@ -2584,18 +2553,8 @@ console.log(response)
       let laPhoneMob= document.getElementById("laPhoneMob").value;
       // let laDOBResp = document.getElementById("laDOBResp").value;
       // let laGenderResp = document.getElementById("genderResp").value;
-if(laCheckBoxMobClick){
-  if (
-    laNameMob == "" ||
-    laEmailMob == "" ||
-    laPhoneMob == "" 
-      ) {
-        alert(
-          "Please ensure all LA required fields are filled and valid in order for us to process your request."
-        );
-        return;
-      }
-}
+
+
 
       if (companyName === "Insurance Company*") {
         alert("Please select a company.");
@@ -2631,22 +2590,6 @@ if (documentKeys?.unitStatementKey == "") {
 if (documentKeys?.policyDocument == "") {
     alert("Policy Bond Not Uploaded Successfully. Please select again.");
     return;
-}
-if(laCheckBoxMobClick){
-
-
-if (documentKeys?.laPanCardKey == "") {
-    alert("LA Pan Card Not Uploaded Successfully. Please select again.");
-    return;
-}
-if (documentKeys?.laAadharCardKey == "") {
-    alert("LA aadhar Not Uploaded Successfully. Please select again.");
-    return;
-}
-if (documentKeys?.laPhotoKey == "") {
-    alert("LA Photo Not Uploaded Successfully. Please select again.");
-    return;
-}
 }
 
 // if (documentKeys?.aadharCardKey == "") {
@@ -2741,7 +2684,7 @@ if(branchNameResp=="Branch Name*"){
       // let link = `https://microservice.valuenable.in/generate-otp`;
       // let link = `https://dev-microservice.valuenable.in/generate-otp`;
       // let link = `http://localhost:3001/generate-otp`;
-      let link = `https://api-dev.valuenable.in/webhook/generate-otp`;
+      let link = `https://api.valuenable.in/webhook/generate-otp`;
 
       // let link = `https://uat-microservice.valuenable.in/generate-otp`;
 
@@ -3038,7 +2981,7 @@ if(branchNameResp=="Branch Name*"){
       // let link = `https://microservice.valuenable.in/generate-otp`;
       // let link = `https://dev-microservice.valuenable.in/generate-otp`;
       // let link = `http://localhost:3001/generate-otp`;
-      let link = `https://api-dev.valuenable.in/webhook/generate-otp`;
+      let link = `https://api.valuenable.in/webhook/generate-otp`;
 
 
 
@@ -3084,7 +3027,7 @@ if(branchNameResp=="Branch Name*"){
       // let link = `https://microservice.valuenable.in/generate-otp`;
       // let link = `https://dev-microservice.valuenable.in/generate-otp`;
       // let link = `http://localhost:3001/generate-otp`;
-      let link = `https://api-dev.valuenable.in/webhook/generate-otp`;
+      let link = `https://api.valuenable.in/webhook/generate-otp`;
 
 
 
@@ -3116,7 +3059,7 @@ if(branchNameResp=="Branch Name*"){
       // let link = `https://microservice.valuenable.in/verify-otp`;
       // let link = `https://dev-microservice.valuenable.in/verify-otp`;
       // let link = `http://localhost:3001/verify-otp`
-      let link = `https://api-dev.valuenable.in/webhook/verify-otp`
+      let link = `https://api.valuenable.in/webhook/verify-otp`
 
       // let link = `https://uat-microservice.valuenable.in/verify-otp`;
 
@@ -3160,7 +3103,7 @@ if(branchNameResp=="Branch Name*"){
       // let link = `https://microservice.valuenable.in/verify-otp`;
       // let link = `https://dev-microservice.valuenable.in/verify-otp`;
       // let link = `http://localhost:3001/verify-otp`
-      let link = `https://api-dev.valuenable.in/webhook/verify-otp`
+      let link = `https://api.valuenable.in/webhook/verify-otp`
 
       // let link = `https://uat-microservice.valuenable.in/verify-otp`
 
@@ -4093,7 +4036,7 @@ if(branchNameResp=="Branch Name*"){
       // let link = `https://uat-microservice.valuenable.in/get-document-url`
       
       // let link = `http://localhost:3001/get-document-url`
-      let link = `https://api-dev.valuenable.in/webhook/get-document-url`
+      let link = `https://api.valuenable.in/webhook/get-document-url`
 
 
   return $.ajax({
@@ -4127,8 +4070,7 @@ if(branchNameResp=="Branch Name*"){
 function toggleFileUpload() {
         const isChecked = document.getElementById("laCheckBox").checked;
         const laCheckBoxResp = document.getElementById("laCheckBoxResp").checked;
-        laCheckBoxClick=isChecked;
-        laCheckBoxMobClick=laCheckBoxResp;
+
         const panCardGroup = document.getElementById("laPanBox");
         const aadharGroup = document.getElementById("laAadharBox");
         const nameGroup = document.getElementById("laNameBox");
